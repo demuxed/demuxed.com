@@ -1,0 +1,12 @@
+@import "colors";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "cover";
+
+.logo {
+  height: 200px;
+  background-image: url('../img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -9999px;
+}
