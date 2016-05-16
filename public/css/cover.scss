@@ -2,13 +2,6 @@
  * Globals
  */
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: $orange;
-}
-
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
@@ -32,7 +25,6 @@ body {
 body {
   color: $blue;
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba($blue, .5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */

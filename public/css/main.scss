@@ -2,6 +2,21 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "cover";
 
+a:hover {
+  text-decoration: none;
+}
+
+.masthead-brand {
+  display: inline-block;
+  height: 100%;
+  width: 140px;
+  background-image: url('../img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -9999px;
+}
+
 .logo {
   height: 200px;
   background-image: url('../img/logo.png');
@@ -9,4 +24,27 @@
   background-repeat: no-repeat;
   background-position: center;
   text-indent: -9999px;
+}
+
+.icon {
+  // display: inline-block;
+
+  svg {
+    width: 20px;
+    vertical-align: text-bottom;
+  }
+}
+
+a.icon {
+  svg {
+    fill: $link-color;
+  }
+
+  &:hover svg {
+    fill: $link-hover-color;
+  }
+}
+
+.lead .btn {
+  margin-bottom: 10px;
 }
