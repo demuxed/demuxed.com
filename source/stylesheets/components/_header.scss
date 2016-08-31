@@ -1,0 +1,146 @@
+/* Page Header */
+.page-head {
+  z-index: 10;
+  //position: absolute;
+  width: 100%;
+  
+  .container {
+    @extend %clearfix;
+    @include mq($med-large) {
+      padding: 2em;
+    }
+    
+    @include mq($large) {
+      padding: 2.8em 2em;
+    }
+  }
+}//page-head
+
+.logo {
+  width: 147px;
+  height: 25px;
+  margin: 1.6em 0 1em 1em;
+  display: block;
+  @extend %logo-black;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 147px;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+  
+  @include mq($tiny) {
+    //width: 150px;
+    //background-size: 100%;
+  }
+  
+  @include mq($med-large) {
+    margin: 0;
+    float: left;    
+  }
+}//logo
+
+
+
+.menu-btn {
+  @extend %device-menu-btn-open;    
+  width: 70px;
+  height: 65px;
+  //background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 66%;
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  z-index: 100;
+  
+  
+  &:hover {
+    //background-color: #000;
+  }
+  
+  @include mq($med-large) {
+    display: none;
+  }
+}//menu-btn
+
+.page-head__nav {
+  position: absolute;
+  top:0;
+  z-index: 20;
+  clear: both;    
+  width: 100%;
+  background-color: $brand-red;
+  text-align: center;
+  padding: 2em 0;
+  
+  @include mq($med-large) {
+    position: static;
+    clear: right;
+    float: right;
+    background: none;
+    width: auto;
+    padding: 0;
+    border: 0;
+  }
+
+  li {    
+    
+    @include mq($med-large) {
+      border: 0;
+      display: inline-block;
+      margin-left: 2em;
+      
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    
+    a {
+      @include transition-all;
+      display: block;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      @include font-size(18px);
+      font-family: $default-sans;
+      font-weight: 400;
+      padding: 1em;
+            
+      @include mq($med-large) {
+        @include font-size(15px);
+        padding: 0;
+        color: $brand-purple;
+      }
+      
+      &.signup-btn {
+        @include mq($med-large) {
+          @include btn;
+          opacity: 1;
+          color: #fff;
+          padding: 0.4em 1.6em;
+          border-color: #fff;
+          
+          &:hover {
+            color: #fff!important;
+          }
+        }
+      }
+    }    
+    
+    a:hover, &.selected a {
+      text-decoration: none;
+      background: rgba(225,225,225,0.1);
+      
+      @include mq($med-large) {
+        opacity: 1;
+        text-decoration: none;
+        background: 0;
+        color: $brand-red;
+      }
+    }
+  }
+}//page-head__nav

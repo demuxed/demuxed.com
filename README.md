@@ -1,13 +1,11 @@
-# Demuxed 2016 Website
+Base Project
+============
 
-We use [Harp](http://harpjs.com) to build the site. Read the docs there on how to use it.
+The project uses [Middleman](https://middlemanapp.com/).
 
-## Updating the site
+To initialise your workspace do:
 
-1. Make a new branch off `master`
-2. Make changes (use `$ harp server _harp` for preview server)
-3. Submit PR against `master` / merge
-4. Checkout `gh-pages`
-5. Rebase against `master`
-6. Build the site: `$ harp compile _harp ./`
-7. Deploy the site: `git push -f`
+0. You will need the latest Middleman release: `gem install middleman --pre`
+1. `bundle exec middleman build`
+
+To run the project for development use `bundle exec middleman`.

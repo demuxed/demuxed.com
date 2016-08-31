@@ -1,0 +1,35 @@
+%footer.page-foot.main-content
+  %div.container
+    %div.logo-container
+      %a.logo{href: "#"}
+    %ul.page-foot__nav
+      %li
+        %h4 Contact
+      %li
+        = mail_to("info@demuxed.com", "info@demuxed.com")
+        
+      %li
+        %a.signup-btn{href:"http://tickets.demuxed.com/"} Register now
+        
+        
+    %ul.page-foot__nav
+      %li
+        %h4 Legal Stuff
+      %li
+        = link_to("Code of Conduct", "http://confcodeofconduct.com/")
+      %li
+        = link_to("Privacy", "/")
+        
+    %ul.page-foot__nav.page-foot__social
+      %li
+        %h4 Follow us        
+      %li.twitter
+        = link_to("Twitter", "https://twitter.com/demuxed", class: "twitter", target: "_blank")
+      %li.facebook
+        = link_to("Facebook", "https://www.facebook.com/info", class: "facebook", target: "_blank")
+      %li.instagram
+        = link_to("Instagram", "https://www.instagram.com", class: "instagram", target: "_blank")
+  
+  %a{href:"http://tickets.demuxed.com/"}
+    = image_tag("/images/footer-illustration.svg", alt: "", class: "footer-illustration")
+  

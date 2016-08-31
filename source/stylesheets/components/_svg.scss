@@ -1,0 +1,37 @@
+
+/* SVG Silent Extends */
+%logo-black {
+  background-image: inline-image('/logo-black.svg');
+}
+
+%logo-white {
+  background-image: inline-image('/logo-white.svg');
+}
+
+%device-menu-btn-closed {
+  background-image: inline-image('x.svg');
+}
+
+%device-menu-btn-open {
+  background-image: inline-image('menu.svg');
+}
+
+%modal-closed {
+  background-image: inline-image('red-x.svg');
+}
+
+%twitter {
+  background-image: inline-image('/twitter.svg');
+}
+
+%facebook {
+  background-image: inline-image('/facebook.svg');
+}
+
+%instagram {
+  background-image: inline-image('/instagram.svg');
+}
+
+%logo-avatar {
+  background-image: inline-image('/logo-avatar.svg');
+}
