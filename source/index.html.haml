@@ -3,22 +3,22 @@ title: Demuxed, The Conference for Video Engineers
 ---
 
 %section.home-hero
-  %div.container            
+  %div.container
     %h1.home-hero__heading
       The Conference for Video Engineers
     %h2.home-hero__sub-heading
       October 13, 2016 San Francisco, Ellation HQ
     %a.home-hero__btn{href:"http://tickets.demuxed.com/"} Register now
 
-      
+
     = image_tag("/images/hero-illustration-mobile.svg", alt: "", class: "hero-illustration-mobile")
     = image_tag("/images/hero-illustration.svg", alt: "", class: "hero-illustration")
-      
+
 %section.speakers#speakers
   %div.container
     %h2.section-heading
       The Speakers
-    
+
     %ul.speakers-list
       %li.speakers-list__card#adam-brown
         = image_tag("/images/adam-brown.jpg", alt: "", class: "speakers-list__img")
@@ -26,65 +26,65 @@ title: Demuxed, The Conference for Video Engineers
         %h4.speakers-list__company Mux
         %p.speakers-list__talk-title Harware Encoding in a Container
         %a.speakers-list__btn{href:"#popup-adam-brown"} Talk Overview
-    
+
       %li.speakers-list__card#andrew-scherkus
-        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        = image_tag("/images/andrew-scherkus.png", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Andrew Scherkus
         %h4.speakers-list__company Google
         %p.speakers-list__talk-title Developing VR Media Technologies
         %a.speakers-list__btn{href:"#popup-andrew-scherkus"} Talk Overview
-        
+
       %li.speakers-list__card#anne-aaron
         = image_tag("/images/anne-aaron.jpg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Anne Aaron
         %h4.speakers-list__company Netflix
         %p.speakers-list__talk-title Measuring Perceptual Video Quality at Scale
         %a.speakers-list__btn{href:"#popup-anne-aaron"} Talk Overview
-        
-        
+
+
       %li.speakers-list__card#nick-chadwick
         = image_tag("/images/nick-chadwick.jpg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Nick Chadwick
         %h4.speakers-list__company Mux
         %p.speakers-list__talk-title WebRTC: From The Ground Up
         %a.speakers-list__btn{href:"#popup-nick-chadwick"} Talk Overview
-        
+
       %li.speakers-list__card.blank
-      
+
       %li.speakers-list__card.blank
-        
+
       %li.speakers-list__card#dan-schultz
         = image_tag("/images/dan-schultz.jpg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Dan Schultz
         %h4.speakers-list__company Archive.org
         %p.speakers-list__talk-title Popcorn Reborn! Open Video Editor from Mozilla mashes up with the Internet Archive
         %a.speakers-list__btn{href:"#popup-dan-schultz"} Talk Overview
-        
+
       %li.speakers-list__card#ben-moskowitz
         = image_tag("/images/ben-moskowitz.jpg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Ben Moskowitz
         %h4.speakers-list__company IRC
         %p.speakers-list__talk-title Popcorn Reborn! Open Video Editor from Mozilla mashes up with the Internet Archive
         %a.speakers-list__btn{href:"#popup-ben-moskowitz"} Talk Overview
-        
+
       %li.speakers-list__card#tracey-jaquith
         = image_tag("/images/tracey-jaquith.jpg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Tracey Jaquith
         %h4.speakers-list__company Archive.org
         %p.speakers-list__talk-title Popcorn Reborn! Open Video Editor from Mozilla mashes up with the Internet Archive
         %a.speakers-list__btn{href:"#popup-tracey-jaquith"} Talk Overview
-        
+
       %li.speakers-list__card#brion-vibber
         = image_tag("/images/brion-vibber.jpg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Brion Vibber
         %h4.speakers-list__company WikiMedia
         %p.speakers-list__talk-title ogv.js: Rebuilding the Web Video Stack From Scratch in JS
         %a.speakers-list__btn{href:"#popup-brion-vibber"} Talk Overview
-        
+
       %li.speakers-list__card.blank
 
       %li.speakers-list__card.blank
-        
+
 
       %li.speakers-list__card#nuno-pinge
         = image_tag("/images/nuno-pinge.jpg", alt: "", class: "speakers-list__img")
@@ -99,7 +99,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.speakers-list__company JW Player
         %p.speakers-list__talk-title DASHing Into the Wild with VP9
         %a.speakers-list__btn{href:"#popup-pooja-madan"} Talk Overview
-        
+
       %li.speakers-list__card#steven-robertson
         = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Steven Robertson
@@ -110,23 +110,23 @@ title: Demuxed, The Conference for Video Engineers
       %li.speakers-list__card.blank
 
       %li.speakers-list__card.blank
-      
+
       %li.speakers-list__card.blank
-        
+
       %li.speakers-list__card#david-lapalomento
         = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name David LaPalomento
         %h4.speakers-list__company Brightcove
         %p.speakers-list__talk-title In a Perfect World: Why Media Sources Are a Hassle
         %a.speakers-list__btn{href:"#popup-david-lapalomento"} Talk Overview
-        
+
       %li.speakers-list__card#matt-frost
         = image_tag("/images/matt-frost.jpg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Matt Frost
         %h4.speakers-list__company Google
         %p.speakers-list__talk-title An overview of AOM: The Alliance for Open Media
         %a.speakers-list__btn{href:"#popup-matt-frost"} Talk Overview
-       
+
     = image_tag("/images/speakers-illustration.svg", alt: "", class: "speakers-illustration")
 
 
@@ -137,18 +137,18 @@ title: Demuxed, The Conference for Video Engineers
     %h3.speakers-list__name Adam Brown
     %h4.speakers-list__company Mux
     %p Running FFmpeg in a docker container is cool, but what happens when you want to leverage hardware encoding technologies such as Intel QuickSync and Nvidia NVENC with docker?
-    %p What are the considerations for the host OS and how do these technologies play with existing docker deployment /orchestration tools. Are there performance or feature restrictions, and is it even worth the effort? 
-    
+    %p What are the considerations for the host OS and how do these technologies play with existing docker deployment /orchestration tools. Are there performance or feature restrictions, and is it even worth the effort?
+
 %section.modal#popup-andrew-scherkus
   %div.modal__container.popup
     %a.modal-btn{href: "#andrew-scherkus"}
-    = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+    = image_tag("/images/andrew-scherkus.png", alt: "", class: "speakers-list__img")
     %h3.speakers-list__name Andrew Scherkus
     %h4.speakers-list__company Google
-    %p I work on Google's VR team leading our multimedia efforts. I'd like to talk about recent developments, technology, and standards we can (hopefully) all rally behind for emerging VR multimedia space. I used to lead the team that developed the Media Source and Encrypted Media web APIs on Chrome.
+    %p I work on Google's VR team leading our multimedia efforts. For the past two years we've been busy figuring out how best to produce, serve, and playback spatial audio and video. During that time we've realized that there are little-to-no standards for any of this stuff and that it really inhibits the creation and distribution of content.
+    %p This talk will cover the basics of spherical representations and the impact they have on visual quality and playback as well as a primer on spatial audio. Considering this is Demuxed, no talk would be complete without diving into our ideas for signalling VR metadata at a container level to enable interoperability between cameras, post-production suites, and players. What else could be more fun than the intersection of sphere-to-plane projections, 3D geometry, and ISOBMFF?!
+    %p If you like to be extra prepared, feel free to look at our draft specifications on our <a href="https://github.com/google/spatial-media">GitHub</a>.
 
-    %p Things like 360 video, stereo video, ambisonic audio, object-based audio, metadata, what YouTube is doing in this space, etc...
-    
 %section.modal#popup-anne-aaron
   %div.modal__container.popup
     %a.modal-btn{href: "#anne-aaron"}
@@ -164,8 +164,8 @@ title: Demuxed, The Conference for Video Engineers
     = image_tag("/images/ben-moskowitz.jpg", alt: "", class: "speakers-list__img")
     %h3.speakers-list__name Ben Moskowitz
     %h4.speakers-list__company IRC
-    %p Overview of rebuilding the PopcornJS / PopcornMaker open source video editor, hooking in to the world's biggest digital library. A large core group of volunteers are coordinating to revitalize the editor to an improved version. Come see what we've been up to or how you can get started, hack on, and volunteer! 
-    
+    %p Overview of rebuilding the PopcornJS / PopcornMaker open source video editor, hooking in to the world's biggest digital library. A large core group of volunteers are coordinating to revitalize the editor to an improved version. Come see what we've been up to or how you can get started, hack on, and volunteer!
+
 %section.modal#popup-brion-vibber
   %div.modal__container.popup
     %a.modal-btn{href: "#brion-vibber"}
@@ -173,8 +173,8 @@ title: Demuxed, The Conference for Video Engineers
     %h3.speakers-list__name Brion Vibber
     %h4.speakers-list__company Wikimedia
     %p HTML5 web video started with black-box video and audio elements, but has expanded with a dizzying array of features from MSE to WebRTC. But what does it look like on the inside? At Wikimedia Foundation, we rebuilt the web video playback stack from the ground up in JavaScript to provide Ogg and WebM compatibility for Safari and IE... This provides a chance to look at the innards of the black box, and how high-level and low-level parts mix. Experience thrills seeing asm.js and WebGL magic, chills at the hacks for streaming URL loading, and prepare to spill your drink as you encounter the remaining low-level limitations to interoperability and performance!
-    
-    
+
+
 %section.modal#popup-dan-schultz
   %div.modal__container.popup
     %a.modal-btn{href: "#dan-schultz"}
@@ -182,7 +182,7 @@ title: Demuxed, The Conference for Video Engineers
     %h3.speakers-list__name Dan Schultz
     %h4.speakers-list__company Archive.org
     %p Overview of rebuilding the PopcornJS / PopcornMaker open source video editor, hooking in to the world's biggest digital library. A large core group of volunteers are coordinating to revitalize the editor to an improved version. Come see what we've been up to or how you can get started, hack on, and volunteer!
-    
+
 %section.modal#popup-matt-frost
   %div.modal__container.popup
     %a.modal-btn{href: "#matt-frost"}
@@ -190,7 +190,7 @@ title: Demuxed, The Conference for Video Engineers
     %h3.speakers-list__name Matt Frost
     %h4.speakers-list__company Google
     %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    
+
 %section.modal#popup-nick-chadwick
   %div.modal__container.popup
     %a.modal-btn{href: "#nick-chadwick"}
@@ -200,7 +200,7 @@ title: Demuxed, The Conference for Video Engineers
     %p WebRTC is most well-known as a browser standard for cross-platform realtime video and audio communications. But its based on industry standards, and industry standards mean RFCs.
     %p In this talk, I'll go through what WebRTC actually is from a protocols perspective, and take a bottom-to-top approach by discussing the RFCs that make up the WebRTC standards.
     %p Starting with ICE, and moving through DTLS, RTP, SRTP, SDP and more, in this talk I'd like to give people a view of what WebRTC actually _is_ , and give people a solid theoretical understanding to get started with this awesome technology.
-    
+
 %section.modal#popup-nuno-pinge
   %div.modal__container.popup
     %a.modal-btn{href: "#nuno-pinge"}
@@ -208,7 +208,7 @@ title: Demuxed, The Conference for Video Engineers
     %h3.speakers-list__name Nuno Pinge
     %h4.speakers-list__company JW Player
     %p The nuts and bolts of JW Player's implementation of VP9 transcoding and delivery through DASH. Why choose VP9 and DASH even though over 80% of video is delivered with H.264 over HLS today? The choice of technology is being driven by the ever growing needs of our publishers and viewers. We are looking to provide a viable and cost effective alternative to H.264/H.265 over HLS to deliver high quality video for users on constrained bandwidth devices. Here we outline our experiments with quality, encoding speed, bytes delivered and lower time to first frame.
-    
+
 %section.modal#popup-pooja-madan
   %div.modal__container.popup
     %a.modal-btn{href: "#pooja-madan"}
@@ -216,7 +216,7 @@ title: Demuxed, The Conference for Video Engineers
     %h3.speakers-list__name Pooja Madan
     %h4.speakers-list__company JW Player
     %p The nuts and bolts of JW Player's implementation of VP9 transcoding and delivery through DASH. Why choose VP9 and DASH even though over 80% of video is delivered with H.264 over HLS today? The choice of technology is being driven by the ever growing needs of our publishers and viewers. We are looking to provide a viable and cost effective alternative to H.264/H.265 over HLS to deliver high quality video for users on constrained bandwidth devices. Here we outline our experiments with quality, encoding speed, bytes delivered and lower time to first frame.
-    
+
 %section.modal#popup-steven-robertson
   %div.modal__container.popup
     %a.modal-btn{href: "#steven-robertson"}
@@ -224,7 +224,7 @@ title: Demuxed, The Conference for Video Engineers
     %h3.speakers-list__name Steven Robertson
     %h4.speakers-list__company YouTube
     %p Why People Really Abandon Playbacks.
-    
+
 %section.modal#popup-tracey-jaquith
   %div.modal__container.popup
     %a.modal-btn{href: "#tracey-jaquith"}
@@ -232,7 +232,7 @@ title: Demuxed, The Conference for Video Engineers
     %h3.speakers-list__name Tracey Jaquith
     %h4.speakers-list__company Archive.org
     %p The nuts and bolts of JW Player's implementation of VP9 transcoding and delivery through DASH. Why choose VP9 and DASH even though over 80% of video is delivered with H.264 over HLS today? The choice of technology is being driven by the ever growing needs of our publishers and viewers. We are looking to provide a viable and cost effective alternative to H.264/H.265 over HLS to deliver high quality video for users on constrained bandwidth devices. Here we outline our experiments with quality, encoding speed, bytes delivered and lower time to first frame.
-    
+
 %section.modal#popup-david-lapalomento
   %div.modal__container.popup
     %a.modal-btn{href: "#david-lapalomento"}
@@ -240,14 +240,14 @@ title: Demuxed, The Conference for Video Engineers
     %h3.speakers-list__name David LaPalomento
     %h4.speakers-list__company Brightcove
     %p Media Source Extensions promise some amazing new capabilities for web video. Once you take that shiny new API out of the garage though, you'll discover a number of delightful quirks that can make it quite difficult to be successful with. This talk will go over a bunch of rough edges in the spec and implementations, discuss popular workarounds, and propose some practical improvements that could make MSE easier to work with.
-        
+
 %section.schedule#schedule
   %div.container
     %h2.section-heading
       The Schedule
       %span
-        October 16th, 2016
-    
+        October 13th, 2016
+
     %ul.schedule-list.morning
       %li.schedule-list__ampm
         %h2 Morning
@@ -256,13 +256,13 @@ title: Demuxed, The Conference for Video Engineers
           8.00am &ndash; 9.00am
         %span.schedule-list__type
           Registration
-          
+
       %li.schedule-list__break.opening-remarks
         %h4.schedule-list__time
           9.00am &ndash; 9.15am
         %span.schedule-list__type
           Opening Remarks
-          
+
       %li.schedule-list__talk
         %h4.schedule-list__time
           9.15am &ndash; 10.00am
@@ -273,8 +273,8 @@ title: Demuxed, The Conference for Video Engineers
           %h3.schedule-list__speaker
             Steven Robertson
           %p.schedule-list__talk-desc
-            Why People Really Abandon Playbacks 
-            
+            Why People Really Abandon Playbacks
+
       %li.schedule-list__talk
         %h4.schedule-list__time
           10.00am &ndash; 10.30am
@@ -284,14 +284,14 @@ title: Demuxed, The Conference for Video Engineers
             Anne Aaron
           %p.schedule-list__talk-desc
             Measuring Perceptual Video Quality at Scale
-            
+
       %li.schedule-list__break
         %h4.schedule-list__time
           10.30am &ndash; 10.45am
         %span.schedule-list__type
           Break
-        
-        
+
+
       %li.schedule-list__talk
         %h4.schedule-list__time
           10.45am &ndash; 11.15am
@@ -300,7 +300,7 @@ title: Demuxed, The Conference for Video Engineers
           %h3.schedule-list__speaker
             David LaPalomento
           %p.schedule-list__talk-desc
-            In a Perfect World: Why Media Sources Are a Hassle 
+            In a Perfect World: Why Media Sources Are a Hassle
 
       %li.schedule-list__talk
         %h4.schedule-list__time
@@ -311,9 +311,9 @@ title: Demuxed, The Conference for Video Engineers
             Adam Brown
           %p.schedule-list__talk-desc
             Harware Encoding in a Container
-            
-            
-            
+
+
+
     %ul.schedule-list
       %li.schedule-list__ampm
         %h2 Afternoon
@@ -339,7 +339,7 @@ title: Demuxed, The Conference for Video Engineers
           %h3.schedule-list__speaker
             Nick Chadwick
           %p.schedule-list__talk-desc
-            WebRTC: From The Ground Up 
+            WebRTC: From The Ground Up
 
       %li.schedule-list__break
         %h4.schedule-list__time
@@ -357,7 +357,7 @@ title: Demuxed, The Conference for Video Engineers
           %h3.schedule-list__speaker
             Brion Vibber
           %p.schedule-list__talk-desc
-            ogv.js: Rebuilding the Web Video Stack From Scratch in JS 
+            ogv.js: Rebuilding the Web Video Stack From Scratch in JS
 
       %li.schedule-list__talk
         %h4.schedule-list__time
@@ -368,13 +368,13 @@ title: Demuxed, The Conference for Video Engineers
             Pooja Madan &amp; Nuno Pinge
           %p.schedule-list__talk-desc
             DASHing Into the Wild with VP9
-            
+
       %li.schedule-list__break
         %h4.schedule-list__time
           3.30pm &ndash; 3.45pm
         %span.schedule-list__type
           Break
-            
+
       %li.schedule-list__talk
         %h4.schedule-list__time
           3.45pm &ndash; 4.15pm
@@ -384,16 +384,16 @@ title: Demuxed, The Conference for Video Engineers
             Tracey Jaquith, Dan Schultz &amp; Ben Moskowitz
           %p.schedule-list__talk-desc
             Popcorn Reborn! Open Video Editor from Mozilla mashes up with the Internet Archive
-            
+
       %li.schedule-list__talk
         %h4.schedule-list__time
           4.15pm &ndash; 4.45pm
         %div.schedule-list__speaker-box
-          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          = image_tag("/images/andrew-scherkus.png", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
             Andrew Scherkus
           %p.schedule-list__talk-desc
-            Developing VR Media Technologies
+            Developing VR Media Technology
 
       %li.schedule-list__talk
         %h4.schedule-list__time
@@ -404,7 +404,7 @@ title: Demuxed, The Conference for Video Engineers
             Matt Frost
           %p.schedule-list__talk-desc
             An overview of AOM: The Alliance for Open Media
-          
+
       %li.schedule-list__talk
         %h4.schedule-list__time
           5.10pm &ndash; 5.45pm
@@ -413,9 +413,9 @@ title: Demuxed, The Conference for Video Engineers
           %h3.schedule-list__speaker
             Demuxed activity!
           %p.schedule-list__talk-desc
-            Hint, there will be prizes! 
-            
-            
+            Hint, there will be prizes!
+
+
 %section.location#location
   %div.container
     %div.location-text
@@ -427,46 +427,49 @@ title: Demuxed, The Conference for Video Engineers
         Ste. 700
         San Francisco
         %br CA 94103
-    
+
     = image_tag("/images/location-illustration.svg", alt: "", class: "location-illustration")
-    
+
 %section.map
-  %a.map-link{href:"/"}
+  %a.map-link{href:"https://www.google.co.uk/maps/place/Ellation+%7C+Crunchyroll/@37.7848489,-122.4089389,17z/data=!3m1!4b1!4m5!3m4!1s0x8085808608ca269d:0xe06022877d3fde60!8m2!3d37.7848489!4d-122.4067502"}
     = image_tag("/images/map.jpg", alt: "", class: "")
-  
+
   / <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12612.885936161667!2d-122.4067502!3d37.7848489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe06022877d3fde60!2sEllation+%7C+Crunchyroll!5e0!3m2!1sen!2suk!4v1471007344772" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-  
+
 
 %section.about-us#about-us
   %div.container
     %div.about-us__text
       %h2.section-heading
         About us
-    
+
       %p
-        To be terribly honest, we're simply engineers talking about video technology. After two years of chatting about video at the
-        %a{href:"http://www.meetup.com/SF-Video-Technology/"} SF Video Technology Meetup,
-        we've decided it's time for an engineer-first event with quality technical talks about video. Our focus is on video delivered over the web, but topics cover anything from encoding to playback and more!
+        Demuxed is simply engineers talking about video technology. After two years of chatting about video at the
+        %a{href: "https://sfvideo.org"} SF Video Technology Meetup
+        , we've decided it's time for an engineer-first event with quality technical talks about video. Our focus is on
+        video delivered over the web, but topics cover anything from encoding to playback and more!
 
       %h3
-        Who's organizing this? 
-      
+        Who's organizing this?
+
       %p
-        Most of the boring work is being done by engineers from
-        %a{href:"https://www.brightcove.com/en/"} Brightcove,                
+        Most of the boring work is being done by
+        %a{href: "https://twitter.com/matt_mcclure"} @matt_mcclure
+        from
+        %a{href:"https://"} Brightcove,
         but there was an amazing group of people from the meetup that we called our "Braintrust." They've been nice enough to do things like schedule planning, vetting the conference name, designing cool swag, and even arguing heatedly over which talk submissions should make the final cut.
-    
+
       %p
         This event is run with the help of the members of the SF Video Technology Meetup. We're incredibly lucky to have built up a community of engineers that work on some of the best video products on the web.
-        
+
     = image_tag("/images/about-photos.jpg", alt: "", class: "about-us__images")
-  
+
 
 %section.guiding-principles
   %div.container
     %h2.section-heading
       Our Guiding Principles
-    
+
     %ul.guiding-principles__list
       %li
         = image_tag("/images/no-marketing.svg", alt: "", class: "guiding-prinicples__img")
@@ -474,16 +477,16 @@ title: Demuxed, The Conference for Video Engineers
           No Marketing
         %p.guiding-principles__text
           Speakers are selected based on merit, not how much money their company paid. To be clear, that means speaking slots aren't for sale. Attendee information is also not for sale, and that includes any sponsors.
-          
+
       %li
         = image_tag("/images/admission.svg", alt: "", class: "guiding-prinicples__img")
         %h3.guiding-principles__title
           Affordable
         %p.guiding-principles__text
           We want anyone in the industry to be able to come, keeping tickets reasonably priced through amazing sponsors and backing from our employers. Working on a great open source project that can't afford to send you?
-        %a{href:"mailto:sfvidtech@gmail.com"}Please reach out
+        %a{href:"mailto:info@demuxed.com"}Please reach out
         and we'll find a ticket for you.
-          
+
       %li
         = image_tag("/images/for-everyone.svg", alt: "", class: "guiding-prinicples__img")
         %h3.guiding-principles__title
@@ -493,7 +496,7 @@ title: Demuxed, The Conference for Video Engineers
           %a{href:"http://confcodeofconduct.com/"}Conf Code of Conduct
           for the event. Any questions or concerns, please speak to any of our voluenteers or organizers.
           %a{href:"mailto:info@demuxed.com"}Or email us directly.
-          
+
 
       %li
         = image_tag("/images/community.svg", alt: "", class: "guiding-prinicples__img")
@@ -501,15 +504,38 @@ title: Demuxed, The Conference for Video Engineers
           Community
         %p.guiding-principles__text
           We strive for high quality, technical content, but just as importantly we're trying to use these events to strengthen our community of video engineers, both in the Bay and at large.
-        
+
+
+%section.after-party
+  %div.container
+    %div.after-party__text
+      %h2.section-heading
+        After Party
+      %p
+        When the dust has settled and the talks are done, Brightcove is hosting a conference party at
+        %a{href:"http://mrsmithssf.com/"}
+          Mr. Smith's
+        within walking distance of Ellation. The conference schedule is pretty packed, so this is the perfect time to catch up with all your fellow attendees. We'll have heavy appetizers and an open bar until the tab runs out or the bar kicks us out.
+
+      %p
+        The only thing you need to get in is your badge, so make sure to bring it with you! Plus ones are welcome, but they either need to meet you at the door to get a wristband or have a wristband in advance.
+
+      %h4
+        Sponsored by
+      = image_tag("/images/brightcove.png", alt: "Brightcove logo", class: "sponsor")
+
+    = image_tag("/images/after-party-illustration.svg", alt: "", class: "after-party-illustration")
+
+
+
 %section.sponsors#sponsors
   %div.container
     %h2.section-heading
       Our Sponsors
-    
+
     %h4.sponsors__type
       Platinum
-    
+
     %ul.sponsors__sponsor-list.platinum
       %li
         = image_tag("/images/ellation.png", alt: "", class: "")
@@ -520,7 +546,7 @@ title: Demuxed, The Conference for Video Engineers
 
     %h4.sponsors__type
       Gold
-      
+
     %ul.sponsors__sponsor-list.gold
       %li
         = image_tag("/images/beamr.svg", alt: "", class: "")
@@ -530,19 +556,14 @@ title: Demuxed, The Conference for Video Engineers
         = image_tag("/images/google.svg", alt: "", class: "")
 
     %h4.sponsors__type
-      Silver  
+      Silver
     %ul.sponsors__sponsor-list.silver
       %li
         = image_tag("/images/wowza.svg", alt: "", class: "")
 
 
     %h4.sponsors__type
-      Bronze  
+      Bronze
     %ul.sponsors__sponsor-list.bronze
       %li
         = image_tag("/images/peer5.svg", alt: "", class: "")
-
-
-
-      
-            

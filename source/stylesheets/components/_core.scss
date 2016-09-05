@@ -550,6 +550,7 @@ h1, h2, h3, h4, h5 {
     @include mq($xl-large) {
       float: left;
       max-width: 30em;
+      margin-bottom: 0;
     }
     
     .section-heading {
@@ -594,13 +595,102 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+.after-party {
+  text-align: center;
+  
+  .container {
+    @extend %clearfix;
+    position: relative;
+    
+    @include mq($xl-large) {
+    //  padding-top: 10em;
+    max-width: 72em;
+    }
+  }
+  
+  .after-party-illustration {
+    @include mq($xl-large) {
+      float: right;
+    }
+  }
+  
+  .after-party__text {
+    text-align: left;
+    margin-bottom: 3em;
+    
+    @include mq($medium) {
+      max-width: 36em;
+      margin: 0 auto 4em auto;
+    }
+    
+    @include mq($xl-large) {
+      float: left;
+      max-width: 30em;
+      margin-bottom: 0;
+    }
+    
+    .section-heading {
+      @include mq($xl-large) {
+        text-align: left;
+
+        &:after {
+          margin: 0.3em 0;
+        }
+      }
+    }
+    
+    p {
+      margin-bottom: 1em;
+      
+      @include mq($medium) {
+        @include font-size(18px);
+        line-height: 1.8em;
+      }
+    }
+    
+    h3 {
+      @include font-size(26px);
+      line-height: 1.6em;
+      
+      @include mq($large) {
+        @include font-size(40px);
+        line-height: 1.8em;
+      }
+    }
+    
+    h4 {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      @include font-size(16px);
+      line-height: 1.6em;
+      margin-bottom: 0.2em;
+      text-align: center;
+      padding-top: 0.8em;
+      
+      @include mq($xl-large) {
+        text-align: left;
+      }
+    }
+    
+    .sponsor {
+      width: 300px;
+      display: block;
+      margin: 0 auto;
+      
+      @include mq($xl-large) {
+        margin: 0;
+        margin-left: -5.2em;
+      }
+    }
+  }
+}
+
 .guiding-principles {
   text-align: center;
   
   .container {
     @include mq($xl-large) {
-      padding-left: 0;
-      padding-right: 0;
+      padding: 6em 0;
     }
   }
   
@@ -726,7 +816,7 @@ h1, h2, h3, h4, h5 {
   opacity: 0;
   
   @include mq($medium) {
-   position: fixed; 
+   //position: fixed; 
   }
   
   &.modal:target {

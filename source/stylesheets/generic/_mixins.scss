@@ -70,6 +70,10 @@
     &.instagram {
       @extend %instagram;
     }
+    
+    &.youtube {
+      @extend %youtube;
+    }
   }  
 }
 
