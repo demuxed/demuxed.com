@@ -265,7 +265,17 @@ title: Demuxed, The Conference for Video Engineers
 
       %li.schedule-list__talk
         %h4.schedule-list__time
-          9.15am &ndash; 10.00am
+          9.15am &ndash; 9.45am
+        %div.schedule-list__speaker-box
+          = image_tag("/images/anne-aaron.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Anne Aaron
+          %p.schedule-list__talk-desc
+            Measuring Perceptual Video Quality at Scale
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          9.45am &ndash; 10.30am
         %span.schedule-list__type
           Keynote
         %div.schedule-list__speaker-box
@@ -274,16 +284,6 @@ title: Demuxed, The Conference for Video Engineers
             Steven Robertson
           %p.schedule-list__talk-desc
             Why People Really Abandon Playbacks
-
-      %li.schedule-list__talk
-        %h4.schedule-list__time
-          10.00am &ndash; 10.30am
-        %div.schedule-list__speaker-box
-          = image_tag("/images/anne-aaron.jpg", alt: "", class: "schedule-list__img")
-          %h3.schedule-list__speaker
-            Anne Aaron
-          %p.schedule-list__talk-desc
-            Measuring Perceptual Video Quality at Scale
 
       %li.schedule-list__break
         %h4.schedule-list__time
@@ -444,7 +444,7 @@ title: Demuxed, The Conference for Video Engineers
         About us
 
       %p
-        Demuxed is simply engineers talking about video technology. After two years of chatting about video at the
+        Demuxed is simply engineers talking about video technology. After <span class="strike">two</span> three years of chatting about video at the
         %a{href: "https://sfvideo.org"} SF Video Technology Meetup
         , we've decided it's time for an engineer-first event with quality technical talks about video. Our focus is on
         video delivered over the web, but topics cover anything from encoding to playback and more!
@@ -453,14 +453,18 @@ title: Demuxed, The Conference for Video Engineers
         Who's organizing this?
 
       %p
-        Most of the boring work is being done by
+        Most of the boring work is done by
         %a{href: "https://twitter.com/matt_mcclure"} @matt_mcclure
-        from
-        %a{href:"https://"} Brightcove,
-        but there was an amazing group of people from the meetup that we called our "Braintrust." They've been nice enough to do things like schedule planning, vetting the conference name, designing cool swag, and even arguing heatedly over which talk submissions should make the final cut.
+        (and others) from
+        %a{href:"https://mux.com"} Mux,
+        (any resemblance in name is purely coincidental) but there was an amazing group of people from the meetup
+        dubbed the "Braintrust." This crew gets together and talks through the submissions, argues
+        heatedly over which talk submissions should make the final cut, and helps plan the final schedule.
 
       %p
-        This event is run with the help of the members of the SF Video Technology Meetup. We're incredibly lucky to have built up a community of engineers that work on some of the best video products on the web.
+        This event is run with the help of the members of the
+        %a{href: "https://sfvideo.org"} SF Video Technology Meetup.
+        We're incredibly lucky to have a community of engineers that work on some of the best video products on the web.
 
     = image_tag("/images/about-photos.jpg", alt: "", class: "about-us__images")
 
@@ -494,8 +498,8 @@ title: Demuxed, The Conference for Video Engineers
         %p.guiding-principles__text
           In keeping with our love for reasonable standards, we're adopting the
           %a{href:"http://confcodeofconduct.com/"}Conf Code of Conduct
-          for the event. Any questions or concerns, please speak to any of our voluenteers or organizers.
-          %a{href:"mailto:info@demuxed.com"}Or email us directly.
+          for the event. If you have any questions or concerns, please speak to any of our volunteers, organizers, or
+          %a{href:"mailto:info@demuxed.com"} email us directly.
 
 
       %li
@@ -512,7 +516,9 @@ title: Demuxed, The Conference for Video Engineers
       %h2.section-heading
         After Party
       %p
-        When the dust has settled and the talks are done, Brightcove is hosting a conference party at
+        When the dust has settled and the talks are done,
+        %a{href: "https://brightcove.com"} Brightcove
+        is hosting a conference party at
         %a{href:"http://mrsmithssf.com/"}
           Mr. Smith's
         within walking distance of Ellation. The conference schedule is pretty packed, so this is the perfect time to catch up with all your fellow attendees. We'll have heavy appetizers and an open bar until the tab runs out or the bar kicks us out.
