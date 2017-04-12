@@ -1,0 +1,134 @@
+/* Font size */
+@mixin font-size($font-size){
+    font-size: $font-size;
+    font-size: ($font-size / $base-font-size)*1rem;
+    line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+}
+
+/* Vendor */
+@mixin vendor($property, $value...){
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
+}
+
+/* Buttons */
+@mixin btn {
+  display: inline-block;
+  padding: 0 1em;
+  text-transform: uppercase;
+  text-align: center;
+  @include font-size(12px);
+  color: #fff;
+  background-color: $brand-red;
+  border-radius: 100px;
+  letter-spacing: 0.2em;
+  font-family: $button-font;
+  font-weight: 600;
+  
+  &:hover {
+    color: #fff;
+    //background-color: darken($brand-red, 7%);
+    background-color: $brand-orange;
+  }
+}
+
+
+@mixin vertical-center {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-center {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin social-icons {
+  a {
+    @include transition-all;
+    height: 22px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 2.6em;
+
+    &.facebook {
+      @extend %facebook;
+    }
+
+    &.twitter {
+      @extend %twitter;
+    }
+
+    &.instagram {
+      @extend %instagram;
+    }
+    
+    &.youtube {
+      @extend %youtube;
+    }
+  }  
+}
+
+@mixin avatar {
+  display: block;
+  background-color: $brand-red;
+  @include font-size(12px);
+  font-weight: 600;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 0.6em;
+  text-align: center;
+  border-radius: 32px;
+  color: #fff;
+  
+  &:hover {
+    background-color: $brand-red;
+  }
+}
+
+@mixin vertical-center {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* MQs */
+@mixin mq($point, $IE9: false, $query1: min, $query2: width){
+  @if $IE9 == true{
+    .lt-ie9 & {
+      @content;
+    }
+  }
+
+  @media (#{$query1}-#{$query2}: $point / 16 +em){
+    @content;
+  }
+}
+
+@mixin orient($orientation: landscape){
+  @media (orientation : $orientation){
+    @content;
+  }
+}
+
+@mixin transition-all {
+  -webkit-transition: $transition-speed;
+  -moz-transition: $transition-speed;
+  -ms-transition: $transition-speed;
+  -o-transition: $transition-speed;
+  transition: $transition-speed;
+}
+
+@mixin animate-in {
+   animation: fadein .5s ease-in;
+}
