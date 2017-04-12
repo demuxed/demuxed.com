@@ -8,27 +8,28 @@
     %meta{name: "HandheldFriendly", content: "True"}
     %meta{name: "MobileOptimized", content: "320"}
     %meta{name: "viewport", content: "width=device-width,initial-scale=1"}
-    
+
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "Middleman"
-    
+
     = favicon_tag("/favicon.ico", rel: "shortcut icon")
 
-    <script src="https://use.typekit.net/nwk0smx.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    
+    %script{src: "https://use.typekit.net/nte1xds.js"}
+    :javascript
+      try{Typekit.load({ async: true });}catch(e){}</script>
+
     = stylesheet_link_tag :site
     = javascript_include_tag :all
 
   %body{:class => page_classes}
-    %div.wrapper       
+    %div.wrapper
       = partial 'partials/header'
-      
+
       %div.main-content
         = yield
-        
+
       = partial 'partials/footer'
-        
-  
+
+
   = javascript_include_tag("mobilemenu")
   
