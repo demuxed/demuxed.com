@@ -106,9 +106,13 @@
 
 
   .made-with {
-    text-align: right;
-    float: right;
+    text-align: center;
     font-size: 0.8em;
     color: lighten($brand-purple, 66%);
+
+    @include mq($medium) {
+      text-align: right;
+      float: right;
+    }
   }
 }
