@@ -11,7 +11,7 @@ title: Demuxed, The Conference for Video Engineers
 
     %h3.home-hero__speaking
       Interested in speaking?
-    %a.home-hero__btn{href:"mailto:info@demuxed.com"} Get in touch
+    = link_to "Submit a Talk!", "/proposal-form", "class" => "home-hero__btn"
 
 
     = image_tag("/images/hero-illustration-mobile.svg", alt: "", class: "hero-illustration-mobile")
