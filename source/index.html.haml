@@ -39,17 +39,16 @@ title: Demuxed, The Conference for Video Engineers
 
     %ul.sponsors__sponsor-list.gold
       %li
-        = image_tag("/images/google.svg", alt: "", class: "")
-    /   %li
-    /     = image_tag("/images/beamr.svg", alt: "", class: "")
+        = link_to image_tag("/images/google.svg", alt: "Google", class: ""), "https://google.com"
     /   %li
     /     = image_tag("/images/jwplayer.svg", alt: "", class: "")
     /
-    / %h4.sponsors__type
-    /   Silver
-    / %ul.sponsors__sponsor-list.silver
-    /   %li
-    /     = image_tag("/images/wowza.svg", alt: "", class: "")
+    %h4.sponsors__type
+      Silver
+
+    %ul.sponsors__sponsor-list.silver
+      %li
+        = link_to image_tag("/images/beamr.svg", alt: "Beamr", class: ""), "http://beamr.com"
 
 
     %h4.sponsors__type
@@ -60,4 +59,6 @@ title: Demuxed, The Conference for Video Engineers
       %li
         = link_to image_tag("/images/unified-streaming.png", alt: "Unified Streaming", class: ""), "http://unified-streaming.com"
       %li
-        = link_to image_tag("/images/comcast.svg", alt: "Comcast")
+        = link_to image_tag("/images/comcast.svg", alt: "Comcast"), "https://comcast.com"
+      %li
+        = link_to image_tag("/images/wowza.svg", alt: "Wowza", class: "Wowza"), "https://wowza.com"
