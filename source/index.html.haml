@@ -10,8 +10,9 @@ title: Demuxed, The Conference for Video Engineers
       October 5, 2017 • San Francisco, <a href="https://www.google.com/maps/place/Broadway+Studios/@37.7980335,-122.4066383,17z/data=!3m1!4b1!4m5!3m4!1s0x808580f4f8a46c3d:0x5715fb6f7e87bb89!8m2!3d37.7980293!4d-122.4044496">Broadway Studios</a>
 
     %h3.home-hero__speaking
-      Interested in speaking?
-    = link_to "Submit a Talk!", "/proposal-form", "class" => "home-hero__btn"
+      Talk submissions are closed!<br>
+      %small Schedule announcements coming soon.
+    = link_to "Buy a ticket", "http://tickets.demuxed.com", "class" => "home-hero__btn"
 
 
     = image_tag("/images/hero-illustration-mobile.svg", alt: "", class: "hero-illustration-mobile")
@@ -45,6 +46,8 @@ title: Demuxed, The Conference for Video Engineers
         = link_to image_tag("/images/google.svg", alt: "Google", class: ""), "https://google.com"
       %li
         = link_to image_tag("/images/netflix.svg", alt: "Netflix", class: ""), "https://netflix.com"
+      %li
+        = link_to image_tag("/images/DLVR.svg", alt: "DLVR", class: ""), "https://dlvr.com/"
 
     %h4.sponsors__type
       Silver
@@ -71,3 +74,5 @@ title: Demuxed, The Conference for Video Engineers
         = link_to image_tag("/images/comcast.svg", alt: "Comcast"), "https://comcast.com"
       %li
         = link_to image_tag("/images/wowza.svg", alt: "Wowza", class: "Wowza"), "https://wowza.com"
+      %li
+        = link_to image_tag("/images/digital-primates.svg", alt: "Digital Primates"), "http://www.digitalprimates.net/"
