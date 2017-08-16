@@ -2,31 +2,35 @@
   background-color: $brand-purple;
   color: #fff;
   position: relative;
-
+  
   .footer-illustration {
     display: none;
-
+    
     @include mq($large) {
       display: block;
       position: absolute;
-      top: -12em;
+      top: -17em;
       right: 0;
       @include transition-all;
-
+      
       &:hover {
-        top: -13em;
+        //top: -13em;
       }
+    }
+    
+    @include mq($xl-large) {
+     right: 2em; 
     }
 
   }
-
+  
   .logo-container {
     width: 100%;
-
+    
     @include mq($med-large) {
       //display: inline-block;
     }
-
+    
     .logo {
       margin: 0 0 2em 0;
       @extend %logo-white;
@@ -34,57 +38,57 @@
       float: none;
     }
   }
-
+  
   .page-foot__nav {
     margin-bottom: 2em;
-
+        
     @include mq($medium) {
       display: inline-block;
       vertical-align: top;
       margin-right: 2em;
     }
-
+    
     @include mq($med-large) {
       margin-right: 3em;
     }
-
+    
     @include mq($large) {
       margin-right: 4em;
     }
-
+    
     @include mq($wide) {
       margin-right: 6em;
     }
-
+    
     li {
       text-transform: uppercase;
       list-style-type: none;
       @include font-size(16px);
       letter-spacing: 0.1em;
       margin-bottom: 0.4em;
-
+      
       h4 {
         font-weight: 500;
       }
-
+      
       a {
         font-weight: 300;
         @include font-size(12px);
         text-transform: none;
         color: #fff;
         color: lighten($brand-purple, 66%);
-
+        
         &:hover {
           color: #fff;
         }
       }
     }
   }
-
+  
   .page-foot__social {
     @include social-icons;
   }
-
+  
   .signup-btn {
     @include mq($med-large) {
       @include btn;
@@ -97,22 +101,11 @@
       margin-top: 1em;
       font-weight: 600;
       @include transition-all;
-
+            
       &:hover {
         color: #fff!important;
       }
     }
   }
 
-
-  .made-with {
-    text-align: center;
-    font-size: 0.8em;
-    color: lighten($brand-purple, 66%);
-
-    @include mq($medium) {
-      text-align: right;
-      float: right;
-    }
-  }
 }

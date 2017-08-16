@@ -3,22 +3,696 @@ title: Demuxed, The Conference for Video Engineers
 ---
 
 %section.home-hero
-  %div.container
+  %div.container            
     %h1.home-hero__heading
       The Conference for Video Engineers
     %h2.home-hero__sub-heading
-      October 5, 2017 • San Francisco, <a href="https://www.google.com/maps/place/Broadway+Studios/@37.7980335,-122.4066383,17z/data=!3m1!4b1!4m5!3m4!1s0x808580f4f8a46c3d:0x5715fb6f7e87bb89!8m2!3d37.7980293!4d-122.4044496">Broadway Studios</a>
+      October 5, 2017 • San Francisco, Broadway Studios
+    %a.home-hero__btn{href:"http://tickets.demuxed.com/"} Register now
 
-    %h3.home-hero__speaking
-      Talk submissions are closed!<br>
-      %small Schedule announcements coming soon.
-    = link_to "Buy a ticket", "http://tickets.demuxed.com", "class" => "home-hero__btn"
-
-
+      
     = image_tag("/images/hero-illustration-mobile.svg", alt: "", class: "hero-illustration-mobile")
     = image_tag("/images/hero-illustration.svg", alt: "", class: "hero-illustration")
+      
+%section.speakers#speakers
+  %div.container
+    %h2.section-heading
+      The Speakers
+    
+    %ul.speakers-list
+      / %li.speakers-list__card#mark-watson
+      /   = image_tag("/images/mark-watson.jpg", alt: "", class: "speakers-list__img")
+      /   %h3.speakers-list__name Mark Watson
+      /   %h4.speakers-list__company Netflix
+      /   %p.speakers-list__talk-title Lorem ipsum dolor sit amet
+      /   %a.speakers-list__btn{href:"#popup-mark-watson"} Talk Overview
+    
+      %li.speakers-list__card#tarek-amara
+        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Tarek Amara
+        %h4.speakers-list__company Twitch
+        %p.speakers-list__talk-title Lorem ipsum dolor sit amet
+        %a.speakers-list__btn{href:"#popup-tarek-amara"} Talk Overview
+              
+      %li.speakers-list__card#megha-manohara
+        = image_tag("/images/megha-manohara.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Megha Manohara
+        %h4.speakers-list__company Netflix
+        %p.speakers-list__talk-title 250 kbps
+        %a.speakers-list__btn{href:"#popup-tarek-amara"} Talk Overview
+        
+        /Blank space for wide layout     
+      %li.speakers-list__card.blank
+        
+      %li.speakers-list__card#derek-buitenhuis
+        = image_tag("/images/derek-buitenhuis.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Derek Buitenhuis
+        %h4.speakers-list__company Vimeo
+        %p.speakers-list__talk-title Things Developers Believe About Video Files (Proven Wrong by User Uploads)
+        %a.speakers-list__btn{href:"#popup-derek-buitenhuis"} Talk Overview
+        
+      %li.speakers-list__card#daniel-weinberger
+        = image_tag("/images/daniel-weinberger.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Daniel Weinberger
+        %h4.speakers-list__company Vimeo
+        %p.speakers-list__talk-title Ambisonic Audio Using the WebAudio API
+        %a.speakers-list__btn{href:"#popup-daniel-weinberger"} Talk Overview
+        
+      %li.speakers-list__card#gary-katsevman
+        = image_tag("/images/gary-katsevman.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Gary Katsevman
+        %h4.speakers-list__company Vimeo
+        %p.speakers-list__talk-title Ambisonic Audio Using the WebAudio API
+        %a.speakers-list__btn{href:"#popup-gary-katsevman"} Talk Overview
+        
+      %li.speakers-list__card#kieran-kunhya
+        = image_tag("/images/kieran-kunhya.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Kieran Kunhya
+        %h4.speakers-list__company OBS
+        %p.speakers-list__talk-title Why broadcasters use IP
+        %a.speakers-list__btn{href:"#popup-kieran-kunhya"} Talk Overview
+        
+      %li.speakers-list__card#sytse
+        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Sytse
+        %h4.speakers-list__company Unified Streaming
+        %p.speakers-list__talk-title Dynamic server-side stitching
+        %a.speakers-list__btn{href:"#popup-sytse"} Talk Overview
+        
+      %li.speakers-list__card#allison-deal
+        = image_tag("/images/allison-deal.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Allison Deal
+        %h4.speakers-list__company Hulu
+        %p.speakers-list__talk-title Live Linear Ads
+        %a.speakers-list__btn{href:"#popup-allison-deal"} Talk Overview
+        
+      %li.speakers-list__card#phil-cluff
+        = image_tag("/images/phil-cluff.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Phil Cluff
+        %h4.speakers-list__company Brightcove
+        %p.speakers-list__talk-title 0 - 18,000 RPS - Repackaging at scale
+        %a.speakers-list__btn{href:"#popup-phil-cluff"} Talk Overview
+        
+      %li.speakers-list__card#matt-ward
+        = image_tag("/images/matt-ward.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Matt Ward
+        %h4.speakers-list__company Mux
+        %p.speakers-list__talk-title Shitty CDNs
+        %a.speakers-list__btn{href:"#popup-matt-ward"} Talk Overview
+        
+      %li.speakers-list__card#strobe
+        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Strobe
+        %h4.speakers-list__company YouTube
+        %p.speakers-list__talk-title Playback Visualization and its Applications
+        %a.speakers-list__btn{href:"#popup-strobe"} Talk Overview
+        
+      %li.speakers-list__card#scott-kellicker
+        = image_tag("/images/scott-kellicker.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Scott Kellicker
+        %h4.speakers-list__company Wowza
+        %p.speakers-list__talk-title 3 Second End to End Latency At Scale
+        %a.speakers-list__btn{href:"#popup-scott-kellicker"} Talk Overview
+        
+      %li.speakers-list__card#jamie-sherry
+        = image_tag("/images/jamie-sherry.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Jamie Sherry
+        %h4.speakers-list__company Wowza
+        %p.speakers-list__talk-title 3 Second End to End Latency At Scale
+        %a.speakers-list__btn{href:"#popup-jamie-sherry"} Talk Overview
+        
+      %li.speakers-list__card#rik-heijdens
+        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Rik Heijdens
+        %h4.speakers-list__company JWPlayer
+        %p.speakers-list__talk-title Leveraging Artificial Intelligence for Scene Detection in Broadcast Video
+        %a.speakers-list__btn{href:"#popup-rik-heijdens"} Talk Overview
+        
+      %li.speakers-list__card#vittorio-giovara
+        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Vittorio Giovara
+        %h4.speakers-list__company Vimeo
+        %p.speakers-list__talk-title Color me Intrigued
+        %a.speakers-list__btn{href:"#popup-vittorio-giovara"} Talk Overview
+        
+      %li.speakers-list__card#reinhard-grandl
+        = image_tag("/images/reinhard-grandl.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Reinhard Grandl
+        %h4.speakers-list__company Bitmovin
+        %p.speakers-list__talk-title Going beyond bitrate (Scene-specific ABR)
+        %a.speakers-list__btn{href:"#popup-reinhard-grandl"} Talk Overview
+        
+     
+        
+        
+
+       
+    = image_tag("/images/speakers-illustration.svg", alt: "", class: "speakers-illustration")
 
 
+%section.modal#popup-mark-watson
+  %div.modal__container.popup
+    %a.modal-btn{href: "#mark-watson"}
+    = image_tag("/images/mark-watson.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Mark Watson
+    %h4.speakers-list__company Netflix
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-tarek-amara
+  %div.modal__container.popup
+    %a.modal-btn{href: "#mark-watson"}
+    = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Tarek Amara
+    %h4.speakers-list__company Netflix
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-megha-manohara
+  %div.modal__container.popup
+    %a.modal-btn{href: "#megha-manohara"}
+    = image_tag("/images/megha-manohara.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Megha Manohara
+    %h4.speakers-list__company Netflix
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        
+%section.modal#popup-derek-buitenhuis
+  %div.modal__container.popup
+    %a.modal-btn{href: "#derek-buitenhuis"}
+    = image_tag("/images/derek-buitenhuis.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Derek Buitenhuis
+    %h4.speakers-list__company Vimeo
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-daniel-weinberger
+  %div.modal__container.popup
+    %a.modal-btn{href: "#daniel-weinberger"}
+    = image_tag("/images/daniel-weinberger.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Daniel Weinberger
+    %h4.speakers-list__company Bitmovin
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-gary-katsevman
+  %div.modal__container.popup
+    %a.modal-btn{href: "#gary-katsevman"}
+    = image_tag("/images/gary-katsevman.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Gary Katsevman
+    %h4.speakers-list__company Brightcove
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-kieran-kunhya
+  %div.modal__container.popup
+    %a.modal-btn{href: "#kieran-kunhya"}
+    = image_tag("/images/kieran-kunhya.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Kieran Kunhya
+    %h4.speakers-list__company OBS
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-sytse
+  %div.modal__container.popup
+    %a.modal-btn{href: "#sytse"}
+    = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Sytse
+    %h4.speakers-list__company Unified Streaming
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-allison-deal
+  %div.modal__container.popup
+    %a.modal-btn{href: "#allison-deal"}
+    = image_tag("/images/allison-deal.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Allison Deal
+    %h4.speakers-list__company Hulu
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-phil-cluff
+  %div.modal__container.popup
+    %a.modal-btn{href: "#phil-cluff"}
+    = image_tag("/images/phil-cluff.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Phil Cluff
+    %h4.speakers-list__company Brightcove
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-matt-ward
+  %div.modal__container.popup
+    %a.modal-btn{href: "#matt-ward"}
+    = image_tag("/images/matt-ward.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Matt Ward
+    %h4.speakers-list__company Mux
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+%section.modal#popup-strobe
+  %div.modal__container.popup
+    %a.modal-btn{href: "#strobe"}
+    = image_tag("/images/strobe.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Strobe
+    %h4.speakers-list__company YouTube
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-scott-kellicker
+  %div.modal__container.popup
+    %a.modal-btn{href: "#scott-kellicker"}
+    = image_tag("/images/scott-kellicker.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Scott Kellicker
+    %h4.speakers-list__company Wowza
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+    
+%section.modal#popup-jamie-sherry
+  %div.modal__container.popup
+    %a.modal-btn{href: "#jamie-sherry"}
+    = image_tag("/images/jamie-sherry.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Jamie Sherry
+    %h4.speakers-list__company Wowza
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    
+%section.modal#popup-rik-heijdens
+  %div.modal__container.popup
+    %a.modal-btn{href: "#rik-heijdens"}
+    = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Rik Heijdens
+    %h4.speakers-list__company JWPlayer
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+%section.modal#popup-vittorio-giovara
+  %div.modal__container.popup
+    %a.modal-btn{href: "#vittorio-giovara"}
+    = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Vittorio Giovara
+    %h4.speakers-list__company Vimeo
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        
+%section.modal#popup-reinhard-grandl
+  %div.modal__container.popup
+    %a.modal-btn{href: "#reinhard-grandl"}
+    = image_tag("/images/reinhard-grandl.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Reinhard Grandl
+    %h4.speakers-list__company Bitmovin
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    
+    
+
+
+
+
+
+        
+%section.schedule#schedule
+  %div.container
+    %h2.section-heading
+      The Schedule
+      %span
+        October 16th, 2016
+    
+    %ul.schedule-list.morning
+      %li.schedule-list__ampm
+        %h2 Morning
+      %li.schedule-list__break
+        %h4.schedule-list__time
+          8.00am &ndash; 8.45am
+        %span.schedule-list__type
+          Registration
+          
+      %li.schedule-list__break.opening-remarks
+        %h4.schedule-list__time
+          8.45am &ndash; 9.00am
+        %span.schedule-list__type
+          Opening Remarks
+          
+      %li.schedule-list__talk.keynote
+        %h4.schedule-list__time
+          9.00am &ndash; 9.45am
+        %span.schedule-list__type
+          Keynote
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-tba.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Speaker TBA!
+          %p.schedule-list__talk-desc
+            Details revealed soon!  
+            
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          9.45am &ndash; 10.15am
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            ?? &amp; Thomas
+          %p.schedule-list__talk-desc
+            AV1 Talk
+            
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          10.15am &ndash; 10.25am          
+        %span.schedule-list__type
+          Fast talk
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Tarek Amara
+          %p.schedule-list__talk-desc
+            Lorem ipsum dolor sit amet.
+            
+      %li.schedule-list__break
+        %h4.schedule-list__time
+          10.25am &ndash; 10.35am
+        %span.schedule-list__type
+          Break
+        
+        
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          10.35am &ndash; 11.45am          
+        %span.schedule-list__type
+          Fast talk
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Stefan's Lawyer
+          %p.schedule-list__talk-desc
+            HEVC Legal Talk 
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          10.45am &ndash; 11.15am
+        %div.schedule-list__speaker-box
+          = image_tag("/images/megha-manohara.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Megha Manohara
+          %p.schedule-list__talk-desc
+            250 kbps
+            
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          11.15am &ndash; 11.30am          
+        %span.schedule-list__type
+          Fast talk
+        %div.schedule-list__speaker-box
+          = image_tag("/images/derek-buitenhuis.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Derek Buitenhuis
+          %p.schedule-list__talk-desc
+            Things Developers Believe About Video Files (Proven Wrong by User Uploads)
+            
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          11.30am &ndash; 12.00am
+        %div.schedule-list__speaker-box
+          = image_tag("/images/daniel-weinberger.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Daniel Weinberger
+          %p.schedule-list__talk-desc
+            Ambisonic Audio Using the WebAudio API
+            
+            
+            
+    %ul.schedule-list
+      %li.schedule-list__ampm
+        %h2 Afternoon
+      %li.schedule-list__break
+        %h4.schedule-list__time
+          12.00pm &ndash; 1.00pm
+        %span.schedule-list__type
+          Lunch
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          1.00pm &ndash; 1.10pm
+        %span.schedule-list__type
+          Fast talk
+        %div.schedule-list__speaker-box
+          = image_tag("/images/gary-katsevman.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Gary Katsevman
+          %p.schedule-list__talk-desc
+            Let's talk about captions
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          1.10pm &ndash; 1.40pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/kieran-kunhya.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Kieran Kunhya
+          %p.schedule-list__talk-desc
+            Why broadcasters use IP 
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          1.40pm &ndash; 1.50pm
+        %span.schedule-list__type
+          Fast talk
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Sytse
+          %p.schedule-list__talk-desc
+            Dynamic server-side stitching 
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          1.50pm &ndash; 2.20pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/allison-deal.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Allison Deal
+          %p.schedule-list__talk-desc
+            Live Linear Ads
+            
+      %li.schedule-list__break
+        %h4.schedule-list__time
+          2.20pm &ndash; 2.35pm
+        %span.schedule-list__type
+          Break
+            
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          2.35pm &ndash; 2.45pm
+        %span.schedule-list__type
+          Fast talk
+        %div.schedule-list__speaker-box
+          = image_tag("/images/phil-cluff.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Phil CLuff
+          %p.schedule-list__talk-desc
+            0 - 18,000 RPS - Repackaging at scale
+            
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          2.45pm &ndash; 3.15pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/matt-ward.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Matt Ward
+          %p.schedule-list__talk-desc
+            Shitty CDNs
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          3.15pm &ndash; 3.25pm
+        %span.schedule-list__type
+          Fast talk
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Strobe
+          %p.schedule-list__talk-desc
+            Playback Visualization and its Applications
+            
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          3.25pm &ndash; 3.55pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/scott-kellicker.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Scott Kellicker &amp; Jamie Sherry
+          %p.schedule-list__talk-desc
+            3 Second End to End Latency At Scale
+            
+      %li.schedule-list__break
+        %h4.schedule-list__time
+          3.55pm &ndash; 4.10pm
+        %span.schedule-list__type
+          Break
+            
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          4.10pm &ndash; 4.20pm
+        %span.schedule-list__type
+          Fast talk
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Rik Heijdens
+          %p.schedule-list__talk-desc
+            Leveraging Artificial Intelligence for Scene Detection in Broadcast Video
+            
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          4.20pm &ndash; 4.50pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Vittorio Giovara
+          %p.schedule-list__talk-desc
+            Color me Intrigued
+            
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          4.50pm &ndash; 5.00pm
+        %span.schedule-list__type
+          Fast talk
+        %div.schedule-list__speaker-box
+          = image_tag("/images/reinhard-grandl.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Reinhard Grandl
+          %p.schedule-list__talk-desc
+            Going beyond bitrate (Scene-specific ABR)
+          
+          
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          5.00pm &ndash; 5.30pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-tba.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Speaker TBA!
+          %p.schedule-list__talk-desc
+            Details released soon! 
+               
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          5.30pm &ndash; 5.40pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/logo-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Closing Remarks
+          %p.schedule-list__talk-desc
+            Goodbye from Demuxed for 2017! 
+            
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          5.40pm &ndash; 12.00pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/logo-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            After Party
+          %p.schedule-list__talk-desc
+            Fun and Drinks! 
+            
+            
+%section.location#location
+  %div.container
+    = image_tag("/images/location-illustration.svg", alt: "", class: "location-illustration")
+    
+    %div.location-text
+      %h2.section-heading
+        The Location
+      %p.location-details
+      
+        Broadway Studios
+        %br 435 Broadway
+        San Francisco
+        CA 94133
+        %br
+        %a{href:"http://broadwayvenue.com/"}broadwayvenue.com
+        
+    
+
+    
+    
+%section.map
+  = image_tag("/images/map-decor.svg", alt: "", class: "map-decors")
+  = image_tag("/images/map-decor-2.svg", alt: "", class: "map-decors2")
+
+
+  %a.map-link{href:"https://www.google.com/maps/place/Broadway+Studios/@37.7980293,-122.4066383,17z/data=!3m1!4b1!4m5!3m4!1s0x808580f4f8a46c3d:0x5715fb6f7e87bb89!8m2!3d37.7980293!4d-122.4044496"}
+    = image_tag("/images/map2.jpg", alt: "", class: "")
+  
+
+%section.about-us#about-us
+  %div.container
+    %div.about-us__text
+      %h2.section-heading
+        About us
+    
+      %p
+        To be terribly honest, we're simply engineers talking about video technology. After two years of chatting about video at the
+        %a{href:"http://www.meetup.com/SF-Video-Technology/"} SF Video Technology Meetup,
+        we've decided it's time for an engineer-first event with quality technical talks about video. Our focus is on video delivered over the web, but topics cover anything from encoding to playback and more!
+
+      %h3
+        Who's organizing this? 
+      
+      %p
+        Most of the boring work is being done by engineers from
+        %a{href:"https://www.brightcove.com/en/"} Brightcove,                
+        but there was an amazing group of people from the meetup that we called our "Braintrust." They've been nice enough to do things like schedule planning, vetting the conference name, designing cool swag, and even arguing heatedly over which talk submissions should make the final cut.
+    
+      %p
+        This event is run with the help of the members of the SF Video Technology Meetup. We're incredibly lucky to have built up a community of engineers that work on some of the best video products on the web.
+        
+    = image_tag("/images/about-photos2.jpg", alt: "", class: "about-us__images")
+    = image_tag("/images/about-images-left.jpg", alt: "", class: "about-us__image-left")
+    = image_tag("/images/about-images-right.jpg", alt: "", class: "about-us__image-right")
+  
+
+%section.guiding-principles
+  %div.container
+    %h2.section-heading
+      Our Guiding Principles
+    
+    %ul.guiding-principles__list
+      %li
+        = image_tag("/images/no-marketing.svg", alt: "", class: "guiding-prinicples__img")
+        %h3.guiding-principles__title
+          Content &amp; Attendees First
+        %p.guiding-principles__text
+          Our top priority is creating a high quality conference engineers are excited to attend. As a result, speaker are selected based solely on merit and we do not sell attendee information to any of our sponsors.
+          
+      %li
+        = image_tag("/images/admission.svg", alt: "", class: "guiding-prinicples__img")
+        %h3.guiding-principles__title
+          Affordable
+        %p.guiding-principles__text
+          We want anyone in the industry to be able to come, which means keeping tickets reasonably priced through amazing sponsors and backing from our employers. We also offer free of discounted tickets to students and open source contributions.
+
+          
+      %li
+        = image_tag("/images/for-everyone.svg", alt: "", class: "guiding-prinicples__img")
+        %h3.guiding-principles__title
+          For Everyone
+        %p.guiding-principles__text
+          Our community is dedicated to providing an inclusive, enjoyable experience for everyone. In this pursuit, and in keeping with our love for reasonable standards, we adopted the Conference Code of Conduct  
+          %a{href:"http://confcodeofconduct.com/"}Conf Code of Conduct
+          
+
+      %li
+        = image_tag("/images/community.svg", alt: "", class: "guiding-prinicples__img")
+        %h3.guiding-principles__title
+          Community
+        %p.guiding-principles__text
+          We strive for high quality, technical content, but just as importantly, Demuxed works to strengthen the community of video engineers around the world.
+   
+   
+%section.after-party
+  %div.container
+    %div.after-party__text
+      %h2.section-heading
+        After Party
+      %p
+        When the dust has settled and the talks are done, Brightcove is hosting a conference party at
+        %a{href:"http://mrsmithssf.com/"}
+          Mr. Smith's
+        within walking distance of Ellation. The conference schedule is pretty packed, so this is the perfect time to catch up with all your fellow attendees. We'll have heavy appetizers and an open bar until the tab runs out or the bar kicks us out.
+
+      %p
+        The only thing you need to get in is your badge, so make sure to bring it with you! Plus ones are welcome, but they either need to meet you at the door to get a wristband or have a wristband in advance.
+        
+      %h4
+        Sponsored by
+      = image_tag("/images/brightcove.png", alt: "Brightcove logo", class: "sponsor")
+
+    = image_tag("/images/after-party-illustration.svg", alt: "", class: "after-party-illustration")
+   
+   
+        
 %section.sponsors#sponsors
   %div.container
     %h2.section-heading
@@ -29,50 +703,55 @@ title: Demuxed, The Conference for Video Engineers
 
     %ul.sponsors__sponsor-list.platinum
       %li
-        = link_to image_tag("/images/bitmovin.svg", alt: "Bitmovin", class: ""), "https://bitmovin.com/"
-
+        = image_tag("/images/bitmovin.svg", alt: "", class: "")
+        
     %h4.sponsors__type
       Party
 
-    %ul.sponsors__sponsor-list.party
+    %ul.sponsors__sponsor-list.platinum
       %li
-        = link_to image_tag("/images/brightcove.svg", alt: "Brightcove", class: ""), "https://brightcove.com"
-
+        = image_tag("/images/brightcove.png", alt: "", class: "")
+    
     %h4.sponsors__type
       Gold
-
+    
     %ul.sponsors__sponsor-list.gold
       %li
-        = link_to image_tag("/images/google.svg", alt: "Google", class: ""), "https://google.com"
+        = image_tag("/images/google.svg", alt: "", class: "")
       %li
-        = link_to image_tag("/images/netflix.svg", alt: "Netflix", class: ""), "https://netflix.com"
+        = image_tag("/images/netflix.svg", alt: "", class: "")
       %li
-        = link_to image_tag("/images/DLVR.svg", alt: "DLVR", class: ""), "https://dlvr.com/"
+        = image_tag("/images/dlvr.svg", alt: "", class: "")
 
     %h4.sponsors__type
       Silver
-
+      
     %ul.sponsors__sponsor-list.silver
       %li
-        = link_to image_tag("/images/beamr.svg", alt: "Beamr", class: ""), "http://beamr.com"
+        = image_tag("/images/beamr.svg", alt: "", class: "")
       %li
-        = link_to image_tag("/images/promethean.svg", alt: "Promethean", class: ""), "http://promethean.tv"
+        = image_tag("/images/promethean.svg", alt: "", class: "")
       %li
-        = link_to image_tag("/images/conviva.svg", alt: "Conviva", class: ""), "https://conviva.com"
+        = image_tag("/images/conviva.svg", alt: "", class: "")
       %li
-        = link_to image_tag("/images/jwplayer.svg", alt: "JW Player", class: ""), "https://jwplayer.com"
+        = image_tag("/images/jwplayer.svg", alt: "", class: "")
 
 
     %h4.sponsors__type
-      Bronze
+      Bronze  
     %ul.sponsors__sponsor-list.bronze
       %li
-        = link_to image_tag("/images/peer5.svg", alt: "Peer5", class: "", height: "auto", width: "80%"), "https://www.peer5.com/"
+        = image_tag("/images/peer5.svg", alt: "", class: "")
       %li
-        = link_to image_tag("/images/unified-streaming.png", alt: "Unified Streaming", class: ""), "http://unified-streaming.com"
+        = image_tag("/images/unified-streaming.png", alt: "", class: "")        
       %li
-        = link_to image_tag("/images/comcast.svg", alt: "Comcast"), "https://comcast.com"
+        = image_tag("/images/comcast.svg", alt: "", class: "")
       %li
-        = link_to image_tag("/images/wowza.svg", alt: "Wowza", class: "Wowza"), "https://wowza.com"
+        = image_tag("/images/wowza.svg", alt: "", class: "")
       %li
-        = link_to image_tag("/images/digital-primates.svg", alt: "Digital Primates"), "http://www.digitalprimates.net/"
+        = image_tag("/images/digital-primates.svg", alt: "", class: "")
+
+
+
+      
+            
