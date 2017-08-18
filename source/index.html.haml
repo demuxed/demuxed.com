@@ -403,7 +403,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           10.15am &ndash; 10.25am
         %span.schedule-list__type
-          Fast talk
+          Short-form
         %div.schedule-list__speaker-box
           = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
@@ -422,7 +422,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           10.35am &ndash; 11.45am
         %span.schedule-list__type
-          Fast talk
+          Short-form
         %div.schedule-list__speaker-box
           = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
@@ -444,7 +444,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           11.15am &ndash; 11.30am
         %span.schedule-list__type
-          Fast talk
+          Short-form
         %div.schedule-list__speaker-box
           = image_tag("/images/derek-buitenhuis.jpeg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
@@ -477,7 +477,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           1.00pm &ndash; 1.10pm
         %span.schedule-list__type
-          Fast talk
+          Short-form
         %div.schedule-list__speaker-box
           = image_tag("/images/gary-katsevman.jpg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
@@ -499,7 +499,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           1.40pm &ndash; 1.50pm
         %span.schedule-list__type
-          Fast talk
+          Short-form
         %div.schedule-list__speaker-box
           = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
@@ -527,7 +527,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           2.35pm &ndash; 2.45pm
         %span.schedule-list__type
-          Fast talk
+          Short-form
         %div.schedule-list__speaker-box
           = image_tag("/images/phil-cluff.jpg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
@@ -549,7 +549,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           3.15pm &ndash; 3.25pm
         %span.schedule-list__type
-          Fast talk
+          Short-form
         %div.schedule-list__speaker-box
           = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
@@ -578,7 +578,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           4.10pm &ndash; 4.20pm
         %span.schedule-list__type
-          Fast talk
+          Short-form
         %div.schedule-list__speaker-box
           = image_tag("/images/rik-heijdens.jpg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
@@ -600,7 +600,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           4.50pm &ndash; 5.00pm
         %span.schedule-list__type
-          Fast talk
+          Short-form
         %div.schedule-list__speaker-box
           = image_tag("/images/reinhard-grandl.jpg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
@@ -676,20 +676,23 @@ title: Demuxed, The Conference for Video Engineers
         About us
 
       %p
-        To be terribly honest, we're simply engineers talking about video technology. After two years of chatting about video at the
+        To be terribly honest, we're simply engineers talking about video technology. After years of chatting about video at the
         %a{href:"http://www.meetup.com/SF-Video-Technology/"} SF Video Technology Meetup,
-        we've decided it's time for an engineer-first event with quality technical talks about video. Our focus is on video delivered over the web, but topics cover anything from encoding to playback and more!
+        we decided it was time for an engineer-first event with quality technical talks about video. Our focus has traditionally been
+        on content delivered over the web, but topics cover anything from encoding to playback and more!
 
       %h3
         Who's organizing this?
 
       %p
-        Most of the boring work is being done by engineers from
-        %a{href:"https://www.brightcove.com/en/"} Brightcove,
-        but there was an amazing group of people from the meetup that we called our "Braintrust." They've been nice enough to do things like schedule planning, vetting the conference name, designing cool swag, and even arguing heatedly over which talk submissions should make the final cut.
+        Most of the organization and work behind the scenes is done by folks from
+        = link_to "Mux", "https://www.mux.com"
+        but none of this would be possible without amazing people from the meetup.
 
       %p
-        This event is run with the help of the members of the SF Video Technology Meetup. We're incredibly lucky to have built up a community of engineers that work on some of the best video products on the web.
+        Every year we get a group together that's
+        kind enough to do things like schedule planning, help brainstorm cool swag, and, most importantly,
+        argue heatedly over which talk submissions should make the final cut.
 
     = image_tag("/images/about-photos2.jpg", alt: "", class: "about-us__images")
     = image_tag("/images/about-images-left.jpg", alt: "", class: "about-us__image-left")
@@ -705,16 +708,22 @@ title: Demuxed, The Conference for Video Engineers
       %li
         = image_tag("/images/no-marketing.svg", alt: "", class: "guiding-prinicples__img")
         %h3.guiding-principles__title
-          Content &amp; Attendees First
+          No Marketing
         %p.guiding-principles__text
-          Our top priority is creating a high quality conference engineers are excited to attend. As a result, speaker are selected based solely on merit and we do not sell attendee information to any of our sponsors.
+          Speakers are selected based on their submission, not how much money their company paid; we will
+          never, ever sell a speaking slot. Attendee information isn't for sale either, and that includes any
+          sponsors.
 
       %li
         = image_tag("/images/admission.svg", alt: "", class: "guiding-prinicples__img")
         %h3.guiding-principles__title
           Affordable
         %p.guiding-principles__text
-          We want anyone in the industry to be able to come, which means keeping tickets reasonably priced through amazing sponsors and backing from our employers. We also offer free of discounted tickets to students and open source contributions.
+          We want anyone in the industry to be able to come, which means keeping tickets reasonably priced
+          (thanks largely to our generous sponsors). We also offer free and discounted tickets
+          to students and open source contributors, so please
+          = link_to("reach out", "mailto:info@demuxed.com")
+          if you're interested.
 
 
       %li
@@ -722,8 +731,10 @@ title: Demuxed, The Conference for Video Engineers
         %h3.guiding-principles__title
           For Everyone
         %p.guiding-principles__text
-          Our community is dedicated to providing an inclusive, enjoyable experience for everyone. In this pursuit, and in keeping with our love for reasonable standards, we adopted the Conference Code of Conduct
-          %a{href:"http://confcodeofconduct.com/"}Conf Code of Conduct
+          Our community is dedicated to providing an inclusive, enjoyable experience for everyone in
+          the video industry. In this pursuit, and in keeping with our love for reasonable standards, we
+          adopted the Ada Initiative's
+          = link_to "Conference Code of Conduct", "http://confcodeofconduct.com/"
 
 
       %li
@@ -731,7 +742,8 @@ title: Demuxed, The Conference for Video Engineers
         %h3.guiding-principles__title
           Community
         %p.guiding-principles__text
-          We strive for high quality, technical content, but just as importantly, Demuxed works to strengthen the community of video engineers around the world.
+          We strive for high quality, technical content, but just as importantly, Demuxed works to strengthen the
+          community of video engineers and raise the industry status quo, both in the Bay and around the world.
 
 
 %section.after-party
@@ -740,17 +752,13 @@ title: Demuxed, The Conference for Video Engineers
       %h2.section-heading
         After Party
       %p
-        When the dust has settled and the talks are done, Brightcove is hosting a conference party at
-        %a{href:"http://mrsmithssf.com/"}
-          Mr. Smith's
-        within walking distance of Ellation. The conference schedule is pretty packed, so this is the perfect time to catch up with all your fellow attendees. We'll have heavy appetizers and an open bar until the tab runs out or the bar kicks us out.
+        When the dust has settled and the talks are done, Brightcove is sponsoring an after party! This year's festivities
+        are downstairs in the same venue, so we can just head straight there to enjoy some food and drinks after the conference.
+        The schedule is <em>packed</em>, so this is the perfect opportunity to unwind and catch up with all your fellow attendees.
 
       %p
-        The only thing you need to get in is your badge, so make sure to bring it with you! Plus ones are welcome, but they either need to meet you at the door to get a wristband or have a wristband in advance.
-
-      %h4
-        Sponsored by
-      = image_tag("/images/brightcove.png", alt: "Brightcove logo", class: "sponsor")
+        The only thing you need to get in is your badge, so make sure to bring it with you. Plus ones are welcome to
+        come join!
 
     = image_tag("/images/after-party-illustration.svg", alt: "", class: "after-party-illustration")
 
@@ -766,53 +774,55 @@ title: Demuxed, The Conference for Video Engineers
 
     %ul.sponsors__sponsor-list.platinum
       %li
-        = image_tag("/images/bitmovin.svg", alt: "", class: "")
+        = link_to image_tag("/images/bitmovin.svg", alt: "Bitmovin", class: ""), "https://bitmovin.com"
 
     %h4.sponsors__type
       Party
 
     %ul.sponsors__sponsor-list.platinum
       %li
-        = image_tag("/images/brightcove.png", alt: "", class: "")
+        = link_to image_tag("/images/brightcove.svg", alt: "Brightcove", class: ""), "https://brightcove.com"
 
     %h4.sponsors__type
       Gold
 
     %ul.sponsors__sponsor-list.gold
       %li
-        = image_tag("/images/google.svg", alt: "", class: "")
+        = link_to image_tag("/images/google.svg", alt: "Google", class: ""), "https://google.com"
       %li
-        = image_tag("/images/netflix.svg", alt: "", class: "")
+        = link_to image_tag("/images/netflix.svg", alt: "Netflix", class: ""), "https://netflix.com"
       %li
-        = image_tag("/images/dlvr.svg", alt: "", class: "")
+        = link_to image_tag("/images/dlvr.svg", alt: "DLVR", class: ""), "https://dlvr.com/"
 
     %h4.sponsors__type
       Silver
 
     %ul.sponsors__sponsor-list.silver
       %li
-        = image_tag("/images/beamr.svg", alt: "", class: "")
+        = link_to image_tag("/images/beamr.svg", alt: "Beamr", class: ""), "http://beamr.com"
       %li
-        = image_tag("/images/promethean.svg", alt: "", class: "")
+        = link_to image_tag("/images/promethean.svg", alt: "Promethean", class: ""), "http://promethean.tv"
       %li
-        = image_tag("/images/conviva.svg", alt: "", class: "")
+        = link_to image_tag("/images/conviva.svg", alt: "Conviva", class: ""), "https://conviva.com"
       %li
-        = image_tag("/images/jwplayer.svg", alt: "", class: "")
+        = link_to image_tag("/images/jwplayer.svg", alt: "JW Player", class: ""), "https://jwplayer.com"
+      %li
+        = link_to image_tag("/images/ellation.png", alt: "Ellation", class: ""), "http://ellation.com"
 
 
     %h4.sponsors__type
       Bronze
     %ul.sponsors__sponsor-list.bronze
       %li
-        = image_tag("/images/peer5.svg", alt: "", class: "")
+        = link_to image_tag("/images/peer5.svg", alt: "Peer5", class: "", height: "auto", width: "80%"), "https://www.peer5.com/"
       %li
-        = image_tag("/images/unified-streaming.png", alt: "", class: "")
+        = link_to image_tag("/images/unified-streaming.png", alt: "Unified Streaming", class: ""), "http://unified-streaming.com"
       %li
-        = image_tag("/images/comcast.svg", alt: "", class: "")
+        = link_to image_tag("/images/comcast.svg", alt: "Comcast"), "https://comcast.com"
       %li
-        = image_tag("/images/wowza.svg", alt: "", class: "")
+        = link_to image_tag("/images/wowza.svg", alt: "Wowza", class: "Wowza"), "https://wowza.com"
       %li
-        = image_tag("/images/digital-primates.svg", alt: "", class: "")
+        = link_to image_tag("/images/digital-primates.svg", alt: "Digital Primates"), "http://www.digitalprimates.net/"
 
 
 

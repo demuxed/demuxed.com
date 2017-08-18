@@ -496,6 +496,7 @@ h1, h2, h3, h4, h5 {
     &.first {
       left: -1em;
       z-index: 1;
+      box-shadow: 0 0 2pt 1pt #fff;
     }
 
     &.second {
@@ -883,7 +884,7 @@ h1, h2, h3, h4, h5 {
 
     &.gold, &.silver {
       li {
-        width: 200px;
+        width: 230px;
       }
     }
 
@@ -995,4 +996,9 @@ h1, h2, h3, h4, h5 {
     }
 
   }
+}
+
+.mux-inline {
+  height: 1em;
+  vertical-align: bottom;
 }
