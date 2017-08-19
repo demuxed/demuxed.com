@@ -19,7 +19,7 @@
 .logo {
   width: 147px;
   height: 25px;
-  margin: 1.6em auto 0 auto;
+  margin: 1.6em 0 1em 1em;
   display: block;
   @extend %logo-black;
   background-repeat: no-repeat;
@@ -36,8 +36,8 @@
   }
   
   @include mq($med-large) {
-    //margin: 0;
-    //float: left;    
+    margin: 0;
+    float: left;    
   }
 }//logo
 

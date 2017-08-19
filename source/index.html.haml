@@ -7,16 +7,761 @@ title: Demuxed, The Conference for Video Engineers
     %h1.home-hero__heading
       The Conference for Video Engineers
     %h2.home-hero__sub-heading
-      October 5, 2017 • San Francisco, <a href="https://www.google.com/maps/place/Broadway+Studios/@37.7980335,-122.4066383,17z/data=!3m1!4b1!4m5!3m4!1s0x808580f4f8a46c3d:0x5715fb6f7e87bb89!8m2!3d37.7980293!4d-122.4044496">Broadway Studios</a>
-
-    %h3.home-hero__speaking
-      Talk submissions are closed!<br>
-      %small Schedule announcements coming soon.
-    = link_to "Buy a ticket", "http://tickets.demuxed.com", "class" => "home-hero__btn"
+      October 5, 2017 • San Francisco, Broadway Studios
+    %a.home-hero__btn{href:"http://tickets.demuxed.com/"} Register now
 
 
     = image_tag("/images/hero-illustration-mobile.svg", alt: "", class: "hero-illustration-mobile")
     = image_tag("/images/hero-illustration.svg", alt: "", class: "hero-illustration")
+
+%section.speakers#speakers
+  %div.container
+    %h2.section-heading
+      The Speakers
+
+    %ul.speakers-list
+      / %li.speakers-list__card#mark-watson
+      /   = image_tag("/images/mark-watson.jpg", alt: "", class: "speakers-list__img")
+      /   %h3.speakers-list__name Mark Watson
+      /   %h4.speakers-list__company Netflix
+      /   %p.speakers-list__talk-title Lorem ipsum dolor sit amet
+      /   %a.speakers-list__btn{href:"#popup-mark-watson"} Talk Overview
+
+      %li.speakers-list__card#tarek-amara
+        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Tarek Amara
+        %h4.speakers-list__company Twitch
+        %p.speakers-list__talk-title S-Frame in AV1: Enabling better compression for low latency live streaming.
+        %a.speakers-list__btn{href:"#popup-tarek-amara"} Talk Overview
+
+      %li.speakers-list__card#megha-manohara
+        = image_tag("/images/megha-manohara.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Megha Manohara
+        %h4.speakers-list__company Netflix
+        %p.speakers-list__talk-title Streaming at 250 kbps: raise your expectations
+        %a.speakers-list__btn{href:"#popup-megha-manohara"} Talk Overview
+
+        /Blank space for wide layout
+      %li.speakers-list__card.blank
+
+      %li.speakers-list__card#derek-buitenhuis
+        = image_tag("/images/derek-buitenhuis.jpeg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Derek Buitenhuis
+        %h4.speakers-list__company Vimeo
+        %p.speakers-list__talk-title Things Developers Believe About Video Files (Proven Wrong by User Uploads)
+        %a.speakers-list__btn{href:"#popup-derek-buitenhuis"} Talk Overview
+
+      %li.speakers-list__card#daniel-weinberger
+        = image_tag("/images/daniel-weinberger.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Daniel Weinberger
+        %h4.speakers-list__company Vimeo
+        %p.speakers-list__talk-title Ambisonic Audio Using the WebAudio API
+        %a.speakers-list__btn{href:"#popup-daniel-weinberger"} Talk Overview
+
+      %li.speakers-list__card#gary-katsevman
+        = image_tag("/images/gary-katsevman.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Gary Katsevman
+        %h4.speakers-list__company Vimeo
+        %p.speakers-list__talk-title Let's talk about captions: WebVTT and TTML
+        %a.speakers-list__btn{href:"#popup-gary-katsevman"} Talk Overview
+
+      %li.speakers-list__card#kieran-kunhya
+        = image_tag("/images/kieran-kunhya.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Kieran Kunhya
+        %h4.speakers-list__company OBS
+        %p.speakers-list__talk-title Why do broadcasters suddenly care about IP - it’s not why you think!
+        %a.speakers-list__btn{href:"#popup-kieran-kunhya"} Talk Overview
+
+      %li.speakers-list__card#sytse
+        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Sytse
+        %h4.speakers-list__company Unified Streaming
+        %p.speakers-list__talk-title Dynamic server-side content stitching for personalized streams.
+        %a.speakers-list__btn{href:"#popup-sytse"} Talk Overview
+
+      %li.speakers-list__card#allison-deal
+        = image_tag("/images/allison-deal.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Allison Deal
+        %h4.speakers-list__company Hulu
+        %p.speakers-list__talk-title Live Linear Ads
+        %a.speakers-list__btn{href:"#popup-allison-deal"} Talk Overview
+
+      %li.speakers-list__card#phil-cluff
+        = image_tag("/images/phil-cluff.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Phil Cluff
+        %h4.speakers-list__company Brightcove
+        %p.speakers-list__talk-title 0 - 18,000 RPS - A story of just-in-time origin media repackaging at scale.
+        %a.speakers-list__btn{href:"#popup-phil-cluff"} Talk Overview
+
+      %li.speakers-list__card#matt-ward
+        = image_tag("/images/matt-ward.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Matt Ward
+        %h4.speakers-list__company Mux
+        %p.speakers-list__talk-title CDNs are shitty, what you can do about it
+        %a.speakers-list__btn{href:"#popup-matt-ward"} Talk Overview
+
+      %li.speakers-list__card#strobe
+        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Steven Robertson
+        %h4.speakers-list__company YouTube
+        %p.speakers-list__talk-title Ultra-High Resolution Playback Visualization and its Applications
+        %a.speakers-list__btn{href:"#popup-strobe"} Talk Overview
+
+      %li.speakers-list__card#scott-kellicker
+        = image_tag("/images/scott-kellicker.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Scott Kellicker
+        %h4.speakers-list__company Wowza
+        %p.speakers-list__talk-title 3 Second End to End Latency At Scale
+        %a.speakers-list__btn{href:"#popup-scott-kellicker"} Talk Overview
+
+      %li.speakers-list__card#jamie-sherry
+        = image_tag("/images/jamie-sherry.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Jamie Sherry
+        %h4.speakers-list__company Wowza
+        %p.speakers-list__talk-title 3 Second End to End Latency At Scale
+        %a.speakers-list__btn{href:"#popup-jamie-sherry"} Talk Overview
+
+      %li.speakers-list__card#rik-heijdens
+        = image_tag("/images/rik-heijdens.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Rik Heijdens
+        %h4.speakers-list__company JWPlayer
+        %p.speakers-list__talk-title Leveraging Artificial Intelligence for Scene Detection in Broadcast Video
+        %a.speakers-list__btn{href:"#popup-rik-heijdens"} Talk Overview
+
+      %li.speakers-list__card#vittorio-giovara
+        = image_tag("/images/vittorio-giovara.png", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Vittorio Giovara
+        %h4.speakers-list__company Vimeo
+        %p.speakers-list__talk-title Color Me Intrigued: A Jaunt Through Color Technology in Video
+        %a.speakers-list__btn{href:"#popup-vittorio-giovara"} Talk Overview
+
+      %li.speakers-list__card#reinhard-grandl
+        = image_tag("/images/reinhard-grandl.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Reinhard Grandl
+        %h4.speakers-list__company Bitmovin
+        %p.speakers-list__talk-title Going Beyond Bitrate - Adaptation Based on Video Context
+        %a.speakers-list__btn{href:"#popup-reinhard-grandl"} Talk Overview
+
+
+
+
+
+
+    = image_tag("/images/speakers-illustration.svg", alt: "", class: "speakers-illustration")
+
+
+%section.modal#popup-mark-watson
+  %div.modal__container.popup
+    %a.modal-btn{href: "#mark-watson"}
+    = image_tag("/images/mark-watson.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Mark Watson
+    %h4.speakers-list__company Netflix
+    %p TBA
+
+%section.modal#popup-tarek-amara
+  %div.modal__container.popup
+    %a.modal-btn{href: "#tarek-amara"}
+    = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Tarek Amara
+    %h4.speakers-list__company Twitch
+    %p
+      S-frame (Switching Frame) was added to the AV1 video encoder to allow shorter segments in ABR, enabling
+      low latency  live streaming without the burden of using  bit-consuming IDR frames. Segments will be allowed
+      to start with S-frame and video player could switch, decode and play at any segment boundary. This talk will
+      cover specifics of S-frame and show how up to 20% bitrate savings could be achieved on top of AV1 encoder.
+
+%section.modal#popup-megha-manohara
+  %div.modal__container.popup
+    %a.modal-btn{href: "#megha-manohara"}
+    = image_tag("/images/megha-manohara.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Megha Manohara
+    %h4.speakers-list__company Netflix
+    %p
+      Netflix is available all around the world, and we want all of Netflix's subscribers to stream the best quality videos possible in their bandwidth.
+    %p
+      This talk will focus on the research and implementation challenges of Dynamic optimizer - an innovative shot-based encoding tool that raises the perceptual quality of streams at bitrates as low as 250kbps.
+
+%section.modal#popup-derek-buitenhuis
+  %div.modal__container.popup
+    %a.modal-btn{href: "#derek-buitenhuis"}
+    = image_tag("/images/derek-buitenhuis.jpeg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Derek Buitenhuis
+    %h4.speakers-list__company Vimeo
+    %p
+      Think you know all there is to know about different video formats, codecs, and containers? Your users
+      are here to prove you wrong! Let's take a quick dive the insanity of petabytes of user uploads on a top video website.
+
+%section.modal#popup-daniel-weinberger
+  %div.modal__container.popup
+    %a.modal-btn{href: "#daniel-weinberger"}
+    = image_tag("/images/daniel-weinberger.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Daniel Weinberger
+    %h4.speakers-list__company Bitmovin
+    %p
+      360-degree videos are becoming mainstream media and promise an immersive experience. Adjusting the
+      video viewport according to the user or device movements is just half the battle. Not only video but
+      also audio is an important factor for an immersive experience. In this talk I will show how ambisonic
+      audio can be handled in JavaScript using the WebAudio API, to enrich 360 video experiences with true
+      "surround" sound.
+
+%section.modal#popup-gary-katsevman
+  %div.modal__container.popup
+    %a.modal-btn{href: "#gary-katsevman"}
+    = image_tag("/images/gary-katsevman.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Gary Katsevman
+    %h4.speakers-list__company Brightcove
+    %p
+      The w3c has two main caption and subtitle formats that they maintain specs for: WebVTT and TTML. We'll
+      go into a quick history of the two formats, how they look like, what features they provide, and how to
+      use them on the web. We'll end with a verdict on which one is better!
+
+%section.modal#popup-kieran-kunhya
+  %div.modal__container.popup
+    %a.modal-btn{href: "#kieran-kunhya"}
+    = image_tag("/images/kieran-kunhya.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Kieran Kunhya
+    %h4.speakers-list__company OBS
+    %p
+      As you walk the halls of major tradeshows such as IBC or NAB, you’ll see that every booth talks about why
+      IP is the future. But they’re not talking about delivery, they’re talking about using IP for live production
+      of content instead of current technologies such as satellite and SDI. This presentation will explain how
+      these industries are changing and go into some of the engineering challenges of handling tens or hundreds of
+      gigabits of uncompressed video on standard server hardware whilst interoperating with traditional hardware.
+
+%section.modal#popup-sytse
+  %div.modal__container.popup
+    %a.modal-btn{href: "#sytse"}
+    = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Sytse
+    %h4.speakers-list__company Unified Streaming
+    %p
+      With the rising trend of stream personalization, we present a true scalable server-side stitching solution for all major playout and DRM formats.
+    %p
+      The architecture is stateless, pull oriented, and also features just-in-time transcoding to fix non-matching content.
+    %p
+      The presenter was responsible for the just-in-time transcoding component facing various challenges relating to segment based transcoding with audio and video.
+
+%section.modal#popup-allison-deal
+  %div.modal__container.popup
+    %a.modal-btn{href: "#allison-deal"}
+    = image_tag("/images/allison-deal.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Allison Deal
+    %h4.speakers-list__company Hulu
+    %p
+      We'll talk about the standard for live linear advertising signaling and the challenges around adapting
+      these traditional broadcast practices for the OTT world. The discussion will focus on strategies to ensure
+      an accurate and consistent customer experience and techniques for real-time monitoring, identifying, and
+      mitigating inconsistent metadata across hundreds of channels.
+
+%section.modal#popup-phil-cluff
+  %div.modal__container.popup
+    %a.modal-btn{href: "#phil-cluff"}
+    = image_tag("/images/phil-cluff.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Phil Cluff
+    %h4.speakers-list__company Brightcove
+    %p
+      Over the past two years, we’ve built an origin media re-packager from scratch. This session will
+      talk about the challenges we had designing, building and scaling this system with a global footprint.
+      In particular, we’ll focus on the edge cases of media delivery that we didn’t see coming, and the war
+      stories of high-scale launch events we encountered.
+
+%section.modal#popup-matt-ward
+  %div.modal__container.popup
+    %a.modal-btn{href: "#matt-ward"}
+    = image_tag("/images/matt-ward.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Matt Ward
+    %h4.speakers-list__company Mux
+    %p
+      Everyone knows some CDNs suck, but what can you actually do about it? This talk will go into the details
+      of how you can actually improve the things that you once thought was out of your control.
+
+%section.modal#popup-strobe
+  %div.modal__container.popup
+    %a.modal-btn{href: "#strobe"}
+    = image_tag("/images/strobe.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Steven Robertson
+    %h4.speakers-list__company YouTube
+    %p
+      Tuning ABR starts off with broad strokes, but perfecting it can require a second-by-second understanding
+      of what your algorithm is doing. We've built a system that captures millisecond-level detail on what's
+      going on during a playback (easy), and invested in figuring out how to display that information effectively
+      so we can spot useful improvements (harder).
+
+%section.modal#popup-scott-kellicker
+  %div.modal__container.popup
+    %a.modal-btn{href: "#scott-kellicker"}
+    = image_tag("/images/scott-kellicker.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Scott Kellicker
+    %h4.speakers-list__company Wowza
+    %p
+      We present our work on low latency streaming: how we achieved 3-second camera-to-screen latency at scale.
+      We'll talk about the player and server technology we developed to stream over WebSockets, and how we are
+      going about scaling it as a worldwide service.
+
+%section.modal#popup-jamie-sherry
+  %div.modal__container.popup
+    %a.modal-btn{href: "#jamie-sherry"}
+    = image_tag("/images/jamie-sherry.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Jamie Sherry
+    %h4.speakers-list__company Wowza
+    %p
+      We present our work on low latency streaming: how we achieved 3-second camera-to-screen latency at scale.
+      We'll talk about the player and server technology we developed to stream over WebSockets, and how we are
+      going about scaling it as a worldwide service.
+
+%section.modal#popup-rik-heijdens
+  %div.modal__container.popup
+    %a.modal-btn{href: "#rik-heijdens"}
+    = image_tag("/images/rik-heijdens.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Rik Heijdens
+    %h4.speakers-list__company JWPlayer
+    %p
+      We've implemented a scene detection framework that segments videos into logical story units without the
+      need for a human editor. We achieve this in two steps: 1) we train a deep-learning model to learn a distance
+      measure (i.e. similarity measure) between all pairs of shots by leveraging visual, audio, and textual
+      features extracted from the video; 2) we then cluster contiguous groups of shots into scenes based on
+      the full similarity matrix of shots.
+
+%section.modal#popup-vittorio-giovara
+  %div.modal__container.popup
+    %a.modal-btn{href: "#vittorio-giovara"}
+    = image_tag("/images/vittorio-giovara.png", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Vittorio Giovara
+    %h4.speakers-list__company Vimeo
+    %p
+      This talk aims to shed light on colorspaces - what they are, how and why they work, why we should care
+      about handling edge cases properly. Starting with historical design choices, venturing through current
+      standards such as BT.709, and arriving at modern times with High Dynamic Range, the focus will be on
+      practical applications on the web and in broadcast.
+
+%section.modal#popup-reinhard-grandl
+  %div.modal__container.popup
+    %a.modal-btn{href: "#reinhard-grandl"}
+    = image_tag("/images/reinhard-grandl.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Reinhard Grandl
+    %h4.speakers-list__company Bitmovin
+    %p
+      Since Netflix started using ‘per-title encoding’, optimizing the encoding recipe for the content has
+      become a well-known concept. But what if a similar approach could be applied to every scene on the
+      client side using the adaptation logic? Many low complexity scenes do not need to be streamed at a
+      high bitrate to maintain a consistent perceptual quality for the viewer. These sequences can be replaced
+      by lower bitrate segments, saving bandwidth and reducing costs, if the client is aware of the video
+      context and not only the bitrate of a segment.
+
+
+
+
+
+
+
+
+%section.schedule#schedule
+  %div.container
+    %h2.section-heading
+      The Schedule
+      %span
+        October 16th, 2016
+
+    %ul.schedule-list.morning
+      %li.schedule-list__ampm
+        %h2 Morning
+      %li.schedule-list__break
+        %h4.schedule-list__time
+          8.00am &ndash; 8.45am
+        %span.schedule-list__type
+          Registration
+
+      %li.schedule-list__break.opening-remarks
+        %h4.schedule-list__time
+          8.45am &ndash; 9.00am
+        %span.schedule-list__type
+          Opening Remarks
+
+      %li.schedule-list__talk.keynote
+        %h4.schedule-list__time
+          9.00am &ndash; 9.45am
+        %span.schedule-list__type
+          Keynote
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-tba.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Speaker TBA!
+          %p.schedule-list__talk-desc
+            Details revealed soon!
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          9.45am &ndash; 10.15am
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            AV1 Contributors
+          %p.schedule-list__talk-desc
+            AV1 Update
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          10.15am &ndash; 10.25am
+        %span.schedule-list__type
+          Short-form
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Tarek Amara
+          %p.schedule-list__talk-desc
+            S-Frame in AV1: Enabling better compression for low latency live streaming.
+
+      %li.schedule-list__break
+        %h4.schedule-list__time
+          10.25am &ndash; 10.35am
+        %span.schedule-list__type
+          Break
+
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          10.35am &ndash; 11.45am
+        %span.schedule-list__type
+          Short-form
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Lawyer (Specifics TBA)
+          %p.schedule-list__talk-desc
+            Overview of the legal implications of new codecs and streaming standards
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          10.45am &ndash; 11.15am
+        %div.schedule-list__speaker-box
+          = image_tag("/images/megha-manohara.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Megha Manohara
+          %p.schedule-list__talk-desc
+            Streaming at 250 kbps: raise your expectations
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          11.15am &ndash; 11.30am
+        %span.schedule-list__type
+          Short-form
+        %div.schedule-list__speaker-box
+          = image_tag("/images/derek-buitenhuis.jpeg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Derek Buitenhuis
+          %p.schedule-list__talk-desc
+            Things Developers Believe About Video Files (Proven Wrong by User Uploads)
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          11.30am &ndash; 12.00am
+        %div.schedule-list__speaker-box
+          = image_tag("/images/daniel-weinberger.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Daniel Weinberger
+          %p.schedule-list__talk-desc
+            Ambisonic Audio Using the WebAudio API
+
+
+
+    %ul.schedule-list
+      %li.schedule-list__ampm
+        %h2 Afternoon
+      %li.schedule-list__break
+        %h4.schedule-list__time
+          12.00pm &ndash; 1.00pm
+        %span.schedule-list__type
+          Lunch
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          1.00pm &ndash; 1.10pm
+        %span.schedule-list__type
+          Short-form
+        %div.schedule-list__speaker-box
+          = image_tag("/images/gary-katsevman.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Gary Katsevman
+          %p.schedule-list__talk-desc
+            Let's talk about captions: WebVTT and TTML
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          1.10pm &ndash; 1.40pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/kieran-kunhya.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Kieran Kunhya
+          %p.schedule-list__talk-desc
+            Why do broadcasters suddenly care about IP - it’s not why you think!
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          1.40pm &ndash; 1.50pm
+        %span.schedule-list__type
+          Short-form
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Sytse
+          %p.schedule-list__talk-desc
+            Dynamic server-side content stitching for personalized streams.
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          1.50pm &ndash; 2.20pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/allison-deal.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Allison Deal
+          %p.schedule-list__talk-desc
+            Live Linear Ads
+
+      %li.schedule-list__break
+        %h4.schedule-list__time
+          2.20pm &ndash; 2.35pm
+        %span.schedule-list__type
+          Break
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          2.35pm &ndash; 2.45pm
+        %span.schedule-list__type
+          Short-form
+        %div.schedule-list__speaker-box
+          = image_tag("/images/phil-cluff.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Phil Cluff
+          %p.schedule-list__talk-desc
+            0 - 18,000 RPS - A story of just-in-time origin media repackaging at scale.
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          2.45pm &ndash; 3.15pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/matt-ward.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Matt Ward
+          %p.schedule-list__talk-desc
+            CDNs are shitty, what you can do about it
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          3.15pm &ndash; 3.25pm
+        %span.schedule-list__type
+          Short-form
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Steven Robertson
+          %p.schedule-list__talk-desc
+            Ultra-High Resolution Playback Visualization and its Applications
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          3.25pm &ndash; 3.55pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/scott-kellicker.jpg", alt: "", class: "schedule-list__img first")
+          = image_tag("/images/jamie-sherry.jpg", alt: "", class: "schedule-list__img second")
+          %h3.schedule-list__speaker
+            Scott Kellicker &amp; Jamie Sherry
+          %p.schedule-list__talk-desc
+            3 Second End to End Latency At Scale
+
+      %li.schedule-list__break
+        %h4.schedule-list__time
+          3.55pm &ndash; 4.10pm
+        %span.schedule-list__type
+          Break
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          4.10pm &ndash; 4.20pm
+        %span.schedule-list__type
+          Short-form
+        %div.schedule-list__speaker-box
+          = image_tag("/images/rik-heijdens.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Rik Heijdens
+          %p.schedule-list__talk-desc
+            Leveraging Artificial Intelligence for Scene Detection in Broadcast Video
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          4.20pm &ndash; 4.50pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/vittorio-giovara.png", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Vittorio Giovara
+          %p.schedule-list__talk-desc
+            Color Me Intrigued: A Jaunt Through Color Technology in Video
+
+      %li.schedule-list__talk.lightening
+        %h4.schedule-list__time
+          4.50pm &ndash; 5.00pm
+        %span.schedule-list__type
+          Short-form
+        %div.schedule-list__speaker-box
+          = image_tag("/images/reinhard-grandl.jpg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Reinhard Grandl
+          %p.schedule-list__talk-desc
+            Going Beyond Bitrate - Adaptation Based on Video Context
+
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          5.00pm &ndash; 5.30pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/default-tba.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Speaker TBA!
+          %p.schedule-list__talk-desc
+            Details released soon!
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          5.30pm &ndash; 5.40pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/logo-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            Closing Remarks
+          %p.schedule-list__talk-desc
+            Goodbye from Demuxed for 2017!
+
+      %li.schedule-list__talk
+        %h4.schedule-list__time
+          5.40pm &ndash; 12.00pm
+        %div.schedule-list__speaker-box
+          = image_tag("/images/logo-avatar.svg", alt: "", class: "schedule-list__img")
+          %h3.schedule-list__speaker
+            After Party
+          %p.schedule-list__talk-desc
+            Fun and Drinks!
+
+
+%section.location#location
+  %div.container
+    = image_tag("/images/location-illustration.svg", alt: "", class: "location-illustration")
+
+    %div.location-text
+      %h2.section-heading
+        The Location
+      %p.location-details
+
+        Broadway Studios
+        %br 435 Broadway
+        San Francisco
+        CA 94133
+        %br
+        %a{href:"http://broadwayvenue.com/"}broadwayvenue.com
+
+
+
+
+
+%section.map
+  = image_tag("/images/map-decor.svg", alt: "", class: "map-decors")
+  = image_tag("/images/map-decor-2.svg", alt: "", class: "map-decors2")
+
+
+  %a.map-link{href:"https://www.google.com/maps/place/Broadway+Studios/@37.7980293,-122.4066383,17z/data=!3m1!4b1!4m5!3m4!1s0x808580f4f8a46c3d:0x5715fb6f7e87bb89!8m2!3d37.7980293!4d-122.4044496"}
+    = image_tag("/images/map2.jpg", alt: "", class: "")
+
+
+%section.about-us#about-us
+  %div.container
+    %div.about-us__text
+      %h2.section-heading
+        About us
+
+      %p
+        Demuxed is simply engineers talking about video technology. After years of chatting about video at the
+        %a{href:"http://www.meetup.com/SF-Video-Technology/"} SF Video Technology Meetup,
+        we decided it was time for an engineer-first event with quality technical talks about video. Our focus has traditionally been
+        on content delivered over the web, but topics cover anything from encoding to playback and more!
+
+      %h3
+        Who's organizing this?
+
+      %p
+        Most of the organization and work behind the scenes is done by folks from
+        = link_to "Mux", "https://www.mux.com"
+        (Demuxed came first ☝️) but none of this would be possible without amazing people from the meetup.
+
+      %p
+        Every year we get a group together that's
+        kind enough to do things like schedule planning, help brainstorm cool swag, and, most importantly,
+        argue heatedly over which talk submissions should make the final cut.
+
+    = image_tag("/images/about-photos2.jpg", alt: "", class: "about-us__images")
+    = image_tag("/images/about-images-left.jpg", alt: "", class: "about-us__image-left")
+    = image_tag("/images/about-images-right.jpg", alt: "", class: "about-us__image-right")
+
+
+%section.guiding-principles
+  %div.container
+    %h2.section-heading
+      Our Guiding Principles
+
+    %ul.guiding-principles__list
+      %li
+        = image_tag("/images/no-marketing.svg", alt: "", class: "guiding-prinicples__img")
+        %h3.guiding-principles__title
+          No Marketing
+        %p.guiding-principles__text
+          Speakers are selected based on their submission, not how much money their company paid; we will
+          never, ever sell a speaking slot. Attendee information isn't for sale either, and that includes any
+          sponsors.
+
+      %li
+        = image_tag("/images/admission.svg", alt: "", class: "guiding-prinicples__img")
+        %h3.guiding-principles__title
+          Affordable
+        %p.guiding-principles__text
+          We want anyone in the industry to be able to come, which means keeping tickets reasonably priced
+          (thanks largely to our generous sponsors). We also offer free and discounted tickets
+          to students and open source contributors, so please
+          = link_to("reach out", "mailto:info@demuxed.com")
+          if you're interested.
+
+
+      %li
+        = image_tag("/images/for-everyone.svg", alt: "", class: "guiding-prinicples__img")
+        %h3.guiding-principles__title
+          For Everyone
+        %p.guiding-principles__text
+          Our community is dedicated to providing an inclusive, enjoyable experience for everyone in
+          the video industry. In this pursuit, and in keeping with our love for reasonable standards, we
+          adopted the Ada Initiative's
+          = link_to "Conference Code of Conduct", "http://confcodeofconduct.com/"
+
+
+      %li
+        = image_tag("/images/community.svg", alt: "", class: "guiding-prinicples__img")
+        %h3.guiding-principles__title
+          Community
+        %p.guiding-principles__text
+          We strive for high quality, technical content, but just as importantly, Demuxed works to strengthen the
+          community of video engineers and raise the industry status quo, both in the Bay and around the world.
+
+
+%section.after-party
+  %div.container
+    %div.after-party__text
+      %h2.section-heading
+        After Party
+      %p
+        When the dust has settled and the talks are done, Brightcove is sponsoring an after party! This year's festivities
+        are downstairs in the same venue, so we can just head straight there to enjoy some food and drinks after the conference.
+        The schedule is <em>packed</em>, so this is the perfect opportunity to unwind and catch up with all your fellow attendees.
+
+      %p
+        The only thing you need to get in is your badge, so make sure to bring it with you. Plus ones are welcome to
+        come join!
+
+    = image_tag("/images/after-party-illustration.svg", alt: "", class: "after-party-illustration")
+
 
 
 %section.sponsors#sponsors
@@ -29,12 +774,12 @@ title: Demuxed, The Conference for Video Engineers
 
     %ul.sponsors__sponsor-list.platinum
       %li
-        = link_to image_tag("/images/bitmovin.svg", alt: "Bitmovin", class: ""), "https://bitmovin.com/"
+        = link_to image_tag("/images/bitmovin.svg", alt: "Bitmovin", class: ""), "https://bitmovin.com"
 
     %h4.sponsors__type
       Party
 
-    %ul.sponsors__sponsor-list.party
+    %ul.sponsors__sponsor-list.platinum
       %li
         = link_to image_tag("/images/brightcove.svg", alt: "Brightcove", class: ""), "https://brightcove.com"
 
@@ -47,7 +792,7 @@ title: Demuxed, The Conference for Video Engineers
       %li
         = link_to image_tag("/images/netflix.svg", alt: "Netflix", class: ""), "https://netflix.com"
       %li
-        = link_to image_tag("/images/DLVR.svg", alt: "DLVR", class: ""), "https://dlvr.com/"
+        = link_to image_tag("/images/dlvr.svg", alt: "DLVR", class: ""), "https://dlvr.com/"
 
     %h4.sponsors__type
       Silver
@@ -61,6 +806,8 @@ title: Demuxed, The Conference for Video Engineers
         = link_to image_tag("/images/conviva.svg", alt: "Conviva", class: ""), "https://conviva.com"
       %li
         = link_to image_tag("/images/jwplayer.svg", alt: "JW Player", class: ""), "https://jwplayer.com"
+      %li
+        = link_to image_tag("/images/ellation.png", alt: "Ellation", class: ""), "http://ellation.com"
 
 
     %h4.sponsors__type
@@ -76,3 +823,7 @@ title: Demuxed, The Conference for Video Engineers
         = link_to image_tag("/images/wowza.svg", alt: "Wowza", class: "Wowza"), "https://wowza.com"
       %li
         = link_to image_tag("/images/digital-primates.svg", alt: "Digital Primates"), "http://www.digitalprimates.net/"
+
+
+
+
