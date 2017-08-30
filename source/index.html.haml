@@ -44,6 +44,13 @@ title: Demuxed, The Conference for Video Engineers
         /Blank space for wide layout
       %li.speakers-list__card.blank
 
+      %li.speakers-list__card#hector-ribera
+        = image_tag("/images/hector-ribera.jpg", alt: "Hector Ribera", class: "speakers-list__img")
+        %h3.speakers-list__name Hector Ribera
+        %h4.speakers-list__company Marton Ribera Schumann<br> & Chang LLP
+        %p.speakers-list__talk-title HEVC Patent Pools: where do we stand?
+        %a.speakers-list__btn{href:"#popup-hector-ribera"} Talk Overview
+
       %li.speakers-list__card#derek-buitenhuis
         = image_tag("/images/derek-buitenhuis.jpeg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Derek Buitenhuis
@@ -180,6 +187,18 @@ title: Demuxed, The Conference for Video Engineers
       Netflix is available all around the world, and we want all of Netflix's subscribers to stream the best quality videos possible in their bandwidth.
     %p
       This talk will focus on the research and implementation challenges of Dynamic optimizer - an innovative shot-based encoding tool that raises the perceptual quality of streams at bitrates as low as 250kbps.
+
+%section.modal#popup-hector-ribera
+  %div.modal__container.popup
+    %a.modal-btn{href: "#hector-ribera"}
+    = image_tag("/images/hector-ribera.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Hector Ribera
+    %h4.speakers-list__company Marton Ribera Schumann & Chang LLP
+    %p
+      Many patents have been asserted to cover various aspects of the HEVC technology.  While patents for
+      earlier standards have more or less converged into a primary patent pool, patent holders claiming
+      ownership of various HEVC features seem to be drifting in multiple directions.  We will discuss the
+      state of the various patent pools forming around the HEVC standard.
 
 %section.modal#popup-derek-buitenhuis
   %div.modal__container.popup
@@ -424,17 +443,17 @@ title: Demuxed, The Conference for Video Engineers
         %span.schedule-list__type
           Short-form
         %div.schedule-list__speaker-box
-          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          = image_tag("/images/hector-ribera.jpg", alt: "Hector Ribera", class: "schedule-list__img")
           %h3.schedule-list__speaker
-            Lawyer (Specifics TBA)
+            Hector Ribera
           %p.schedule-list__talk-desc
-            Overview of the legal implications of new codecs and streaming standards
+            HEVC Patent Pools: where do we stand?
 
       %li.schedule-list__talk
         %h4.schedule-list__time
           10.45am &ndash; 11.15am
         %div.schedule-list__speaker-box
-          = image_tag("/images/megha-manohara.jpg", alt: "", class: "schedule-list__img")
+          = image_tag("/images/megha-manohara.jpg", alt: "Megha Manohara", class: "schedule-list__img")
           %h3.schedule-list__speaker
             Megha Manohara
           %p.schedule-list__talk-desc
@@ -446,7 +465,7 @@ title: Demuxed, The Conference for Video Engineers
         %span.schedule-list__type
           Short-form
         %div.schedule-list__speaker-box
-          = image_tag("/images/derek-buitenhuis.jpeg", alt: "", class: "schedule-list__img")
+          = image_tag("/images/derek-buitenhuis.jpeg", alt: "Derek Buitenhuis", class: "schedule-list__img")
           %h3.schedule-list__speaker
             Derek Buitenhuis
           %p.schedule-list__talk-desc
@@ -456,7 +475,7 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           11.30am &ndash; 12.00am
         %div.schedule-list__speaker-box
-          = image_tag("/images/daniel-weinberger.jpg", alt: "", class: "schedule-list__img")
+          = image_tag("/images/daniel-weinberger.jpg", alt: "Daniel Weinberger", class: "schedule-list__img")
           %h3.schedule-list__speaker
             Daniel Weinberger
           %p.schedule-list__talk-desc
