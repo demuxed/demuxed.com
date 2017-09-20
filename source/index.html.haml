@@ -20,12 +20,22 @@ title: Demuxed, The Conference for Video Engineers
       The Speakers
 
     %ul.speakers-list
-      / %li.speakers-list__card#mark-watson
-      /   = image_tag("/images/mark-watson.jpg", alt: "", class: "speakers-list__img")
-      /   %h3.speakers-list__name Mark Watson
-      /   %h4.speakers-list__company Netflix
-      /   %p.speakers-list__talk-title Lorem ipsum dolor sit amet
-      /   %a.speakers-list__btn{href:"#popup-mark-watson"} Talk Overview
+      %li.speakers-list__card#mark-watson
+        = image_tag("/images/mark-watson.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Mark Watson
+        %h4.speakers-list__company Netflix
+        %p.speakers-list__talk-title Lights, Colors, Artwork
+        %a.speakers-list__btn{href:"#popup-mark-watson"} Talk Overview
+
+      %li.speakers-list__card#yueshi-shen
+        = image_tag("/images/yueshi-shen.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Yueshi Shen
+        %h4.speakers-list__company Twitch
+        %p.speakers-list__talk-title Live Video Transmuxing/Transcoding: FFmpeg vs TwitchTranscoder
+        %a.speakers-list__btn{href:"#popup-yueshi-shen"} Talk Overview
+
+      /Blank space for wide layout
+      %li.speakers-list__card.blank
 
       %li.speakers-list__card#tarek-amara
         = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
@@ -40,9 +50,6 @@ title: Demuxed, The Conference for Video Engineers
         %h4.speakers-list__company Netflix
         %p.speakers-list__talk-title Streaming at 250 kbps: raise your expectations
         %a.speakers-list__btn{href:"#popup-megha-manohara"} Talk Overview
-
-        /Blank space for wide layout
-      %li.speakers-list__card.blank
 
       %li.speakers-list__card#hector-ribera
         = image_tag("/images/hector-ribera.jpg", alt: "Hector Ribera", class: "speakers-list__img")
@@ -59,8 +66,8 @@ title: Demuxed, The Conference for Video Engineers
         %a.speakers-list__btn{href:"#popup-derek-buitenhuis"} Talk Overview
 
       %li.speakers-list__card#daniel-weinberger
-        = image_tag("/images/daniel-weinberger.jpg", alt: "", class: "speakers-list__img")
-        %h3.speakers-list__name Daniel Weinberger
+        = image_tag("/images/mario-guggenberger.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Mario Guggenberger
         %h4.speakers-list__company Bitmovin
         %p.speakers-list__talk-title Ambisonic Audio Using the WebAudio API
         %a.speakers-list__btn{href:"#popup-daniel-weinberger"} Talk Overview
@@ -81,7 +88,7 @@ title: Demuxed, The Conference for Video Engineers
 
       %li.speakers-list__card#sytse
         = image_tag("/images/sytse.jpg", alt: "", class: "speakers-list__img")
-        %h3.speakers-list__name Sytse
+        %h3.speakers-list__name Sytse<br>van Geldermalsen
         %h4.speakers-list__company Unified Streaming
         %p.speakers-list__talk-title Dynamic server-side content stitching for personalized streams.
         %a.speakers-list__btn{href:"#popup-sytse"} Talk Overview
@@ -108,7 +115,7 @@ title: Demuxed, The Conference for Video Engineers
         %a.speakers-list__btn{href:"#popup-matt-ward"} Talk Overview
 
       %li.speakers-list__card#strobe
-        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        = image_tag("/images/steve-robertson.jpg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Steven Robertson
         %h4.speakers-list__company YouTube
         %p.speakers-list__talk-title Ultra-High Resolution Playback Visualization and its Applications
@@ -160,15 +167,34 @@ title: Demuxed, The Conference for Video Engineers
 %section.modal#popup-mark-watson
   %div.modal__container.popup
     %a.modal-btn{href: "#mark-watson"}
-    = image_tag("/images/mark-watson.jpg", alt: "", class: "speakers-list__img")
+    = image_tag("/images/mark-watson.jpg", alt: "Mark Watson", class: "speakers-list__img")
     %h3.speakers-list__name Mark Watson
     %h4.speakers-list__company Netflix
-    %p TBA
+    %p
+      Next year will see widespread availability of a new creative canvas (High Dynamic Range, Wider Colors),
+      a new royalty-free codec (AV-1) and a new royalty-free image format (AVIF). These new technologies offer
+      great opportunities for creating new immersive experiences, both in content itself and in discovery/user
+      interfaces. What are some of the challenges when we move from "find, click, play" to a rich, seamless
+      and dynamic auto-playing user experience ? How will these new technologies help - and hinder - that evolution?
+
+%section.modal#popup-yueshi-shen
+  %div.modal__container.popup
+    %a.modal-btn{href: "#yueshi-shen"}
+    = image_tag("/images/yueshi-shen.jpg", alt: "Yueshi Shen", class: "speakers-list__img")
+    %h3.speakers-list__name Yueshi Shen
+    %h4.speakers-list__company Twitch
+    %p
+      In this talk, we will examine FFmpeg as a live-stream RTMP-to-HLS transcoder and provide some insight
+      on how to operate the tool. Such a solution is simple to deploy but has a few technical issues, such
+      as segment misalignment, unnecessary performance sacrifice, and a lack of flexibility to support our
+      product features. Therefore, Twitch has implemented its own in-house transcoder software stack called
+      TwitchTranscoder, which runs in a custom designed threading model and outputs N variants in a
+      single process.
 
 %section.modal#popup-tarek-amara
   %div.modal__container.popup
     %a.modal-btn{href: "#tarek-amara"}
-    = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+    = image_tag("/images/default-avatar.svg", alt: "Tarek Amara", class: "speakers-list__img")
     %h3.speakers-list__name Tarek Amara
     %h4.speakers-list__company Twitch
     %p
@@ -213,8 +239,8 @@ title: Demuxed, The Conference for Video Engineers
 %section.modal#popup-daniel-weinberger
   %div.modal__container.popup
     %a.modal-btn{href: "#daniel-weinberger"}
-    = image_tag("/images/daniel-weinberger.jpg", alt: "", class: "speakers-list__img")
-    %h3.speakers-list__name Daniel Weinberger
+    = image_tag("/images/mario-guggenberger.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Mario Guggenberger
     %h4.speakers-list__company Bitmovin
     %p
       360-degree videos are becoming mainstream media and promise an immersive experience. Adjusting the
@@ -251,7 +277,7 @@ title: Demuxed, The Conference for Video Engineers
   %div.modal__container.popup
     %a.modal-btn{href: "#sytse"}
     = image_tag("/images/sytse.jpg", alt: "", class: "speakers-list__img")
-    %h3.speakers-list__name Sytse
+    %h3.speakers-list__name Sytse van Geldermalsen
     %h4.speakers-list__company Unified Streaming
     %p
       With the rising trend of stream personalization, we present a true scalable server-side stitching solution for all major playout and DRM formats.
@@ -297,7 +323,7 @@ title: Demuxed, The Conference for Video Engineers
 %section.modal#popup-strobe
   %div.modal__container.popup
     %a.modal-btn{href: "#strobe"}
-    = image_tag("/images/strobe.jpg", alt: "", class: "speakers-list__img")
+    = image_tag("/images/steve-robertson.jpg", alt: "", class: "speakers-list__img")
     %h3.speakers-list__name Steven Robertson
     %h4.speakers-list__company YouTube
     %p
@@ -402,17 +428,17 @@ title: Demuxed, The Conference for Video Engineers
         %span.schedule-list__type
           Keynote
         %div.schedule-list__speaker-box
-          = image_tag("/images/default-tba.svg", alt: "", class: "schedule-list__img")
+          = image_tag("/images/mark-watson.jpg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
-            Speaker TBA!
+            Mark Watson
           %p.schedule-list__talk-desc
-            Details revealed soon!
+            Lights, Colors, Artwork
 
       %li.schedule-list__talk
         %h4.schedule-list__time
           9.45am &ndash; 10.15am
         %div.schedule-list__speaker-box
-          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          = image_tag("/images/yueshi-shen.jpg", alt: "Yueshi Shen", class: "schedule-list__img")
           %h3.schedule-list__speaker
             AV1 Contributors
           %p.schedule-list__talk-desc
@@ -475,9 +501,9 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           11.30am &ndash; 12.00am
         %div.schedule-list__speaker-box
-          = image_tag("/images/daniel-weinberger.jpg", alt: "Daniel Weinberger", class: "schedule-list__img")
+          = image_tag("/images/mario-guggenberger.jpg", alt: "Mario Guggenberger", class: "schedule-list__img")
           %h3.schedule-list__speaker
-            Daniel Weinberger
+            Mario Guggenberger
           %p.schedule-list__talk-desc
             Ambisonic Audio Using the WebAudio API
 
@@ -522,7 +548,7 @@ title: Demuxed, The Conference for Video Engineers
         %div.schedule-list__speaker-box
           = image_tag("/images/sytse.jpg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
-            Sytse
+            Sytse van Geldermalsen
           %p.schedule-list__talk-desc
             Dynamic server-side content stitching for personalized streams.
 
@@ -570,7 +596,7 @@ title: Demuxed, The Conference for Video Engineers
         %span.schedule-list__type
           Short-form
         %div.schedule-list__speaker-box
-          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
+          = image_tag("/images/steve-robertson.jpg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
             Steven Robertson
           %p.schedule-list__talk-desc
@@ -634,9 +660,9 @@ title: Demuxed, The Conference for Video Engineers
         %div.schedule-list__speaker-box
           = image_tag("/images/default-tba.svg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
-            Speaker TBA!
+            AV1 Contributors
           %p.schedule-list__talk-desc
-            Details released soon!
+            AV1 Update
 
       %li.schedule-list__talk
         %h4.schedule-list__time
