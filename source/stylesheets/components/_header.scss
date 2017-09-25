@@ -158,7 +158,7 @@
   font-family: $button-font;
   letter-spacing: 0.2em;
 
-  @include mq($x-large) {
+  @include mq($wide) {
     display: block;
   }
 }
