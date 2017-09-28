@@ -2,8 +2,6 @@
 title: Demuxed, The Conference for Video Engineers
 ---
 
-#sold-out-banner Sold Out
-
 %section.home-hero
   %div.container
     %h1.home-hero__heading
@@ -100,15 +98,15 @@ title: Demuxed, The Conference for Video Engineers
       %li.speakers-list__card#allison-deal
         = image_tag("/images/allison-deal.jpg", alt: "", class: "speakers-list__img")
         %h3.speakers-list__name Allison Deal
-        %h4.speakers-list__company Hulu
+        %h4.speakers-list__company
         %p.speakers-list__talk-title Live Linear Ads
         %a.speakers-list__btn{href:"#popup-allison-deal"} Talk Overview
 
       %li.speakers-list__card#phil-cluff
-        = image_tag("/images/phil-cluff.jpg", alt: "", class: "speakers-list__img")
-        %h3.speakers-list__name Phil Cluff
-        %h4.speakers-list__company Brightcove
-        %p.speakers-list__talk-title 0 - 18,000 RPS - A story of just-in-time origin media repackaging at scale.
+        = image_tag("/images/greg-mirsky.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Dr. Greg Mirsky
+        %h4.speakers-list__company Beamr
+        %p.speakers-list__talk-title Practical HDR: Not 101, but Flavors, Pros, Cons, Dos and Don’ts
         %a.speakers-list__btn{href:"#popup-phil-cluff"} Talk Overview
 
       %li.speakers-list__card#matt-ward
@@ -305,14 +303,15 @@ title: Demuxed, The Conference for Video Engineers
 %section.modal#popup-phil-cluff
   %div.modal__container.popup
     %a.modal-btn{href: "#phil-cluff"}
-    = image_tag("/images/phil-cluff.jpg", alt: "", class: "speakers-list__img")
-    %h3.speakers-list__name Phil Cluff
-    %h4.speakers-list__company Brightcove
+    = image_tag("/images/greg-mirsky.jpg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Dr. Greg Mirsky
+    %h4.speakers-list__company Beamr
     %p
-      Over the past two years, we’ve built an origin media re-packager from scratch. This session will
-      talk about the challenges we had designing, building and scaling this system with a global footprint.
-      In particular, we’ll focus on the edge cases of media delivery that we didn’t see coming, and the war
-      stories of high-scale launch events we encountered.
+      This talk will be devoted to the practical aspects of HDR technology for video engineers. Most HDR
+      presentations these days focus on color spaces, EOTF and OETF and tone mapping, but this one's for the
+      practical aspects of HDR deployments. We'll cover the pros and cons of various formats from a practical
+      deployment point of view, the proliferation of various flavors, CPE (Customer Premises Equipment) as
+      of 2017, constraints, workflow aspects, common dos and don’ts, and HDR's impact on codecs.
 
 %section.modal#popup-matt-ward
   %div.modal__container.popup
@@ -578,11 +577,11 @@ title: Demuxed, The Conference for Video Engineers
         %span.schedule-list__type
           Short-form
         %div.schedule-list__speaker-box
-          = image_tag("/images/phil-cluff.jpg", alt: "", class: "schedule-list__img")
+          = image_tag("/images/greg-mirsky.jpg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
-            Phil Cluff
+            Dr. Greg Mirsky
           %p.schedule-list__talk-desc
-            0 - 18,000 RPS - A story of just-in-time origin media repackaging at scale.
+            Practical HDR: Not 101, but Flavors, Pros, Cons, Dos and Don’ts
 
       %li.schedule-list__talk
         %h4.schedule-list__time
@@ -680,7 +679,7 @@ title: Demuxed, The Conference for Video Engineers
 
       %li.schedule-list__talk
         %h4.schedule-list__time
-          5.40pm &ndash; 12.00pm
+          5.40pm &ndash; 9.00pm
         %div.schedule-list__speaker-box
           = image_tag("/images/logo-avatar.svg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker

@@ -144,21 +144,3 @@
     }
   }
 }//page-head__nav
-
-#sold-out-banner {
-  display: none;
-  position: absolute;
-  top: 25px;
-  right: -47px;
-  background-color: $brand-red;
-  color: #fff;
-  text-transform: uppercase;
-  transform: rotate(45deg);
-  padding: 10px 40px;
-  font-family: $button-font;
-  letter-spacing: 0.2em;
-
-  @include mq($wide) {
-    display: block;
-  }
-}
