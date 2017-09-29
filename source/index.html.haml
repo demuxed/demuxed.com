@@ -158,6 +158,13 @@ title: Demuxed, The Conference for Video Engineers
         %p.speakers-list__talk-title Going Beyond Bitrate - Adaptation Based on Video Context
         %a.speakers-list__btn{href:"#popup-reinhard-grandl"} Talk Overview
 
+      %li.speakers-list__card#thomas-daede
+        = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name Thomas Daede
+        %h4.speakers-list__company Mozilla
+        %p.speakers-list__talk-title AV1 Update
+        %a.speakers-list__btn{href:"#popup-thomas-daede"} Talk Overview
+
 
 
 
@@ -395,6 +402,15 @@ title: Demuxed, The Conference for Video Engineers
       high bitrate to maintain a consistent perceptual quality for the viewer. These sequences can be replaced
       by lower bitrate segments, saving bandwidth and reducing costs, if the client is aware of the video
       context and not only the bitrate of a segment.
+
+%section.modal#popup-thomas-daede
+  %div.modal__container.popup
+    %a.modal-btn{href: "#thomas-daede"}
+    = image_tag("/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+    %h3.speakers-list__name Thomas Daede
+    %h4.speakers-list__company Mozilla
+    %p
+      AV1 Update
 
 
 
@@ -661,9 +677,9 @@ title: Demuxed, The Conference for Video Engineers
         %h4.schedule-list__time
           5.00pm &ndash; 5.30pm
         %div.schedule-list__speaker-box
-          = image_tag("/images/default-tba.svg", alt: "", class: "schedule-list__img")
+          = image_tag("/images/default-avatar.svg", alt: "", class: "schedule-list__img")
           %h3.schedule-list__speaker
-            AV1 Contributors
+            Thomas Daede
           %p.schedule-list__talk-desc
             AV1 Update
 
