@@ -89,6 +89,7 @@ const Header = styled(( { className }) =>
           <NavLinks>
             <NavLink to="/meetups">Meetups</NavLink>
             <NavLink href="https://www.heavybit.com/library/podcasts/demuxed/">Podcast</NavLink>
+            <NavLink href="https://medium.com/@demuxed">Blog</NavLink>
             <NavLink href="https://2018.demuxed.com" mainText="2018 Conference">
               <Link href="https://2017.demuxed.com">2017</Link>
               <Link href="https://2016.demuxed.com">2016</Link>
