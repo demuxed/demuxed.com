@@ -21,17 +21,17 @@
         "path": "/"
     },
     {
-        "componentChunkName": "component---src-pages-page-2-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-jsx",
-        "jsonName": "page-2.json",
-        "path": "/page-2/"
-    },
-    {
         "componentChunkName": "component---src-pages-404-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-jsx",
         "jsonName": "404-html.json",
         "path": "/404.html"
+    },
+    {
+        "componentChunkName": "component---src-pages-meetups-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "meetups.json",
+        "path": "/meetups/"
     }
 ]

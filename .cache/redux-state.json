@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "cc81219881e33b3a94424642eb5be5b6",
+        "contentDigest": "3ade91066bacb9782883d0d95052689c",
         "owner": "internal-data-bridge"
       }
     },
@@ -384,12 +384,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-03-13T06:12:13.488Z",
+      "buildTime": "2018-03-14T20:26:41.162Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "ee44739e69deec0452fd2b85cf8bfe6d",
+        "contentDigest": "d471ae952def6f7ead18b1cb19e47e6b",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -410,7 +410,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "eab6caae88d922c89c4f967973b23a50",
+        "contentDigest": "22e6ab2f2bc3542321ef4e841d9c3229",
         "owner": "internal-data-bridge"
       }
     },
@@ -430,27 +430,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ad707e0ef15e5b3503407b3f9558253e",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /page-2/": {
-      "layout": "index",
-      "jsonName": "page-2.json",
-      "internalComponentName": "ComponentPage2",
-      "path": "/page-2/",
-      "component": "/Users/mmcc/Projects/demuxed/demuxed.com/src/pages/page-2.js",
-      "componentChunkName": "component---src-pages-page-2-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/Users/mmcc/Projects/demuxed/demuxed.com/src/pages/page-2.js",
-      "id": "SitePage /page-2/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "5ed6ae89009dea80f3bab97e14509038",
+        "contentDigest": "fc68d4b4f8a9cf217761d5a23ab18271",
         "owner": "internal-data-bridge"
       }
     },
@@ -470,7 +450,27 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a3ef3dade1a8725b2768e64355fb206b",
+        "contentDigest": "eaf35c6fea96bd98e57f337c8942978f",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /meetups/": {
+      "layout": "index",
+      "jsonName": "meetups.json",
+      "internalComponentName": "ComponentMeetups",
+      "path": "/meetups/",
+      "component": "/Users/mmcc/Projects/demuxed/demuxed.com/src/pages/meetups.jsx",
+      "componentChunkName": "component---src-pages-meetups-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/mmcc/Projects/demuxed/demuxed.com/src/pages/meetups.jsx",
+      "id": "SitePage /meetups/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f2d28ecadd4d60b481a5689bd3bd5c9a",
         "owner": "internal-data-bridge"
       }
     }

@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import './index.css'
 
 const colors = {
+  white: '#fff',
   peach: '#ffe6ce',
   purple: '#2f1c46',
   red: '#c7485b',
@@ -14,6 +15,8 @@ const colors = {
 
 const theme = {
   primaryBg: colors.peach,
+  secondaryBg: colors.white,
+  accentBg: colors.red,
   primaryText: colors.purple,
   secondaryText: colors.red,
   fonts: {
@@ -43,6 +46,7 @@ const theme = {
 const StyledTemplateWrapper = styled.div`
   height: 100%;
   width: 100%;
+  padding: 0 1em;
   color: ${props => props.primaryText};
   font-family: ${props => props.theme.fonts.default};
   background-color: ${props => props.theme.primaryBg};

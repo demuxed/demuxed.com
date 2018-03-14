@@ -24,6 +24,7 @@ const IndexPage = () => (
       <Col xs={12}>
         <Hero>
           <HeroHeader>October 17th and 18th, 2018</HeroHeader>
+          <p>The best damn technical video conference in the multiverse.<br />Now with <em>2 days</em> of awesome.</p>
           <p>
             <Link href="http://www.bespokesf.co/">Bespoke</Link> | San Francisco, CA
           </p>

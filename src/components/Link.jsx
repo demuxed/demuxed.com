@@ -9,7 +9,12 @@ const InternalLink = styled(({ className, href, to, props, children }) => {
     return <Link className={className} to={to} {...props}>{children}</Link>
   }
 })`
+  color: ${props => props.theme.secondaryText};
+  text-decoration: none;
 
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export default InternalLink;

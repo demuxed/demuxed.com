@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Grid, Col, Row } from 'react-styled-flexboxgrid';
+
 import Link from './Link';
 
 import comcast from '../img/sponsors/comcast.svg';
@@ -19,170 +21,139 @@ import hulu from '../img/sponsors/hulu.svg';
 
 import brightcove from '../img/sponsors/brightcove.svg';
 
+const GroupTitle = styled.h5`
+  font-size: 12px;
+  line-height: 1.4375;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+`;
+
+const GroupSpacer = styled.div`
+  width: 100%;
+  height: 3em;
+`
+
 const Sponsors = styled(({ className }) =>
   <div className={className}>
-    <div className="group platinum">
-      <h5>Platinum</h5>
+    <Grid>
+      <Row center="xs">
+        <GroupTitle>Platinum</GroupTitle>
+      </Row>
 
-      <ul>
-        <li>
+      <Row center="xs">
+        <Col lg={5} md={7} xs={10}>
           <Link href="https://comcast.com">
-            <img className="gold" src={comcast} alt="Comcast" />
+            <img src={comcast} alt="Comcast" />
           </Link>
-        </li>
-      </ul>
-    </div>
+        </Col>
+      </Row>
 
-    <div className="group gold">
-      <h5>Gold</h5>
-      <ul>
-        <li>
+      <GroupSpacer />
+
+      <Row center="xs">
+        <GroupTitle>Gold</GroupTitle>
+      </Row>
+
+      <Row center="xs" middle="xs" around="md">
+        <Col lg={3} md={4} xs={8}>
           <Link href="https://netflix.com">
-            <img className="gold" src={netflix} alt="Netflix" />
+            <img src={netflix} alt="Netflix" />
           </Link>
-        </li>
+        </Col>
 
-        <li>
+        <Col lg={3} md={4} xs={8}>
           <Link href="https://bitmovin.com">
-            <img className="gold" src={bitmovin} alt="Bitmovin" />
+            <img src={bitmovin} alt="Bitmovin" />
           </Link>
-        </li>
+        </Col>
 
-        <li>
+        <Col lg={3} md={4} xs={8}>
           <Link href="https://google.com">
-            <img className="gold" src={google} alt="Google" />
+            <img src={google} alt="Google" />
           </Link>
-        </li>
-      </ul>
-    </div>
+        </Col>
+      </Row>
 
-    <div className="group silver">
-      <h5>Silver</h5>
+      <GroupSpacer />
 
-      <ul>
-        <li>
+      <Row center="xs">
+        <GroupTitle>Silver</GroupTitle>
+      </Row>
+
+      <Row center="xs" middle="md" around="md">
+        <Col lg={2} md={3} xs={7}>
           <Link href="https://wowza.com">
             <img src={wowza} alt="Wowza" />
           </Link>
-        </li>
+        </Col>
 
-        <li>
+        <Col lg={2} md={3} xs={7}>
           <Link href="https://cbsinteractive.com">
             <img src={cbsi} alt="CBS Interactive" />
           </Link>
-        </li>
+        </Col>
 
-        <li>
+        <Col lg={2} md={3} xs={7}>
           <Link href="https://fastly.com">
             <img src={fastly} alt="Fastly" />
           </Link>
-        </li>
+        </Col>
 
-        <li>
+        <Col lg={2} md={3} xs={7}>
           <Link href="https://peer5.com">
             <img src={peer5} alt="Peer5" />
           </Link>
-        </li>
+        </Col>
 
-        <li>
+        <Col lg={2} md={3} xs={7}>
           <Link href="https://jwplayer.com">
             <img src={jwplayer} alt="JW Player" />
           </Link>
-        </li>
-      </ul>
-    </div>
+        </Col>
+      </Row>
 
-    <div className="group bronze">
-      <h5>Bronze</h5>
+      <GroupSpacer />
 
-      <ul>
-        <li>
+      <Row center="xs">
+        <GroupTitle>Bronze</GroupTitle>
+      </Row>
+
+      <Row center="xs" middle="md">
+        <Col lg={2} md={2} xs={5}>
           <Link href="https://unified-streaming.com">
             <img src={unifiedStreaming} alt="Unified Streaming" />
           </Link>
-        </li>
+        </Col>
 
-        <li>
+        <Col lg={2} md={2} xs={5} mdOffset={1}>
           <Link href="https://hulu.com">
             <img src={hulu} alt="Hulu" />
           </Link>
-        </li>
-      </ul>
-    </div>
+        </Col>
+      </Row>
 
-    <div className="group party">
-      <h5>party</h5>
+      <GroupSpacer />
 
-      <ul>
-        <li>
+      <Row center="xs">
+        <GroupTitle>Party</GroupTitle>
+      </Row>
+
+      <Row center="xs">
+        <Col lg={3} md={4} xs={8}>
           <Link href="https://brightcove.com">
             <img src={brightcove} alt="Brightcove" />
           </Link>
-        </li>
-      </ul>
-    </div>
+        </Col>
+      </Row>
+    </Grid>
   </div>
 )`
-
-  h5 {
-    font-size: 12px;
-    line-height: 1.4375;
-    margin-bottom: 2em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+  a {
+    display: block;
   }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    li:last-child {
-      margin-right: 0;
-    }
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  .group {
-    margin-bottom: 30px;
-
-    img { height: auto; }
-  }
-
-  .platinum img { width: 300px; }
-
-  .gold {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
-      width: 220px;
-      max-height: ${220/2}px;
-    }
-  }
-
-  .silver img {
-    width: 190px;
-    max-height: ${190/3}px;
-  }
-
-  .bronze {
-    max-width: 50%;
-    margin 0 auto 30px;
-    img {
-      width: 160px;
-      max-height: ${160/3}px;
-    }
-  }
-
-  .party img {
-    width: 240px;
-    max-height: ${160/3}px;
+  img {
+    width: 100%;
   }
 `;
 

@@ -10,7 +10,7 @@ exports.components = {
   "component---cache-dev-404-page-js": preferDefault(require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/mmcc/Projects/demuxed/demuxed.com/src/pages/404.js")),
   "component---src-pages-index-jsx": preferDefault(require("/Users/mmcc/Projects/demuxed/demuxed.com/src/pages/index.jsx")),
-  "component---src-pages-page-2-js": preferDefault(require("/Users/mmcc/Projects/demuxed/demuxed.com/src/pages/page-2.js"))
+  "component---src-pages-meetups-jsx": preferDefault(require("/Users/mmcc/Projects/demuxed/demuxed.com/src/pages/meetups.jsx"))
 }
 
 exports.json = {
@@ -21,7 +21,7 @@ exports.json = {
   "layout-index.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/layout-index.json"),
   "index.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/index.json"),
   "layout-index.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/layout-index.json"),
-  "page-2.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/page-2.json"),
+  "404-html.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/404-html.json"),
   "layout-index.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/layout-index.json"),
-  "404-html.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/404-html.json")
+  "meetups.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/meetups.json")
 }
