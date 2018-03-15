@@ -24,7 +24,7 @@ const IndexPage = () => (
       <Col xs={12}>
         <Hero>
           <HeroHeader>October 17th and 18th, 2018</HeroHeader>
-          <p>Save the date for best damn technical video conference in the multiverse.<br />Now with <Text underline>2 days</Text> of awesome.</p>
+          <p>Save the date for your favorite video engineering conference in the multiverse.<br />Now with <Text underline>2 days</Text> of awesome.</p>
 
           <p>Call for proposals opening soon.</p>
 
