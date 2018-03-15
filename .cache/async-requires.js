@@ -16,9 +16,9 @@ exports.json = {
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/layout-index.json"),
   "index.json": require("gatsby-module-loader?name=path---index!/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/index.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/layout-index.json"),
-  "404-html.json": require("gatsby-module-loader?name=path---404-html!/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/404-html.json"),
+  "meetups.json": require("gatsby-module-loader?name=path---meetups!/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/meetups.json"),
   "layout-index.json": require("gatsby-module-loader?name=path---!/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/layout-index.json"),
-  "meetups.json": require("gatsby-module-loader?name=path---meetups!/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/meetups.json")
+  "404-html.json": require("gatsby-module-loader?name=path---404-html!/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/404-html.json")
 }
 
 exports.layouts = {

@@ -21,7 +21,7 @@ exports.json = {
   "layout-index.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/layout-index.json"),
   "index.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/index.json"),
   "layout-index.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/layout-index.json"),
-  "404-html.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/404-html.json"),
+  "meetups.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/meetups.json"),
   "layout-index.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/layout-index.json"),
-  "meetups.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/meetups.json")
+  "404-html.json": require("/Users/mmcc/Projects/demuxed/demuxed.com/.cache/json/404-html.json")
 }

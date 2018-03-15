@@ -21,6 +21,8 @@ import hulu from '../img/sponsors/hulu.svg';
 
 import brightcove from '../img/sponsors/brightcove.svg';
 
+import mux from '../img/sponsors/mux.svg';
+
 const GroupTitle = styled.h5`
   font-size: 12px;
   line-height: 1.4375;
@@ -42,8 +44,8 @@ const Sponsors = styled(({ className }) =>
       </Row>
 
       <Row center="xs">
-        <Col lg={5} md={7} xs={10}>
-          <Link href="https://comcast.com">
+        <Col lg={5} md={6} sm={7} xs={10}>
+          <Link href="https://comcast.com" rel="noopener noreferrer" target="_blank">
             <img src={comcast} alt="Comcast" />
           </Link>
         </Col>
@@ -56,20 +58,20 @@ const Sponsors = styled(({ className }) =>
       </Row>
 
       <Row center="xs" middle="xs" around="md">
-        <Col lg={3} md={4} xs={8}>
-          <Link href="https://netflix.com">
+        <Col lg={3} md={4} sm={5} xs={8}>
+          <Link href="https://netflix.com" rel="noopener noreferrer" target="_blank">
             <img src={netflix} alt="Netflix" />
           </Link>
         </Col>
 
-        <Col lg={3} md={4} xs={8}>
-          <Link href="https://bitmovin.com">
+        <Col lg={3} md={4} sm={5} xs={8}>
+          <Link href="https://bitmovin.com" rel="noopener noreferrer" target="_blank">
             <img src={bitmovin} alt="Bitmovin" />
           </Link>
         </Col>
 
-        <Col lg={3} md={4} xs={8}>
-          <Link href="https://google.com">
+        <Col lg={3} md={4} sm={5} xs={8}>
+          <Link href="https://google.com" rel="noopener noreferrer" target="_blank">
             <img src={google} alt="Google" />
           </Link>
         </Col>
@@ -82,32 +84,32 @@ const Sponsors = styled(({ className }) =>
       </Row>
 
       <Row center="xs" middle="md" around="md">
-        <Col lg={2} md={3} xs={7}>
-          <Link href="https://wowza.com">
+        <Col lg={2} md={3} sm={4} xs={7}>
+          <Link href="https://wowza.com" rel="noopener noreferrer" target="_blank">
             <img src={wowza} alt="Wowza" />
           </Link>
         </Col>
 
-        <Col lg={2} md={3} xs={7}>
-          <Link href="https://cbsinteractive.com">
+        <Col lg={2} md={3} sm={4} xs={7}>
+          <Link href="https://cbsinteractive.com" rel="noopener noreferrer" target="_blank">
             <img src={cbsi} alt="CBS Interactive" />
           </Link>
         </Col>
 
-        <Col lg={2} md={3} xs={7}>
-          <Link href="https://fastly.com">
+        <Col lg={2} md={3} sm={4} xs={7}>
+          <Link href="https://fastly.com" rel="noopener noreferrer" target="_blank">
             <img src={fastly} alt="Fastly" />
           </Link>
         </Col>
 
-        <Col lg={2} md={3} xs={7}>
-          <Link href="https://peer5.com">
+        <Col lg={2} md={3} sm={4} xs={7}>
+          <Link href="https://peer5.com" rel="noopener noreferrer" target="_blank">
             <img src={peer5} alt="Peer5" />
           </Link>
         </Col>
 
-        <Col lg={2} md={3} xs={7}>
-          <Link href="https://jwplayer.com">
+        <Col lg={2} md={3} sm={4} xs={7}>
+          <Link href="https://jwplayer.com" rel="noopener noreferrer" target="_blank">
             <img src={jwplayer} alt="JW Player" />
           </Link>
         </Col>
@@ -120,14 +122,14 @@ const Sponsors = styled(({ className }) =>
       </Row>
 
       <Row center="xs" middle="md">
-        <Col lg={2} md={2} xs={5}>
-          <Link href="https://unified-streaming.com">
+        <Col lg={2} md={2} sm={3} xs={5}>
+          <Link href="http://unified-streaming.com" target="_blank">
             <img src={unifiedStreaming} alt="Unified Streaming" />
           </Link>
         </Col>
 
-        <Col lg={2} md={2} xs={5} mdOffset={1}>
-          <Link href="https://hulu.com">
+        <Col lg={2} md={2} sm={3} xs={5}>
+          <Link href="https://hulu.com" rel="noopener noreferrer" target="_blank">
             <img src={hulu} alt="Hulu" />
           </Link>
         </Col>
@@ -140,20 +142,38 @@ const Sponsors = styled(({ className }) =>
       </Row>
 
       <Row center="xs">
-        <Col lg={3} md={4} xs={8}>
-          <Link href="https://brightcove.com">
+        <Col lg={3} md={4} sm={5} xs={7}>
+          <Link href="https://brightcove.com" rel="noopener noreferrer" target="_blank">
             <img src={brightcove} alt="Brightcove" />
           </Link>
         </Col>
       </Row>
+
+      <GroupSpacer />
+
+      <Row center="xs">
+        <GroupTitle>Organized with ❤️ by folks from</GroupTitle>
+      </Row>
+
+      <Row center="xs">
+        <Col lg={2} md={3} sm={4} xs={5}>
+          <Link href="https://mux.com" rel="noopener noreferrer" target="_blank">
+            <img src={mux} alt="Mux" />
+          </Link>
+        </Col>
+      </Row>
+
+      <GroupSpacer />
     </Grid>
   </div>
 )`
   a {
     display: block;
   }
+
   img {
-    width: 100%;
+    padding: 1em 0;
+    width: 75%;
   }
 `;
 

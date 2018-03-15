@@ -24,7 +24,10 @@ const IndexPage = () => (
       <Col xs={12}>
         <Hero>
           <HeroHeader>October 17th and 18th, 2018</HeroHeader>
-          <p>The best damn technical video conference in the multiverse.<br />Now with <em>2 days</em> of awesome.</p>
+          <p>Save the date for best damn technical video conference in the multiverse.<br />Now with <Text underline>2 days</Text> of awesome.</p>
+
+          <p>Call for proposals opening soon.</p>
+
           <p>
             <Link href="http://www.bespokesf.co/">Bespoke</Link> | San Francisco, CA
           </p>
@@ -33,6 +36,9 @@ const IndexPage = () => (
     </Row>
 
     <Row center="xs">
+      <Col xs={12}>
+        <h2>Supported by <Text underline>amazing</Text> companies like...</h2>
+      </Col>
       <Col xs={12}>
         <Sponsors />
       </Col>

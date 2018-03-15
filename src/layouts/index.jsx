@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled, { ThemeProvider } from 'styled-components';
 
-import Header from '../components/Header'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import './index.css'
 
 const colors = {
@@ -44,12 +45,17 @@ const theme = {
 };
 
 const StyledTemplateWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  min-height: 100vh;
   width: 100%;
   padding: 0 1em;
   color: ${props => props.primaryText};
   font-family: ${props => props.theme.fonts.default};
   background-color: ${props => props.theme.primaryBg};
+
+  .content { flex: 1 }
 
   h1, h2, h3, h4 {
     font-weight: 100;
@@ -67,7 +73,11 @@ const TemplateWrapper = ({ children }) => (
       </Helmet>
       <Header />
 
-      {children()}
+      <div className="content">
+        {children()}
+      </div>
+
+      <Footer />
     </StyledTemplateWrapper>
   </ThemeProvider>
 )

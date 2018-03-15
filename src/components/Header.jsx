@@ -159,7 +159,7 @@ class Header extends React.Component {
         <Grid>
           <Row middle="xs">
             <Col>
-              <img className="logo" src={logo} />
+              <Link to="/"><img className="logo" src={logo} /></Link>
             </Col>
 
             <Col lg md xs={false}>
