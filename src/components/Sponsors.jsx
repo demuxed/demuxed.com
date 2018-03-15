@@ -152,7 +152,7 @@ const Sponsors = styled(({ className }) =>
       <GroupSpacer />
 
       <Row center="xs">
-        <GroupTitle>Organized with ❤️ by folks from</GroupTitle>
+        <GroupTitle>Organized with ❤️ by</GroupTitle>
       </Row>
 
       <Row center="xs">
