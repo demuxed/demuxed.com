@@ -37,7 +37,7 @@ const IndexPage = () => (
 
     <Row center="xs">
       <Col xs={12}>
-        <h2>Supported by <Text underline>amazing</Text> companies like...</h2>
+        <h2>The 2017 conference is supported by these <Text underline>amazing</Text> companies:</h2>
       </Col>
       <Col xs={12}>
         <Sponsors />

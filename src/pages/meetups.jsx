@@ -24,6 +24,7 @@ const SecondPage = () => (
           <li><Link href="http://www.meetup.com/Video-Tech-NYC/">New York</Link></li>
           <li><Link href="https://www.meetup.com/SeattleVideoTech/">Seattle</Link></li>
           <li><Link href="https://www.meetup.com/TLV-Video-Technology/">Tel Aviv</Link></li>
+          <li><Link href="http://www.denvervideotechnology.org">Denver</Link></li>
         </MeetupList>
       </Col>
     </Row>
