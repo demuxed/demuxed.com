@@ -149,7 +149,7 @@ const Sponsors = styled(({ className }) =>
       </Row>
 
       <Row center="xs">
-        <Col lg={3} md={4} sm={5} xs={7}>
+        <Col lg={4} md={5} sm={7} xs={8}>
           <Link href="https://brightcove.com" rel="noopener noreferrer" target="_blank">
             <img src={brightcove} alt="Brightcove" />
           </Link>
