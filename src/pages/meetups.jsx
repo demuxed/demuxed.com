@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Col, Row } from 'react-styled-flexboxgrid';
+import { Col, Row } from 'react-styled-flexboxgrid';
 import styled from 'styled-components';
 
 import Link from '../components/Link';
@@ -9,8 +9,8 @@ const MeetupList = styled.ul`
   margin: 0 0 3em 0;
 `;
 
-const SecondPage = () => (
-  <Grid>
+const Meetups = () => (
+  <div>
     <Row>
       <Col xs={12}>
         <h1>Video Tech Meetups Around the World</h1>
@@ -36,7 +36,7 @@ const SecondPage = () => (
         <Link href="http://video-dev.org/">Video Dev Slack</Link>
       </Col>
     </Row>
-  </Grid>
-)
+  </div>
+);
 
-export default SecondPage
+export default Meetups;

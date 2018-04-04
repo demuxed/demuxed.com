@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import styled from 'styled-components';
 
 const InternalLink = styled(({ className, href, to, children, ...props }) => {
   if (href) {
-    return <a className={className} href={href} {...props}>{children}</a>
+    return <OutboundLink className={className} href={href} {...props}>{children}</OutboundLink>
   } else {
     return <Link className={className} to={to} {...props}>{children}</Link>
   }

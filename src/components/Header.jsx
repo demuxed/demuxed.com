@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components';
-import { Grid, Col, Row } from 'react-styled-flexboxgrid';
+import { Col, Row } from 'react-styled-flexboxgrid';
 
 import Button from './Button';
 import Link from './Link';
@@ -156,21 +156,19 @@ class Header extends React.Component {
   render () {
     return (
       <HeaderContainer>
-        <Grid>
-          <Row middle="xs">
-            <Col>
-              <Link to="/"><img className="logo" src={logo} /></Link>
-            </Col>
+        <Row middle="xs">
+          <Col>
+            <Link to="/"><img className="logo" src={logo} /></Link>
+          </Col>
 
-            <Col lg md xs={false}>
-              <NavLinks />
-            </Col>
+          <Col lg md xs={false}>
+            <NavLinks />
+          </Col>
 
-            <Col lg={false} md={false} xs>
-              <Hamburger onClick={this.toggleMenu} />
-            </Col>
-          </Row>
-        </Grid>
+          <Col lg={false} md={false} xs>
+            <Hamburger onClick={this.toggleMenu} />
+          </Col>
+        </Row>
 
         {this.state.menuShowing &&
           <MobileMenu close={this.toggleMenu} />}

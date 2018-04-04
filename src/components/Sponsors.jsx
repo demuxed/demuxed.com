@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Grid, Col, Row } from 'react-styled-flexboxgrid';
+import { Col, Row } from 'react-styled-flexboxgrid';
 
 import Link from './Link';
 
@@ -39,139 +39,137 @@ const GroupSpacer = styled.div`
 
 const Sponsors = styled(({ className }) =>
   <div className={className}>
-    <Grid>
-      <Row center="xs">
-        <GroupTitle>Platinum</GroupTitle>
-      </Row>
+    <Row center="xs">
+      <GroupTitle>Platinum</GroupTitle>
+    </Row>
 
-      <Row center="xs">
-        <Col lg={5} md={6} sm={7} xs={10}>
-          <Link href="https://comcast.com" rel="noopener noreferrer" target="_blank">
-            <img src={comcast} alt="Comcast" />
-          </Link>
-        </Col>
-      </Row>
+    <Row center="xs">
+      <Col lg={5} md={6} sm={7} xs={10}>
+        <Link href="https://comcast.com" rel="noopener noreferrer" target="_blank">
+          <img src={comcast} alt="Comcast" />
+        </Link>
+      </Col>
+    </Row>
 
-      <GroupSpacer />
+    <GroupSpacer />
 
-      <Row center="xs">
-        <GroupTitle>Gold</GroupTitle>
-      </Row>
+    <Row center="xs">
+      <GroupTitle>Gold</GroupTitle>
+    </Row>
 
-      <Row center="xs" middle="xs" around="md">
-        <Col lg={3} md={4} sm={5} xs={8}>
-          <Link href="https://netflix.com" rel="noopener noreferrer" target="_blank">
-            <img src={netflix} alt="Netflix" />
-          </Link>
-        </Col>
+    <Row center="xs" middle="xs" around="md">
+      <Col lg={3} md={4} sm={5} xs={8}>
+        <Link href="https://netflix.com" rel="noopener noreferrer" target="_blank">
+          <img src={netflix} alt="Netflix" />
+        </Link>
+      </Col>
 
-        <Col lg={3} md={4} sm={5} xs={8}>
-          <Link href="https://bitmovin.com" rel="noopener noreferrer" target="_blank">
-            <img src={bitmovin} alt="Bitmovin" />
-          </Link>
-        </Col>
+      <Col lg={3} md={4} sm={5} xs={8}>
+        <Link href="https://bitmovin.com" rel="noopener noreferrer" target="_blank">
+          <img src={bitmovin} alt="Bitmovin" />
+        </Link>
+      </Col>
 
-        <Col lg={3} md={4} sm={5} xs={8}>
-          <Link href="https://google.com" rel="noopener noreferrer" target="_blank">
-            <img src={google} alt="Google" />
-          </Link>
-        </Col>
-      </Row>
+      <Col lg={3} md={4} sm={5} xs={8}>
+        <Link href="https://google.com" rel="noopener noreferrer" target="_blank">
+          <img src={google} alt="Google" />
+        </Link>
+      </Col>
+    </Row>
 
-      <GroupSpacer />
+    <GroupSpacer />
 
-      <Row center="xs">
-        <GroupTitle>Silver</GroupTitle>
-      </Row>
+    <Row center="xs">
+      <GroupTitle>Silver</GroupTitle>
+    </Row>
 
-      <Row center="xs" middle="md" around="md">
-        <Col lg={2} md={3} sm={4} xs={7}>
-          <Link href="https://wowza.com" rel="noopener noreferrer" target="_blank">
-            <img src={wowza} alt="Wowza" />
-          </Link>
-        </Col>
+    <Row center="xs" middle="md" around="md">
+      <Col lg={2} md={3} sm={4} xs={7}>
+        <Link href="https://wowza.com" rel="noopener noreferrer" target="_blank">
+          <img src={wowza} alt="Wowza" />
+        </Link>
+      </Col>
 
-        <Col lg={2} md={3} sm={4} xs={7}>
-          <Link href="https://cbsinteractive.com" rel="noopener noreferrer" target="_blank">
-            <img src={cbsi} alt="CBS Interactive" />
-          </Link>
-        </Col>
+      <Col lg={2} md={3} sm={4} xs={7}>
+        <Link href="https://cbsinteractive.com" rel="noopener noreferrer" target="_blank">
+          <img src={cbsi} alt="CBS Interactive" />
+        </Link>
+      </Col>
 
-        <Col lg={2} md={3} sm={4} xs={7}>
-          <Link href="https://fastly.com" rel="noopener noreferrer" target="_blank">
-            <img src={fastly} alt="Fastly" />
-          </Link>
-        </Col>
+      <Col lg={2} md={3} sm={4} xs={7}>
+        <Link href="https://fastly.com" rel="noopener noreferrer" target="_blank">
+          <img src={fastly} alt="Fastly" />
+        </Link>
+      </Col>
 
-        <Col lg={2} md={3} sm={4} xs={7}>
-          <Link href="https://peer5.com" rel="noopener noreferrer" target="_blank">
-            <img src={peer5} alt="Peer5" />
-          </Link>
-        </Col>
+      <Col lg={2} md={3} sm={4} xs={7}>
+        <Link href="https://peer5.com" rel="noopener noreferrer" target="_blank">
+          <img src={peer5} alt="Peer5" />
+        </Link>
+      </Col>
 
-        <Col lg={2} md={3} sm={4} xs={7}>
-          <Link href="https://jwplayer.com" rel="noopener noreferrer" target="_blank">
-            <img src={jwplayer} alt="JW Player" />
-          </Link>
-        </Col>
-      </Row>
+      <Col lg={2} md={3} sm={4} xs={7}>
+        <Link href="https://jwplayer.com" rel="noopener noreferrer" target="_blank">
+          <img src={jwplayer} alt="JW Player" />
+        </Link>
+      </Col>
+    </Row>
 
-      <GroupSpacer />
+    <GroupSpacer />
 
-      <Row center="xs">
-        <GroupTitle>Bronze</GroupTitle>
-      </Row>
+    <Row center="xs">
+      <GroupTitle>Bronze</GroupTitle>
+    </Row>
 
-      <Row center="xs" middle="md">
-        <Col lg={2} md={2} sm={3} xs={5}>
-          <Link href="http://unified-streaming.com" target="_blank">
-            <img src={unifiedStreaming} alt="Unified Streaming" />
-          </Link>
-        </Col>
+    <Row center="xs" middle="md">
+      <Col lg={2} md={2} sm={3} xs={5}>
+        <Link href="http://unified-streaming.com" target="_blank">
+          <img src={unifiedStreaming} alt="Unified Streaming" />
+        </Link>
+      </Col>
 
-        <Col lg={2} md={2} sm={3} xs={5}>
-          <Link href="https://hulu.com" rel="noopener noreferrer" target="_blank">
-            <img src={hulu} alt="Hulu" />
-          </Link>
-        </Col>
+      <Col lg={2} md={2} sm={3} xs={5}>
+        <Link href="https://hulu.com" rel="noopener noreferrer" target="_blank">
+          <img src={hulu} alt="Hulu" />
+        </Link>
+      </Col>
 
-        <Col lg={2} md={2} sm={3} xs={5}>
-          <Link href="http://m2amedia.tv/" rel="noopener noreferrer" target="_blank">
-            <img src={m2a} alt="M2A Media" />
-          </Link>
-        </Col>
-      </Row>
+      <Col lg={2} md={2} sm={3} xs={5}>
+        <Link href="http://m2amedia.tv/" rel="noopener noreferrer" target="_blank">
+          <img src={m2a} alt="M2A Media" />
+        </Link>
+      </Col>
+    </Row>
 
-      <GroupSpacer />
+    <GroupSpacer />
 
-      <Row center="xs">
-        <GroupTitle>Party</GroupTitle>
-      </Row>
+    <Row center="xs">
+      <GroupTitle>Party</GroupTitle>
+    </Row>
 
-      <Row center="xs">
-        <Col lg={4} md={5} sm={7} xs={8}>
-          <Link href="https://brightcove.com" rel="noopener noreferrer" target="_blank">
-            <img src={brightcove} alt="Brightcove" />
-          </Link>
-        </Col>
-      </Row>
+    <Row center="xs">
+      <Col lg={4} md={5} sm={7} xs={8}>
+        <Link href="https://brightcove.com" rel="noopener noreferrer" target="_blank">
+          <img src={brightcove} alt="Brightcove" />
+        </Link>
+      </Col>
+    </Row>
 
-      <GroupSpacer />
+    <GroupSpacer />
 
-      <Row center="xs">
-        <GroupTitle>Organized with ❤️ by</GroupTitle>
-      </Row>
+    <Row center="xs">
+      <GroupTitle>Organized with ❤️ by</GroupTitle>
+    </Row>
 
-      <Row center="xs">
-        <Col lg={2} md={3} sm={4} xs={5}>
-          <Link href="https://mux.com" rel="noopener noreferrer" target="_blank">
-            <img src={mux} alt="Mux" />
-          </Link>
-        </Col>
-      </Row>
+    <Row center="xs">
+      <Col lg={2} md={3} sm={4} xs={5}>
+        <Link href="https://mux.com" rel="noopener noreferrer" target="_blank">
+          <img src={mux} alt="Mux" />
+        </Link>
+      </Col>
+    </Row>
 
-      <GroupSpacer />
-    </Grid>
+    <GroupSpacer />
   </div>
 )`
   a {
