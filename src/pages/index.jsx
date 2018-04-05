@@ -38,7 +38,7 @@ const IndexPage = () => (
 
               <Col xs={12} sm={4} md={4} lg={3}>
                 <Link href="http://tickets.demuxed.com">
-                  <Button large block>Buy Tickets</Button>
+                  <Button large block>Tickets</Button>
                 </Link>
               </Col>
             </Row>
