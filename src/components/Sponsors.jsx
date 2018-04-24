@@ -19,6 +19,7 @@ import jwplayer from '../img/sponsors/jwplayer.svg';
 import unifiedStreaming from '../img/sponsors/unifiedStreaming.svg';
 import hulu from '../img/sponsors/hulu.svg';
 import m2a from '../img/sponsors/m2a.svg';
+import philo from '../img/sponsors/philo.svg';
 
 import brightcove from '../img/sponsors/brightcove.svg';
 
@@ -137,6 +138,12 @@ const Sponsors = styled(({ className }) =>
       <Col lg={2} md={2} sm={3} xs={5}>
         <Link href="http://m2amedia.tv/" rel="noopener noreferrer" target="_blank">
           <img src={m2a} alt="M2A Media" />
+        </Link>
+      </Col>
+
+      <Col lg={2} md={2} sm={3} xs={5}>
+        <Link href="https://philo.com" rel="noopener noreferrer" target="_blank">
+          <img src={philo} alt="Philo" />
         </Link>
       </Col>
     </Row>
