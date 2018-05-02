@@ -20,6 +20,7 @@ import unifiedStreaming from '../img/sponsors/unifiedStreaming.svg';
 import hulu from '../img/sponsors/hulu.svg';
 import m2a from '../img/sponsors/m2a.svg';
 import philo from '../img/sponsors/philo.svg';
+import vimeo from '../img/sponsors/vimeo.svg';
 
 import brightcove from '../img/sponsors/brightcove.svg';
 
@@ -144,6 +145,12 @@ const Sponsors = styled(({ className }) =>
       <Col lg={2} md={2} sm={3} xs={5}>
         <Link href="https://philo.com" rel="noopener noreferrer" target="_blank">
           <img src={philo} alt="Philo" />
+        </Link>
+      </Col>
+
+      <Col lg={2} md={2} sm={3} xs={5}>
+        <Link href="https://vimeo.com" rel="noopener noreferrer" target="_blank">
+          <img src={vimeo} alt="Vimeo" />
         </Link>
       </Col>
     </Row>
