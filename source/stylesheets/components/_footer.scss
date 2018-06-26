@@ -1,0 +1,153 @@
+.page-foot {
+  background-color: $brand-purple;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  
+  
+  .container {
+    @include mq($large) {
+      padding: 10em 2em;
+    }  
+    
+    @include mq($xl-large) {
+      padding: 14em 2em;
+    }
+  }
+  
+  .footer-illustration {
+    display: none;
+    z-index: 0;
+    
+    @include mq($large) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: -15%;
+      width: 50%;
+    }
+    
+    @include mq($xl-large) {
+      right: -19em;
+      width: 55em; 
+    }
+    
+    @include mq($wide) {
+      right: -25em; 
+    }
+  }
+  
+  .footer-illustration2 {
+    display: none;
+    z-index: 0;
+    
+    @include mq($large) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: -35%;
+      max-width: 38em;
+    }
+    
+    @include mq($x-large) {
+      left: -24%;
+    }
+    
+    @include mq($xl-large) {
+     left: -25em; 
+     max-width: 70em;
+    }
+  }
+  
+  .logo-container {
+    text-align: center;
+    width: 100%;
+    display: block;
+    @extend %clearfix;
+    margin-bottom: 2em;
+    
+    .logo {
+      float: none;
+      @extend %logo-white;
+      display: inline-block;
+      width: 147px;
+      height: 25px;
+    }
+
+  }
+  
+  .page-foot__nav {
+    margin-bottom: 2em;
+    z-index: 1;
+    position: relative;
+        
+    @include mq($medium) {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 3% 3em 3%;
+    }
+    
+    li {
+      text-transform: uppercase;
+      list-style-type: none;
+      @include font-size(16px);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4em;
+      
+      h4 {
+        @include font-size(13px);
+      }
+      
+      a {
+        font-weight: 300;
+        @include font-size(12px);
+        text-transform: none;
+        color: #fff;
+        color: lighten($brand-purple, 66%);
+        
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  .page-foot__social {
+    @include social-icons;
+    z-index: 1;
+    
+    li:first-child {
+      display: block;
+    }
+    
+    li {
+      display: inline-block;
+    }
+  }
+  
+  .nerds {
+    color: #fff;
+    @include font-size(11px);
+  }
+  
+  .signup-btn {
+    @include mq($med-large) {
+      @include btn;
+      opacity: 1;
+      color: $brand-purple!important;
+      padding: 0.2em 1em;
+      border-color: #fff;
+      text-transform: uppercase!important;
+      display: block;
+      margin-top: 1em;
+      font-weight: 600;
+      @include transition-all;
+            
+      &:hover {
+        color: #fff!important;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,44 @@
+%footer.page-foot.main-content
+  %div.container
+    %div.logo-container
+      %a.logo{href: "#"}
+    %ul.page-foot__nav
+      %li
+        %h4 Contact
+      %li
+        = mail_to("info@demuxed.com", "info@demuxed.com")
+
+      %li
+        %a.signup-btn{href:"http://tickets.demuxed.com/"} Register now
+
+
+    %ul.page-foot__nav
+      %li
+        %h4 Legal/Policy Stuff
+      %li
+        = link_to("Code of Conduct", "/code-of-conduct.html")
+      -# %li
+      -#   = link_to("Privacy", "/")
+
+    %ul.page-foot__nav.page-foot__social
+      %li
+        %h4 Follow us
+      %li.twitter
+        = link_to("", "https://twitter.com/demuxed", class: "twitter", target: "_blank")
+
+      %li.youtube
+        = link_to("", "https://www.youtube.com/channel/UCIc_DkRxo9UgUSTvWVNCmpA", class: "youtube", target: "_blank")
+
+      %li.facebook
+        = link_to("", "https://www.facebook.com/demuxed/", class: "facebook", target: "_blank")
+      / %li.instagram
+      /   = link_to("", "https://www.instagram.com", class: "instagram", target: "_blank")
+
+    %p.nerds
+      Organized with
+      %span
+        = image_tag("/images/heart.svg", alt: "", class: "")
+      by video nerds in SF
+    = image_tag("/images/footer-illustration.svg", alt: "Demuxed van illustration", class: "footer-illustration")
+    = image_tag("/images/footer-illustration2.svg", alt: "Demuxed robot illustration", class: "footer-illustration2")
+
