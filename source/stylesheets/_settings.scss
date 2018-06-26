@@ -1,0 +1,45 @@
+/* Settings */
+$base-font-size: 15px!default;
+$base-line-height: 23px!default;
+
+$default-sans: sans-serif!default;
+$default-serif: "ocr-a-std",monospace;
+$button-font: "ocr-a-std",monospace;
+$headline-font:"bungee",sans-serif;
+
+//Colours
+$font-color: #2f1c46!default;
+$link-color: #fc7bfb!default;
+$selection-color: #b4d5ff!default;
+$error: #e45858!default;
+$alert: #f36e5b!default;
+
+$brand-pink: #fc7bfb!default;
+$brand-purple: #2e1c46!default;
+$brand-purple-light: #5f2e8e!default;
+$brand-grey: #827790!default;
+
+
+
+//Type spacing
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+$max-width: 87.5em; // 1400px
+//$max-width: 75em;  // 1200px
+
+// Pixel settings (auto convereted to em's)
+$tiny: 320;
+$tiny-small: 360;
+$small: 600;
+$medium: 760;
+$med-large: 960;
+$large: 1100;
+$x-large: 1170;
+$xl-large: 1400;
+$wide: 1600;
+$super-wide: 1800;
+
+//animation
+$transition-speed: all 0.2s ease-out;

@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:charset => "utf-8"}
+    %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}
+    %meta{name: "description", content: "Demuxed, the conference for video engineers."}
+    %meta{name: "HandheldFriendly", content: "True"}
+    %meta{name: "MobileOptimized", content: "320"}
+    %meta{name: "viewport", content: "width=device-width,initial-scale=1"}
+
+    / Use title if it's in the page YAML frontmatter
+    %title= current_page.data.title || "Middleman"
+
+    = favicon_tag("/favicon.ico", rel: "shortcut icon")
+
+    %link{rel: "stylesheet", href: "https://use.typekit.net/xts4zxl.css"}
+
+
+    = stylesheet_link_tag :site
+    = javascript_include_tag :all
+
+  %body{:class => page_classes}
+    %div.wrapper
+      = partial 'partials/header'
+
+      %div.main-content
+        = yield
+
+      = partial 'partials/footer'
+
+
+  = javascript_include_tag("mobilemenu")
+

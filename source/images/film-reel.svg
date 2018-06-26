@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Isolation_Mode" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px" height="935.3px"
+	 viewBox="0 0 500 935.3" style="enable-background:new 0 0 500 935.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#5F2F8E;}
+	.st1{fill:#FD7CFC;}
+	.st2{fill:none;stroke:#37E79B;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#362B5C;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0,16.1204;}
+	.st4{fill:#362B5C;}
+	.st5{fill:#2F1C46;}
+	.st6{fill:none;stroke:#FD7CFC;stroke-width:6;stroke-miterlimit:10;stroke-dasharray:10;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="935.3" width="500" x="4546.1" y="-1087"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<circle class="st0" cx="250" cy="250" r="250"/>
+<circle class="st1" cx="250" cy="249.8" r="135.6"/>
+<path class="st2" d="M146.1,249.8"/>
+<g>
+	<circle class="st3" cx="250" cy="249.8" r="125.7"/>
+</g>
+<g>
+	<circle class="st4" cx="250" cy="250" r="6.1"/>
+	<path class="st5" d="M236.7,257.7c-3.7-6.4-2.4-14.3,2.7-19.2l-12.1-20.9c-16.4,11.7-21.5,34.2-11.3,52
+		c10.3,17.8,32.3,24.6,50.7,16.3L254.6,265C247.8,266.9,240.4,264.1,236.7,257.7z"/>
+	<path class="st5" d="M284.6,230c-10.3-17.8-32.3-24.6-50.7-16.3l12.1,20.9c6.8-1.9,14.3,0.9,18,7.3c3.7,6.4,2.4,14.3-2.7,19.2
+		l12.1,20.9C289.8,270.3,294.9,247.9,284.6,230z"/>
+</g>
+<path class="st6" d="M256.2,385.4h32.8c21.3,0,38.6,17.3,38.6,38.6v194.2c0,21.3,17.3,38.6,38.6,38.6h0c21.3,0,38.6,17.3,38.6,38.6
+	v89.5c0,21.3-17.3,38.6-38.6,38.6h-55.9c-21.3,0-38.6,17.3-38.6,38.6v31.5c0,21.3-17.3,38.6-38.6,38.6H10"/>
+<path class="st5" d="M144.3,69C43.2,127.4,8.6,256.6,67,357.7c58.4,101.1,187.6,135.7,288.7,77.4s135.7-187.6,77.4-288.7
+	C374.7,45.3,245.4,10.6,144.3,69z M171.5,364.4c-27.8,16-63.3,6.5-79.3-21.2c-16-27.8-6.5-63.3,21.2-79.3
+	c27.8-16,63.3-6.5,79.3,21.2C208.8,312.9,199.3,348.4,171.5,364.4z M341.1,409.8c-27.8,16-63.3,6.5-79.3-21.2
+	c-16-27.8-6.5-63.3,21.2-79.3c27.8-16,63.3-6.5,79.3,21.2S368.9,393.8,341.1,409.8z M279,302.3c-27.8,16-63.3,6.5-79.3-21.2
+	c-16-27.8-6.5-63.3,21.2-79.3c27.8-16,63.3-6.5,79.3,21.2C316.3,250.8,306.8,286.3,279,302.3z M217,194.8
+	c-27.8,16-63.3,6.5-79.3-21.2s-6.5-63.3,21.2-79.3c27.8-16,63.3-6.5,79.3,21.2S244.7,178.8,217,194.8z M386.5,240.2
+	c-27.8,16-63.3,6.5-79.3-21.2c-16-27.8-6.5-63.3,21.2-79.3c27.8-16,63.3-6.5,79.3,21.2C423.8,188.7,414.3,224.2,386.5,240.2z"/>
+</svg>

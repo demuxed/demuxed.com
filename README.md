@@ -1,13 +1,11 @@
-# gatsby-starter-default
-The default Gatsby starter
+Base Project
+============
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+The project uses [Middleman](https://middlemanapp.com/).
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+To initialise your workspace do:
 
-## Deploy
+0. You will need the latest Middleman release: `gem install middleman --pre`
+1. `bundle exec middleman build`
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+To run the project for development use `bundle exec middleman`.

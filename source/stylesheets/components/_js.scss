@@ -1,0 +1,13 @@
+/* JS specific logic */
+
+#js-menu-btn[data-state="open"]{
+  @extend %device-menu-btn-closed;
+}
+
+#js-main-nav[data-state="closed"]{
+  display:none;
+  
+  @include mq($med-large) {
+    display: inline-block;
+  }
+}

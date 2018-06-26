@@ -1,0 +1,7 @@
+.index {
+  .logo {
+    @include mq($x-large) {
+      display: none;
+    }
+  }
+}
