@@ -4,9 +4,13 @@
       %a.logo{href: "#"}
     %ul.page-foot__nav
       %li
-        %h4 Contact
+        %h4 Contact + More
       %li
-        = mail_to("info@demuxed.com", "info@demuxed.com")
+        = mail_to("info@demuxed.com", "Email us")
+      %li
+        = link_to("Podcast", "https://www.heavybit.com/library/podcasts/demuxed/")
+      %li
+        = link_to("Meetups", "/meetups")
 
       %li
         %a.signup-btn{href:"http://tickets.demuxed.com/"} Register now
