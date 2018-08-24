@@ -1,50 +1,62 @@
 {
   "decentralized-fabric": {
     "title": "A Decentralized Fabric for Video over the Internet",
+    "description": "This talk will introduce a new high performance software fabric for managing and distributing video over the existing Internet based on a low latency and Internet-scale storage solution with no shared state, just-in time composition (rendering, personalization, etc.) through dynamic bitcode, blockchain controlled access and versioning, and efficient, high bandwidth content routing. We will show several examples using the fabric to stream video just-in-time to consumer audiences from single master version media and metadata, and various novel monetization solutions through blockchain smart contracts enabled by the fabric.",
     "speakers": ["Michelle Munson"]
   },
   "vvc": {
     "title": "VVC - the Next-Next Gen Codec",
+    "description": "This talk will give a first glimpse of the upcoming video coding standard Versatile Video Coding (VVC), scheduled to be released in a first version by the end of 2020. Based on technologies from HEVC, VVC has new coding tools and features in the proposal, which significantly increase the coding performance and ensure continuous innovation of video codecs technologies, while not to directly inheriting the licensing problems of HEVC. We will go into detail on some of these tools, show the performance improvements compared to HEVC and explore the challenges we expect to encounter as we plan for the next codec evolution.",
     "speakers": ["Christian Feldmann"]
   },
   "multi-cdn-jumpstart": {
     "title": "Multi-CDN Jumpstart",
+    "description": "Have you been dating just one CDN for what feels like forever? While monogamy is good for personal relationships it can open a lot of risk when it comes to streaming media delivery. As CDN delivery continues to become more commoditized working through the solution to have an intelligent Multi CDN solution in place is very wise for wide spread critical delivery at scale. This session will dive into the options, providers, and solutions regarding how and what to consider. Then we will present what are some of the gotchas around security and implementation that need to be accounted for in the client and infrastructure as well as how to take it to the next level with advanced concepts.",
     "speakers": ["David Hassoun"]
   },
   "time-machine": {
     "title": "\"Time Machine\" - how to reconstruct perceptually, during playback, part of the detail lost in encoding",
+    "description": "Lossy encoding is somewhat destructive by definition. Even when encoding with modern optimizations, part of details, grain and spatial contrast are lost making the video flat and less vivid. With special processing and a bit of machine learning it's possible to perceptually reconstruct loss details directly in real time during playback bringing perceptual quality back in time (almost) to the level it had before encoding.",
     "speakers": ["Fabio Sonnati"]
   },
   "cea-608": {
     "title": "Parsing CEA-608 Captions from FMP4s",
+    "description": "This talk will briefly cover the history of CEA-608 captions, conceptually how to parse them from MPEG-TS segments and how to do the same with FMP4s.",
     "speakers": ["Lahiru Dayananda"]
   },
   "media-innovation": {
     "title": "Media innovation in minutes",
+    "description": "Video engineers at Netflix want to be immersed in applying algorithms and analyzing the media, and it is ideal if video engineers can do this without worrying about the underlying compute platform. Archer is an easy to use MapReduce style platform for media processing that uses containers so that users can bring their OS-level dependencies. Archer can apply hundreds of thousands of CPUs to make media innovation happen in minutes, join us to see how we do it at Netflix using Archer. In this talk, we will share the key differentiators that shaped Archer.",
     "speakers": ["Naveen Mareddy"]
   },
   "chunky-monkey": {
     "title": "CHUNKY MONKEY - using chunked-encoded chunked-transferred CMAF to bring low latency live to very large scale audiences",
+    "description": "In the jungle of solutions for low latency live, there are many current options, ranging from WebRTC, to proprietary UDP protocols to standard segmented media with ever-shortening segments. This session highlights one of these - chunked-encoded chunked-transferred CMAF - as a optimal and practical confluence of both reach and performance. On the technical side we'll investigate the underlying technology, the latency regimes possible, compatibility with legacy players, cachability on delivery networks and player behavior requirements. There will be a live demonstrations of several streams on a production network. This talks brings a standards perspective from DVB and DASH as well as CDN support. As a sweetener, we'll point you at open source code on both the encoder and player side for doing this all yourself. For free. From your tree.",
     "speakers": ["Will Law"]
   },
   "video-toolbox": {
     "title": "An FFmpeg maintainer's deep dive: iOS VideoToolbox and Android MediaCodec integration",
+    "description": "A look at how FFmpeg wraps and exposes the hardware encoding and decoding APIs available on modern phones and tablets running iOS or Android",
     "speakers": ["Aman Gupta"]
   },
   "after-per-title": {
     "title": "What to do after per-title encoding",
+    "description": "Per-title encoding is powerful, but it's just a start. Once you know the right adaptive curve for a video, what do you do next?\n\nIn this talk, we will discuss how data and machine learning can make video encoding better. After a quick summary of why per-title encoding matters, we will describe how our approach to instant and free per-title encoding. We will demonstrate that this approach is highly scalable, and how to transition from per-title to per-shot encoding.\n\nWe will then demonstrate how encoding an optimal bitrate ladder is only half the battle. A per-shot encoded bitrate ladder can ensure the highest quality rendition is being delivered, but it doesn’t ensure the right rendition is being delivered to the right person.\n\nIn order to solve that problem, we will demonstrate how AI can intelligently choose renditions to maximize QoE metrics, and how that data creates a positive feedback loop. Instead of just monitoring your QoE, you can use AI to actively improve it over time.\n\nWe can conclude by discussing the video delivery paradigm. You start with per-shot encoding using AV1 and optimized VMAF; then you can use AI to maximize experience while optimizing costs; lastly you deliver the video using ABR and super resolution upscaling (maybe).",
     "speakers": ["Ben Dodson", "Nick Chadwick"]
   },
   "native-gap": {
     "title": "Narrowing the Native Gap",
+    "description": "An Updated analysis of HTML5 vs Native playback on mobile devices. This lighting talk will give an updated performance and gap analysis of HTML5 vs Native video playback on iOS and Android. We will show the data around startup time, memory usage, cpu usage, and recently added features. Although the gap is narrowing, we will demonstrate why Native is still leading the race.",
     "speakers": ["James Yeh"]
   },
   "evolution": {
     "title": "Video, evolution, and gravity: how science affects digital video",
+    "description": "In the 2015 Demuxed keynote (\"What idiot designed this?\"), Matt Szatmary talked about the strange history behind things like frame rates, interlacing, and 188 byte packets. Much of digital video is arbitrary, unnecessary, and weird.\n\nThis talk will explore the opposite question. What about video is derived from human biology and fundamental physics? A lot, it turns out. In this talk, we'll explore how aspect ratios, color depth, pixel density, sample rates, and more are all directly affected by human physiology. Understanding these things can help us all deliver better video experiences, while avoiding abominations like vertical video.",
     "speakers": ["Jon Dahl"]
   },
   "root-causes": {
     "title": "Identifying Root Cause via Playback Metrics",
+    "description": "As more video distribution and consumption mechanisms are created across the video landscape, detailed playback metrics are quickly becoming a video engineers goto tool for validation of platform quality and health. But when quality of experience is key, how can these metrics be used in a way to create actionable solutions to issues? In this presentation Matt Fisher, lead video playback engineer at Vimeo, will discuss some real world use cases where utilizing detailed playback metrics led to quickly identifying and solving complex video playback issues.",
     "speakers": ["Matt Fisher"]
   },
   "hlsjs": {
@@ -54,10 +66,12 @@
   },
   "drm": {
     "title": "DRM is not a black box",
+    "description": "Content protection is now a commodity and ever-increasing standardization is reducing integration effort. A look on how modern DRM works, the standards involved, where complexity still remains and what to expect from the future.",
     "speakers": ["Sander Saares"]
   },
   "world-cup": {
     "title": "Lessons learned from streaming the World Cup live in UHD with HDR",
+    "description": "As part of our FIFA World Cup coverage this year, we've been able to deliver matches live in UHD with HDR10. We had a few short weeks to negotiate source acquisition, choose an encoder, configure our players, and determine the correct experience for our users. This project moved quickly and we were ultimately able to launch our UHD HDR experience on Chromecast, Amazon Fire TV and Android TV just before the semi-final matches started, with Apple TV and Roku support coming days later. This process provided an excellent learning opportunity, introducing us to the new challenges of supporting HEVC, HDR10 and much higher bitrate streams. We're happy to share our story, touching on cloud acquisition, cloud encoding, packaging (determining our bitrate/frame rate/resolution ladders), learnings around device support for HDR content, and the performance of our different players (Shaka, AVF, Exo & Roku).",
     "speakers": ["Billy Romero", "Thomas Symborski"]
   },
   "synchronize-watches": {
@@ -94,5 +108,15 @@
     "title": "Machine Learning for ABR in production",
     "description": "Our progress on jntegrating machine learning with adaptive streaming at YouTube - what worked, what didn't, what results we have seen.",
     "speakers": ["Steven Robertson"]
+  },
+  "weaver": {
+    "title": "Weaver: Inserting Ads in a Live Stream",
+    "description": "The internet hates ads... so we developed a live video system that attempts to circumvent ad blocking. Advertisements are requested, inserted, and tracked on the server for each user, all while operating at Twitch’s massive scale. Our solution works by dynamically “weaving” the live and advertisement playlists together into a seamless result. Advertisement segments are indistinguishable from live segments in order to prevent blocking, while still containing the necessary information to download video and record ad impressions.",
+    "speakers": ["Luke Curley"]
+  },
+  "data-driven": {
+    "title": "How to be data-driven when you aren’t Netflix (or even if you are)",
+    "description": "This presentation examines how we built and scaled an analytics pipeline and metadata exchange to millions of concurrent users with only a handful of engineers. From building a clean dataset and choosing metrics to the impact of these choices on AB tests results, we’ll discuss what went wrong (of course), what went right (even better), and the tools we used. We’ll talk about statistical significance, metric variance and how using rudimentary statistical methods can improve confidence in production tests. Finally, we describe basic data visualization techniques that capture the complexity of each experiment’s results, especially useful when running dozens of experiments at the same time. And of course, a few fun facts from our findings on millions of streams and devices around the world.",
+    "speakers": ["Charles Sonigo"]
   }
 }
