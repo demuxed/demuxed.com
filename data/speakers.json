@@ -1,0 +1,60 @@
+[
+  {
+    "name": "James Yeh",
+    "company": "Bitmovin",
+    "talk": "native-gap"
+  },
+  {
+    "name": "Nick Chadwick",
+    "company": "Mux",
+    "headshot": true,
+    "talk": "after-per-title"
+  },
+  {
+    "name": "Ben Dodson",
+    "company": "Mux",
+    "talk": "after-per-title"
+  },
+  {
+    "name": "Aman Gupta",
+    "company": "Fancy Bits LLC",
+    "headshot": true,
+    "talk": "video-toolbox"
+  },
+  {
+    "name": "Will Law",
+    "company": "Akamai",
+    "talk": "chunky-monkey"
+  },
+  {
+    "name": "Naveen Mareddy",
+    "company": "Netflix",
+    "talk": "media-innovation"
+  },
+  {
+    "name": "Lahiru Dayananda",
+    "company": "Brightcove",
+    "talk": "cea-608"
+  },
+  {
+    "name": "Fabio Sonnati",
+    "company": "Progetto Sinergia",
+    "talk": "time-machine"
+  },
+  {
+    "name": "David Hassoun",
+    "company": "RealEyes",
+    "talk": "multi-cdn-jumpstart"
+  },
+  {
+    "name": "Christian Feldmann",
+    "company": "Bitmovin",
+    "headshot": true,
+    "talk": "vvc"
+  },
+  {
+    "name": "Michelle Munson",
+    "company": "Eluvio",
+    "talk": "decentralized-fabric"
+   }
+]

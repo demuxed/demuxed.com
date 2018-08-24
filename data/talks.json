@@ -1,0 +1,42 @@
+{
+  "decentralized-fabric": {
+    "title": "A Decentralized Fabric for Video over the Internet",
+    "speakers": ["Michelle Munson"]
+  },
+  "vvc": {
+    "title": "VVC - the Next-Next Gen Codec",
+    "speakers": ["Christian Feldmann"]
+  },
+  "multi-cdn-jumpstart": {
+    "title": "Multi-CDN Jumpstart",
+    "speakers": ["David Hassoun"]
+  },
+  "time-machine": {
+    "title": "\"Time Machine\" - how to reconstruct perceptually, during playback, part of the detail lost in encoding",
+    "speakers": ["Fabio Sonnati"]
+  },
+  "cea-608": {
+    "title": "Parsing CEA-608 Captions from FMP4s",
+    "speakers": ["Lahiru Dayananda"]
+  },
+  "media-innovation": {
+    "title": "Media innovation in minutes",
+    "speakers": ["Naveen Mareddy"]
+  },
+  "chunky-monkey": {
+    "title": "CHUNKY MONKEY - using chunked-encoded chunked-transferred CMAF to bring low latency live to very large scale audiences",
+    "speakers": ["Will Law"]
+  },
+  "video-toolbox": {
+    "title": "An FFmpeg maintainer's deep dive: iOS VideoToolbox and Android MediaCodec integration",
+    "speakers": ["Aman Gupta"]
+  },
+  "after-per-title": {
+    "title": "What to do after per-title encoding",
+    "speakers": ["Ben Dodson", "Nick Chadwick"]
+  },
+  "native-gap": {
+    "title": "Narrowing the Native Gap",
+    "speakers": ["James Yeh"]
+  }
+}

@@ -7,21 +7,21 @@ html{
   color: $font-color;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;    
+  -webkit-text-size-adjust: none;
 }
 
 html,body{
-  height: 100%;  
+  height: 100%;
 }
 
 body {
-  
+
 }
 
 .wrapper{
   margin: 0 auto;
   position: relative;
-  @include animate-in; 
+  @include animate-in;
 }
 
 canvas{
@@ -33,14 +33,14 @@ a{
   text-decoration: none;
 
   &:hover{
-  
+
   }
 }
 
 //base styles for main content
 
 h1, h2, h3, h4, h5 {
-  font-weight: 100;  
+  font-weight: 100;
 }
 
 .container {
@@ -55,26 +55,26 @@ h1, h2, h3, h4, h5 {
     @include font-size(16px);
     line-height: 1.6em;
   }
-  
+
   p {
     @include font-size(13px);
     line-height: 1.8em;
     color: $brand-grey;
-    
-    a {      
+
+    a {
       &:hover {
         text-decoration: underline;
       }
     }
   }
-    
+
   .container {
     padding: 3em 2em;
-    
+
     @include mq($medium) {
       padding: 4em 2em;
     }
-    
+
     @include mq($large) {
       padding: 6em 2em;
     }
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5 {
   height: 100px;
   display: none;
   z-index: 0;
-  
+
   @include mq($medium) {
     display: block;
   }
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5 {
   height: 20px;
   display: none;
   z-index: 0;
-  
+
   @include mq($medium) {
     display: block;
   }
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5 {
   height: 40px;
   display: none;
   z-index: 0;
-  
+
   @include mq($medium) {
     display: block;
   }
@@ -124,18 +124,18 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1em;
   text-align: center;
   font-weight: 300;
-  
-  
+
+
   @include mq($medium) {
     @include font-size(68px);
     line-height: 1.4em;
   }
-  
+
   @include mq($large) {
     @include font-size(90px);
     line-height: 1.4em;
   }
-  
+
   span {
     text-transform: uppercase;
     display: block;
@@ -143,11 +143,11 @@ h1, h2, h3, h4, h5 {
     @include font-size(14px);
     margin-bottom: 1.6em;
     color: $brand-pink;
-    
+
     @include mq($large) {
       @include font-size(20px);
     }
-    
+
     &:after {
       height: 2px;
       width: 50px;
@@ -167,19 +167,19 @@ h1, h2, h3, h4, h5 {
   color: $brand-purple;
   text-align: center;
   text-transform: uppercase;
-  
+
   @include mq($med-large) {
     margin: 0 auto 2em auto;
     max-width: 75%;
   }
-  
+
   @include mq($large) {
     @include font-size(20px);
     line-height: 1.6em;
     max-width: 65%;
     //margin-bottom: 3em;
   }
-  
+
   span {
     display: block;
     font-family: $default-serif;
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5 {
     margin-top: 0.6em;
     color: $brand-pink;
     text-transform: uppercase;
-    
+
     @include mq($large) {
       @include font-size(18px);
     }
@@ -201,22 +201,22 @@ h1, h2, h3, h4, h5 {
   overflow: hidden;
 //  z-index: 0;
 //  position: relative;
-  
+
   .container {
     @extend %clearfix;
     //position: relative;
     padding-top: 1em;
     max-width: 87.5em;
-    
-    
+
+
     @include mq($medium) {
       padding: 4em 2em;
     }
-    
+
     @include mq($large) {
       padding: 2em 2em;
     }
-    
+
     @include mq($x-large) {
       padding: 0em 2em 6em 2em;
     }
@@ -230,16 +230,16 @@ h1, h2, h3, h4, h5 {
       width: 30em;
       @include vertical-center;
     }
-    
+
     .logo {
       display: none;
-      
+
       @include mq($x-large) {
         display: block;
         float: none;
         margin-bottom: 3em;
         position: relative;
-        
+
         &:before {
           content: "";
           width: 50px;
@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5 {
     }
   }
 
-  
+
   .home-hero__heading {
     font-family:$headline-font;
     @include font-size(30px);
@@ -274,38 +274,38 @@ h1, h2, h3, h4, h5 {
       line-height: 1em;
       margin-bottom: 0.3em;
     }
-    
+
     @include mq($x-large) {
       @include font-size(38px);
       line-height: 1.2em;
       margin-bottom: 0.3em;
     }
   }
-  
+
   .home-hero__sub-heading {
     font-family: $default-serif;
     @include font-size(16px);
     line-height: 1.4em;
     margin-bottom: 1em;
     //text-align: center;
-    
+
     @include mq($small) {
       @include font-size(16px);
       margin-bottom: 1.2em;
     }
-    
+
     @include mq($med-large) {
       margin-bottom: 2em;
     }
-    
+
     @include mq($large) {
       margin-bottom: 3em;
     }
-    
+
     @include mq($x-large) {
       line-height: 1.8em;
     }
-    
+
     .break {
       display: none;
       @include mq($x-large) {
@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5 {
       }
     }
   }
-  
+
   .home-hero__btn {
     z-index: 10;
     position: relative;
@@ -323,18 +323,18 @@ h1, h2, h3, h4, h5 {
     padding: 0.7em;
     margin-bottom: 1.5em;
     @include transition-all;
-    
+
     @include mq($small) {
       padding: 1em 0.7em;
       max-width: 14em;
       //margin-bottom: 2em;
     }
-    
+
     @include mq($medium) {
       //margin-bottom: 4em;
     }
   }
-  
+
   .home-hero__btn-submit {
     z-index: 10;
     position: relative;
@@ -346,15 +346,15 @@ h1, h2, h3, h4, h5 {
     @include transition-all;
     border-bottom: solid $brand-pink 2px;
     padding-bottom: 0.2em;
-    
+
     &:hover {
       opacity: 0.5;
     }
-    
+
     @include mq($small) {
 
     }
-    
+
     @include mq($medium) {
     }
   }
@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5 {
  .hero-illustration-mobile {
   display: none;
  }
- 
+
  .hero-shapes {
    display: none;
   @include mq($x-large) {
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5 {
     left:0;
   }
  }
- 
+
  .hero-shapes2 {
    display: none;
   @include mq($x-large) {
@@ -381,12 +381,12 @@ h1, h2, h3, h4, h5 {
     top: 0;
     left: 5%;
   }
-  
+
   @include mq($xl-large) {
     left: 14%;
   }
  }
- 
+
  .hero-shapes3 {
    z-index: 0;
    display: none;
@@ -396,37 +396,37 @@ h1, h2, h3, h4, h5 {
     top: -10%;
     right: 0;
   }
-  
+
   @include mq($xl-large) {
     //right: 14%;
   }
  }
-  
+
 //  .hero-illustration-mobile {
 //    display: block;
 //    @include mq($medium) {
 //      display: none;
 //    }
 //  }
-  
+
   .hero-illustration {
     display: inline-block;
     z-index: 0;
-    
+
     @include mq($medium) {
       //display: block;
       //margin-top: -2em;
     }
-    
+
     @include mq($large) {
       //margin-top: -4.5em;
     }
-    
+
     @include mq($x-large) {
       float: right;
       margin-right: -16%;
     }
-    
+
     @include mq($xl-large) {
       margin-right: -10%;
     }
@@ -436,16 +436,16 @@ h1, h2, h3, h4, h5 {
 .why {
   position: relative;
   overflow: hidden;
-  
+
     @include mq($large) {
         @include purple-divider-right;
-    }   
-    
+    }
+
   .section-heading {
     @include mq($large) {
       span {
         margin-right: -10em;
-        
+
         &:before {
           content: "";
           display: inline-block;
@@ -454,22 +454,22 @@ h1, h2, h3, h4, h5 {
           background-color: lighten($brand-grey, 43%);
           vertical-align: middle;
         }
-        
+
         &:after {
           display: none;
         }
       }
     }
-  }   
-  
-  
+  }
+
+
   .why-photo, .why-photo2, .why-photo3 {
     z-index: 1;
   }
-  
+
   .why-photo {
     display: none;
-    
+
     @include mq($large) {
       display: block;
       position: absolute;
@@ -477,28 +477,28 @@ h1, h2, h3, h4, h5 {
       left: -4%;
       width: 18%;
     }
-    
+
     @include mq($wide) {
       left: -14%;
     }
-  } 
-  
+  }
+
   .why-photo2 {
     max-width: 100%;
     margin: 0 auto;
-    
+
     @include mq($medium) {
       display: block;
       max-width: 65%;
     }
-    
+
     @include mq($med-large) {
       position: absolute;
       top: 6%;
       left: -4%;
       width: 25%;
     }
-    
+
     @include mq($large) {
       position: absolute;
       top: 40%;
@@ -511,10 +511,10 @@ h1, h2, h3, h4, h5 {
     }
 
   }
-  
+
   .why-photo3 {
     display: none;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
@@ -522,13 +522,13 @@ h1, h2, h3, h4, h5 {
       top: 45%;
       width: 22%;
     }
-    
+
     @include mq($large) {
       right: -3%;
       top: 56%;
       width: 16%;
     }
-    
+
     @include mq($wide) {
       right: -10%;
       top: 54%;
@@ -538,13 +538,13 @@ h1, h2, h3, h4, h5 {
 
   .why-box1 {
     display: none;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
       top: 42%;
     }
-    
+
     @include mq($large) {
       top: 22%;
       width: 530px;
@@ -552,65 +552,65 @@ h1, h2, h3, h4, h5 {
       left: -20%;
     }
   }
-  
+
   .why-box2 {
     display: none;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
       top: 66%;
       right: 0;
     }
-    
+
     @include mq($large) {
       width: 230px;
       height: 230px;
       right: -10%;
     }
-    
+
     @include mq($wide) {
       top: 70%;
       width: 430px;
       height: 430px;
       right: -12%;
     }
-  } 
-  
+  }
+
   .why-box3 {
     display: none;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
       top: 76%;
       left: 10%;
     }
-    
+
     @include mq($large) {
       top: 90%;
     }
   }
-  
+
   .why-box4 {
     display: none;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
       top: 79%;
       left: 6%;
     }
-    
+
     @include mq($large) {
       top: 93%;
     }
   }
-  
+
   .why-box5 {
     display: none;
-  
-    
+
+
     @include mq($large) {
       top: 53%;
       display: block;
@@ -618,65 +618,65 @@ h1, h2, h3, h4, h5 {
       right: 14%;
     }
   }
-    
+
   .why__list {
     margin-bottom: 5em;
-    
+
     @include mq($medium) {
       max-width: 65%;
       margin: 0 auto 5em auto;
     }
-    
+
     @include mq($med-large) {
       max-width: 50%;
       margin-bottom: 7em;
     }
-    
+
     @include mq($large) {
       max-width: 35%;
       margin-left: 43%;
     }
-    
+
     @include mq($x-large) {
 
     }
-    
+
     @include mq($xl-large) {
     }
-    
-    
+
+
     li {
       margin-bottom: 2em;
       list-style-type: none;
       background-repeat: no-repeat;
       padding-left: 3em;
-      
+
       &.no-marketing {
         @extend %no-marketing;
       }
-      
+
       &.affordable {
         @extend %affordable;
       }
-      
+
       &.for-everyone {
         @extend %for-everyone;
       }
     }
-    
+
     h3 {
       @include font-size(16px);
       font-family: $default-serif;
       text-transform: uppercase;
       margin-bottom: 0.3em;
     }
-    
+
     p {
       @include font-size(12px);
       line-height: 1.9em;
       color: $brand-grey;
     }
-    
+
     a {
       @include font-size(13px);
       &:hover {
@@ -684,7 +684,7 @@ h1, h2, h3, h4, h5 {
       }
     }
   }
-  
+
   .share-box {
     background-color: $brand-purple;
     color: #fff;
@@ -692,26 +692,26 @@ h1, h2, h3, h4, h5 {
     position: relative;
     text-align: center;
     z-index: 1;
-    
+
     @include mq($medium) {
       max-width: 65%;
       margin: 0 auto;
     }
-    
+
     @include mq($med-large) {
       max-width: 55%;
     }
-    
+
     @include mq($large) {
       padding: 4em 3em;
       max-width: 45%;
       margin-left: 43%;
     }
-    
+
     @include mq($xl-large) {
       margin-left: 43%;
     }
-    
+
     .share-box__title {
       @include font-size(13px);
       letter-spacing: 0.2em;
@@ -723,9 +723,9 @@ h1, h2, h3, h4, h5 {
       position: absolute;
       top: -25px;
       right: 0;
-      
+
       @include mq($med-large) {
-       right: 30px; 
+       right: 30px;
       }
     }
     .share-box__text {
@@ -733,7 +733,7 @@ h1, h2, h3, h4, h5 {
       //font-family: $headline-font;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      
+
       @include mq($small) {
         @include font-size(30px);
       }
@@ -744,23 +744,23 @@ h1, h2, h3, h4, h5 {
 .speakers {
   //display: none;
   overflow: hidden;
-  
+
   .container {
     @include mq($large) {
       padding-bottom: 30em;
     }
   }
-  
+
   .section-heading {
     @include mq($large) {
       @include font-size(130px);
       text-align: left;
       padding-left: 8%;
       //background-color: green;
-      
+
       span {
         //margin-right: -10em;
-        
+
         &:before {
           content: "";
           display: inline-block;
@@ -769,32 +769,32 @@ h1, h2, h3, h4, h5 {
           background-color: lighten($brand-grey, 43%);
           vertical-align: middle;
         }
-        
+
         &:after {
           display: none;
         }
       }
     }
   }
-  
+
   .speakers-list {
     text-align: center;
     //max-width: 1100px;
     margin: 0 auto;
-    
+
     @include mq($large) {
       margin-left: -8%;
     }
-        
-    
+
+
     .speakers-list__card {
       position: relative;
       padding: 0 2em;
       list-style-type: none;
       text-align: center;
       margin-bottom: 2em;
-      
-      
+
+
       @include mq($small) {
         display: inline-block;
         vertical-align: top;
@@ -802,52 +802,52 @@ h1, h2, h3, h4, h5 {
         margin: 0 2.5%;
         margin-bottom: 3em;
       }
-      
+
       @include mq($med-large) {
         width: 29%;
         margin-right: 2%;
         margin-left: 2%;
       }
-      
+
       @include mq($large) {
         width: 21%;
         text-align: left;
-        
+
 //        margin-left: 1.5%;
-//        margin-right: 1.5%;        
+//        margin-right: 1.5%;
 //        margin-bottom: 2em;
         //min-height: 422px;
 
       }
-      
+
       @include mq($xl-large) {
 //        padding: 2em 1.6em;
 //        width: 15em;
 //        margin: 0 0.6em 1.6em 0.6em;
       }
-      
+
       &.blank {
         display: none;
-        
+
         @include mq($xl-large) {
           display: inline-block;
         }
       }
     }
-    
+
     .speakers-list__img-wrap {
-      background-color: $brand-purple; 
+      background-color: $brand-purple;
       margin-bottom: 2em;
       max-width: 200px;
       display: inline-block;
     }
-    
+
     .speakers-list__img {
       //max-width: 200px;
       width: 500px;
       mix-blend-mode: luminosity;
-      
-      
+
+
       @include mq($large) {
 //        position: absolute;
 //        top: 1.3em;
@@ -855,14 +855,14 @@ h1, h2, h3, h4, h5 {
 
       }
     }
-    
+
     .speakers-list__name {
       font-family: $default-serif;
       @include font-size(16px);
       line-height: 1em;
       margin-bottom: 1em;
     }
-    
+
     .speakers-list__company {
       font-family: $default-serif;
       color: $brand-purple-light;
@@ -870,18 +870,18 @@ h1, h2, h3, h4, h5 {
       line-height: 1.4em;
       margin-bottom: 0.3em;
       text-transform: uppercase;
-      
+
       @include mq($large) {
         margin-bottom: 0.6em;
       }
     }
-    
+
     .speakers-list__talk-title {
       color: $brand-grey;
       @include font-size(12px);
       line-height: 1.6em;
       margin-bottom: 0.6em;
-      
+
 //      @include mq($large) {
 //        @include font-size(19px);
 //        line-height: 1.5em;
@@ -889,25 +889,25 @@ h1, h2, h3, h4, h5 {
 //        padding-left: 1em;
 //      }
     }
-    
+
     .speakers-list__btn {
-      @include font-size(11px);  
+      @include font-size(11px);
       text-transform: uppercase;
       border-bottom: solid 2px $brand-pink;
-      @include transition-all;      
+      @include transition-all;
       padding-bottom: 0.2em;
     }
   }
-  
+
   .speaker-illustration {
     @include mq($large) {
       margin-left: -24%;
     }
   }
-  
+
   .speaker-illustration2 {
     display: none;
-    
+
     @include mq($large) {
       position: absolute;
       display: block;
@@ -915,10 +915,10 @@ h1, h2, h3, h4, h5 {
       left: 25%;
     }
   }
-  
+
   .speaker-photo {
     display: none;
-    
+
     @include mq($large) {
       display: block;
       position: absolute;
@@ -926,16 +926,16 @@ h1, h2, h3, h4, h5 {
       right: 0;
       width: 22%;
     }
-    
+
     @include mq($wide) {
       right: -5%;
     }
   }
-  
-  
+
+
   .speaker-photo2 {
     display: none;
-    
+
     @include mq($large) {
       display: block;
       position: absolute;
@@ -943,15 +943,15 @@ h1, h2, h3, h4, h5 {
       right: -7%;
       width: 50%;
     }
-    
+
     @include mq($wide) {
       //right: -5%;
     }
   }
-  
+
   .speaker-photo3 {
     display: none;
-    
+
     @include mq($large) {
       display: block;
       position: absolute;
@@ -959,15 +959,15 @@ h1, h2, h3, h4, h5 {
       left: 27%;
       width: 22%;
     }
-    
+
     @include mq($wide) {
       //right: -5%;
     }
   }
-  
+
   .speaker-box1 {
     display: none;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
@@ -977,10 +977,10 @@ h1, h2, h3, h4, h5 {
       height: 20px;
     }
   }
-  
+
   .speaker-box2 {
     display: none;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
@@ -990,10 +990,10 @@ h1, h2, h3, h4, h5 {
       height: 120px;
     }
   }
-  
+
   .speaker-box3 {
     display: none;
-    
+
     @include mq($large) {
       display: block;
       position: absolute;
@@ -1003,10 +1003,10 @@ h1, h2, h3, h4, h5 {
       height: 80px;
     }
   }
-  
+
   .speaker-box4 {
     display: none;
-    
+
     @include mq($large) {
       display: block;
       position: absolute;
@@ -1016,10 +1016,10 @@ h1, h2, h3, h4, h5 {
       height: 20px;
     }
   }
-  
+
   .speaker-box5 {
     display: none;
-    
+
     @include mq($large) {
       display: block;
       position: absolute;
@@ -1032,20 +1032,20 @@ h1, h2, h3, h4, h5 {
 }
 
 .schedule {
-  
+
   //display: none;
-  
-  
+
+
   text-align: center;
   @include mq($large) {
     @include purple-divider-left;
   }
-  
+
   .section-heading {
     font-family: $default-serif;
     text-transform: uppercase;
     @include font-size(20px);
-    
+
     span {
       @include font-size(30px);
     }
@@ -1056,10 +1056,10 @@ h1, h2, h3, h4, h5 {
       text-align: left;
       margin-top: 3em;
 
-      
+
       span {
         @include font-size(50px);
-        
+
         &:before {
           content: "";
           display: inline-block;
@@ -1068,14 +1068,14 @@ h1, h2, h3, h4, h5 {
           background-color: #fff;
           vertical-align: middle;
         }
-        
+
         &:after {
           display: none;
         }
       }
     }
   }
-  
+
   .schedule-box1 {
     display: none;
     @include mq($med-large) {
@@ -1085,7 +1085,7 @@ h1, h2, h3, h4, h5 {
       left: 4%;
     }
   }
-  
+
   .schedule-box2 {
     display:none;
     @include mq($med-large) {
@@ -1098,11 +1098,11 @@ h1, h2, h3, h4, h5 {
 
   .schedule-day-one {
     background-color: lighten($brand-grey, 43%);
-    
+
     @include mq($large) {
         @include white-divider-left;
     }
-    
+
     .schedule-text {
       @include mq($large) {
         text-align: left;
@@ -1111,36 +1111,36 @@ h1, h2, h3, h4, h5 {
         vertical-align: top;
         margin-top: 27%;
       }
-      
+
       @include mq($xl-large) {
         width: 40%;
       }
     }
-    
+
     .schedule-list {
       @include mq($large) {
         display: inline-block;
         width: 64%;
       }
-      
+
       @include mq($xl-large) {
         width: 50%;
       }
     }
-    
+
   }
-  
-  .schedule-day-two {    
+
+  .schedule-day-two {
     @include mq($large) {
         @include grey-divider-right;
     }
-    
+
     .container {
       @include mq($large) {
         padding-top: 8em;
       }
     }
-    
+
     .schedule-list {
       @include mq($large) {
         display: inline-block;
@@ -1148,10 +1148,10 @@ h1, h2, h3, h4, h5 {
         vertical-align: top;
         margin-bottom: 4em;
       }
-      
+
       &.pm {
         margin-bottom: 2em;
-        
+
         @include mq($large) {
           margin-top: 4.3em;
         }
@@ -1161,31 +1161,31 @@ h1, h2, h3, h4, h5 {
 
   .schedule-text {
     margin-bottom: 3em;
-    
+
     @include mq($small) {
       margin-bottom: 4em;
     }
-    
+
     @include mq($medium) {
       max-width: 55%;
       margin: 0 auto 4em auto;
     }
-    
+
     h2 {
       text-transform: uppercase;
       @include font-size(20px);
       margin-bottom: 0.8em;
     }
-    
+
     p {
       line-height: 2.3em;
     }
   }
-  
+
   .schedule-list {
     li {
       list-style-type: none;
-      
+
       &:last-child {
         .schedule-list__content {
           border: none;
@@ -1197,7 +1197,7 @@ h1, h2, h3, h4, h5 {
     .schedule-list__title {
       .section-sub-heading {
         text-align: left;
-        
+
         @include mq($small) {
           text-align: center;
         }
@@ -1205,16 +1205,16 @@ h1, h2, h3, h4, h5 {
     }
 
     .schedule-list__item {
-    
+
       .schedule-list__time {
         @include font-size(13px);
-        color: $brand-grey;        
+        color: $brand-grey;
         text-align: left;
         vertical-align: top;
         padding: 0 0 0 2em;
         border-left: solid 2px lighten($brand-grey, 33%);
-        
-        
+
+
         @include mq($small) {
           display: inline-block;
           text-align: right;
@@ -1222,13 +1222,13 @@ h1, h2, h3, h4, h5 {
           padding: 0 1.4em 0 0;
           border: none;
         }
-        
+
         @include mq($medium) {
           //width: 48%;
-          
+
         }
       }
-      
+
       .schedule-list__content {
         @include font-size(13px);
         min-height: 5em;
@@ -1237,17 +1237,17 @@ h1, h2, h3, h4, h5 {
         text-align: left;
         border-left: solid 2px lighten($brand-grey, 33%);
         position: relative;
-        
+
         @include mq($small) {
           display: inline-block;
           width: 45%;
         }
-        
+
         @include mq($medium) {
           //width: 49%;
-          
+
         }
-        
+
         &:before {
           content: "";
           position: absolute;
@@ -1259,7 +1259,7 @@ h1, h2, h3, h4, h5 {
           top: 3px;
           left: -7px;
         }
-        
+
         .schedule-list__speaker {
           @include font-size(14px);
           text-transform: uppercase;
@@ -1270,7 +1270,7 @@ h1, h2, h3, h4, h5 {
 
         }
       }
-      
+
       &.break {
         .schedule-list__content {
           &:before {
@@ -1279,27 +1279,27 @@ h1, h2, h3, h4, h5 {
             width: 8px;
             height: 8px;
           }
-          
+
           .schedule-list__speaker {
             color: $brand-grey;
           }
         }
       }
-    }  
+    }
   }
-  
+
   .after-party {
     margin-bottom: 3em;
-    
+
     @include mq($small) {
       margin-bottom: 4em;
     }
-    
+
     @include mq($medium) {
       max-width: 55%;
       margin: 0 auto 4em auto;
     }
-    
+
     h2 {
       text-transform: uppercase;
       @include font-size(20px);
@@ -1321,73 +1321,73 @@ h1, h2, h3, h4, h5 {
 //  @include mq($medium) {
 //    width: 34em;
 //  }
-//  
+//
 //  @include mq($x-large) {
 //    margin: 0 1.5em;
 //  }
 //
-//  
+//
 //  li {
 //    padding: 1.8em 1.6em;
 //    list-style-type: none;
 //    @extend %clearfix;
 //    text-align: left;
 //  }
-//  
+//
 //  .schedule-list__ampm {
-//    
+//
 //    h2 {
 //      text-align: center;
 //      text-transform: uppercase;
 //    }
 //  }
-//  
+//
 //  .schedule-list__time {
 //    float: left;
 //    @include font-size(17px);
-//    
+//
 //    @include mq($large) {
 //      @include font-size(19px);
 //    }
 //  }
-//  
+//
 //  .schedule-list__type {
 //    //float: right;
 //    @include font-size(13px);
-//    
+//
 //    @include mq($large) {
 //      @include font-size(14px);
 //    }
 //  }
-//  
+//
 //  .schedule-list__break {
 //
 //  }
-//  
+//
 //  .schedule-list__speaker-box {
 //    padding-top: 1.3em;
 //    clear: both;
 //    position: relative;
 //    padding-left: 5em;
 //  }
-//  
+//
 //  .schedule-list__speaker {
 //    @include font-size(22px);
 //    margin-bottom: 0.2em;
-//    
+//
 //    @include mq($large) {
 //      @include font-size(24px);
 //      line-height: 1.1em;
 //      margin-bottom: 0.1em;
 //    }
 //  }
-//  
+//
 //  .schedule-list__talk-desc {
 //    @include font-size(14px);
 //    color: $brand-purple-light;
 //  }
 //
-//  
+//
 //  .schedule-list__img {
 //    width: 60px;
 //    position: absolute;
@@ -1401,18 +1401,18 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   background-color: $brand-purple;
   overflow: hidden;
-  
+
   @include mq($large) {
     padding-top: 2em;
   }
-  
-  
+
+
   .section-heading {
     font-family: $default-serif;
     text-transform: uppercase;
     @include font-size(20px);
     color: #fff;
-    
+
     span {
       @include font-size(30px);
     }
@@ -1423,10 +1423,10 @@ h1, h2, h3, h4, h5 {
       margin-left: 50%;
       //margin-top: -10%;
 
-      
+
       span {
         @include font-size(50px);
-        
+
         &:before {
           content: "";
           display: inline-block;
@@ -1435,53 +1435,53 @@ h1, h2, h3, h4, h5 {
           background-color: lighten($brand-grey, 43%);
           vertical-align: middle;
         }
-        
+
         &:after {
           display: none;
         }
       }
     }
   }
-  
+
   .container {
     position: relative;
     //max-width: 70em;
-    
+
     @include mq($medium) {
       padding-bottom: 0;
     }
   }
-  
+
   .location-text {
     color: #fff;
     margin-bottom: 3em;
-    
+
     @include mq($small) {
       margin-bottom: 4em;
     }
-    
+
     @include mq($medium) {
       max-width: 55%;
       margin: 0 auto 4em auto;
-      text-align: left; 
+      text-align: left;
     }
-    
+
     @include mq($xl-large) {
       display: inline-block;
       max-width: 30%;
       margin-right: 9%;
     }
-    
+
     a {
       color: $brand-pink;
     }
-    
+
     h2 {
       text-transform: uppercase;
       @include font-size(16px);
       margin-bottom: 0.6em;
     }
-    
+
     p {
       @include mq($medium) {
         @include font-size(14px);
@@ -1490,44 +1490,44 @@ h1, h2, h3, h4, h5 {
       }
     }
   }
-  
+
   .location-illustration {
     display: none;
-    
+
     @include mq($medium) {
       display: block;
     }
-    
+
     @include mq($medium) {
       margin-left: 35%;
       margin-top: -14%;
     }
-    
+
     @include mq($large) {
       margin-top: -26%;
     }
   }
-  
+
   .location-photos {
     @include mq($medium) {
       margin-bottom: 2em;
     }
-    
+
     @include mq($med-large) {
       display: block;
       width: 75%;
       margin-left: -5%;
     }
   }
-  
+
   .map-link {
     display: inline-block;
     margin-bottom: 3em;
-    
+
     @include mq($medium) {
       max-width: 80%;
     }
-    
+
     @include mq($xl-large) {
       vertical-align: top;
       max-width: 53%;
@@ -1537,7 +1537,7 @@ h1, h2, h3, h4, h5 {
       opacity: 0.8;
     }
   }
-  
+
   .location-box1 {
     display: none;
     @include mq($med-large) {
@@ -1547,7 +1547,7 @@ h1, h2, h3, h4, h5 {
       left: 4%;
     }
   }
-  
+
   .location-box2 {
     display:none;
     @include mq($med-large) {
@@ -1563,16 +1563,16 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   overflow: hidden;
   position: relative;
-  
+
   @include mq($large) {
     @include purple-divider-left-top;
   }
-  
+
   .section-heading {
     font-family: $default-serif;
     text-transform: uppercase;
     @include font-size(20px);
-    
+
     span {
       @include font-size(30px);
     }
@@ -1584,10 +1584,10 @@ h1, h2, h3, h4, h5 {
       //margin-left: 50%;
       //margin-top: -10%;
 
-      
+
       span {
         @include font-size(50px);
-        
+
         &:before {
           content: "";
           display: inline-block;
@@ -1596,77 +1596,77 @@ h1, h2, h3, h4, h5 {
           background-color: lighten($brand-grey, 43%);
           vertical-align: middle;
         }
-        
+
         &:after {
           display: none;
         }
       }
     }
-    
+
     @include mq($x-large) {
       margin-bottom: 6em;
     }
-    
+
     @include mq($xl-large) {
       margin-bottom: 9em;
     }
   }
-  
+
   .container {
     @include mq($large) {
       padding-top: 12em;
     }
   }
-  
+
   .about-us__text {
     margin-bottom: 3em;
-    
+
     @include mq($small) {
       margin-bottom: 4em;
     }
-    
+
     @include mq($medium) {
       max-width: 55%;
       margin: 0 auto 4em auto;
-      text-align: left; 
+      text-align: left;
     }
-    
+
     @include mq($large) {
       display: inline-block;
       max-width: 45%;
       margin-left: 30%;
     }
-    
+
     @include mq($xl-large) {
       display: inline-block;
       max-width: 35%;
       margin-left: 40%;
     }
-    
+
     a {
       color: $brand-pink;
     }
-    
+
     h2 {
       text-transform: uppercase;
       @include font-size(16px);
       margin-bottom: 0.6em;
     }
-    
+
     p {
       margin-bottom: 1em;
-      
+
       @include mq($medium) {
         @include font-size(14px);
         line-height: 2.3em;
       }
     }
   }
-  
+
   .about-us-photo {
     display: none;
     z-index: 1;
-    
+
     @include mq($med-large) {
       position: absolute;
       width: 27%;
@@ -1674,25 +1674,25 @@ h1, h2, h3, h4, h5 {
       top: 4%;
       right: -5%;
     }
-    
+
     @include mq($large) {
       width: 43%;
       top: 5%;
       right: -6%;
     }
-    
+
     @include mq($xl-large) {
       width: 43%;
       top: 8%;
       right: 5%;
     }
-          
+
   }
-  
+
   .about-us-photo2 {
     display: none;
     z-index: 1;
-    
+
     @include mq($med-large) {
       position: absolute;
       width: 20%;
@@ -1700,7 +1700,7 @@ h1, h2, h3, h4, h5 {
       bottom: 4%;
       left: -5%;
     }
-    
+
     @include mq($large) {
       position: absolute;
       width: 27%;
@@ -1708,13 +1708,13 @@ h1, h2, h3, h4, h5 {
       top: 40%;
       left: -5%;
     }
-    
+
   }
-  
+
   .about-us-photo3 {
     display: none;
     z-index: 1;
-    
+
     @include mq($large) {
       position: absolute;
       width: 27%;
@@ -1722,66 +1722,66 @@ h1, h2, h3, h4, h5 {
       bottom: 5%;
       left: 9%;
     }
-    
+
     @include mq($x-large) {
       bottom: 0;
     }
   }
-  
+
   .about-box1 {
     display: none;
     z-index: 0;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
       top: 42%;
     }
-    
+
     @include mq($large) {
       top: 52%;
       width: 500px;
       height: 500px;
       left: -15%
     }
-    
+
     @include mq($x-large) {
       top: 60%;
       left: -5%;
     }
   }
-  
+
   .about-box2 {
     z-index: 0;
     display: none;
     width: 12px;
     height: 12px;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
       top: 37%;
       left: 5%;
     }
-    
+
     @include mq($large) {
       left: 25%;
     }
   }
-  
+
 }
 
 
 .sponsors {
   text-align: center;
-  
+
   @include mq($large) {
     @include purple-divider-right-bottom;
   }
-  
+
   .sponsors-illustration {
     display: none;
-    
+
     @include mq($large) {
       position: absolute;
       display: block;
@@ -1790,13 +1790,13 @@ h1, h2, h3, h4, h5 {
       width: 30%;
     }
   }
-  
-  
+
+
   .section-heading {
     font-family: $default-serif;
     text-transform: uppercase;
     @include font-size(20px);
-    
+
     span {
       @include font-size(30px);
     }
@@ -1808,10 +1808,10 @@ h1, h2, h3, h4, h5 {
       margin-left: 60%;
       //margin-top: -10%;
 
-      
+
       span {
         @include font-size(50px);
-        
+
         &:before {
           content: "";
           display: inline-block;
@@ -1820,25 +1820,25 @@ h1, h2, h3, h4, h5 {
           background-color: lighten($brand-grey, 43%);
           vertical-align: middle;
         }
-        
+
         &:after {
           display: none;
         }
       }
     }
   }
-  
-  
+
+
   .container {
 //    max-width: 100em;
 //    @include mq($large) {
 //      padding-bottom: 16em;
 //    }
   }
-  
+
   .sponsors__sponsor-list {
     margin-bottom: 1.6em;
-    
+
     li {
       display: inline-block;
       list-style-type: none;
@@ -1846,88 +1846,88 @@ h1, h2, h3, h4, h5 {
       padding: 0.2em;
       margin: 0 3% 2.5em 3%;
       vertical-align: middle;
-      
+
       @include mq($large) {
         margin-left: 3%;
         margin-right: 3%;
       }
     }
-    
+
     &.platinum {
       li {
         vertical-align: bottom;
       }
     }
-    
+
     &.gold, &.silver {
       li {
         width: 125px;
       }
     }
-    
+
     &.bronze {
       li {
         width: 125px;
       }
     }
-    
+
     &.party {
       li {
         width: 250px;
       }
     }
-    
+
     &.conf {
       li {
         width: 125px;
       }
     }
-    
+
   }
-  
+
   .sponsors__type {
     @include font-size(13px);
     margin-bottom: 0.6em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
-  
+
   .sponsors-box1 {
     display: none;
     z-index: 0;
     width: 70px;
     height: 70px;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
       top: 3%;
       right: 2%;
     }
-    
+
     @include mq($large) {
       right: 2%;
     }
   }
-  
+
   .sponsors-box2 {
     display: none;
     z-index: 0;
     width: 20px;
     height: 20px;
-    
+
     @include mq($med-large) {
       display: block;
       position: absolute;
       top: 0%;
       right: 0;
     }
-    
+
     @include mq($large) {
       //right: 2%;
     }
   }
-  
+
 }
 
 
@@ -1945,16 +1945,16 @@ h1, h2, h3, h4, h5 {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-  
+
   @include mq($medium) {
-   //position: fixed; 
+   //position: fixed;
   }
-  
+
   &.modal:target {
     visibility: visible;
     opacity: 1;
   }
-  
+
   .modal__container {
     background-color: #fff;
     padding: 2em;
@@ -1963,12 +1963,12 @@ h1, h2, h3, h4, h5 {
     max-width: 36em;
     position: relative;
     display: inline-block;
-    
+
     @include mq($large) {
       margin-top: 10%;
       padding: 3em;
     }
-    
+
     .speakers-list__img-wrap {
       display: inline-block;
       width: 80px;
@@ -1976,18 +1976,18 @@ h1, h2, h3, h4, h5 {
       margin-bottom: 1em;
       background-color: $brand-purple;
     }
-    
+
     .speakers-list__img {
       //width: 100%;
       mix-blend-mode: luminosity;
     }
-    
+
     .speakers-list__name {
       @include font-size(16px);
       line-height: 1em;
       margin-bottom: 0.4em;
     }
-    
+
     .speakers-list__company {
       @include font-size(13px);
       line-height: 1em;
@@ -1995,22 +1995,22 @@ h1, h2, h3, h4, h5 {
       text-transform: uppercase;
       color: $brand-purple-light;
     }
-    
+
     p {
       @include font-size(12px);
       line-height: 1.6em;
       margin-bottom: 1.6em;
-      
+
       &:last-child {
         margin-bottom: 0;
-      } 
-           
+      }
+
       @include mq($large) {
         @include font-size(13px);
         line-height: 1.7em;
       }
     }
-    
+
     .modal-btn {
       @extend %modal-closed;
       width: 70px;
@@ -2023,43 +2023,43 @@ h1, h2, h3, h4, h5 {
       top: 0;
       right: 0;
       z-index: 120;
-      
+
       &:hover {
         opacity: 0.6;
       }
     }
-    
+
   }
 }
 
 .content-page {
-  
+
   .content-container {
     max-width: 800px;
   }
-  
+
   h1 {
     margin-bottom: 1em;
     @include font-size(19px);
     text-transform: uppercase;
   }
-  
+
   p {
     margin-bottom: 3em;
   }
-  
+
   ul {
     margin-bottom: 2em;
-    
+
     li {
       @include font-size(13px);
       color: $brand-grey;
       a {
-        
+
       }
     }
   }
-  
+
   .contact-form {
     @include mq($medium) {
       //max-width: 75%;
@@ -2111,22 +2111,3 @@ h1, h2, h3, h4, h5 {
     }
   }
 }
-
-
-//FOR PRE-LAUNCH
-
-.speakers, .schedule {
-  display: none;
-}
-
-.location {
-  .location-box1 {
-    display: none;
-  }
-  
-  .location-box2 {
-    display: none;
-  }
-}
-
-//delete after launch!
