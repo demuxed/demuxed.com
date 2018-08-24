@@ -1,60 +1,122 @@
 [
   {
-    "name": "James Yeh",
-    "company": "Bitmovin",
-    "talk": "native-gap"
-  },
-  {
-    "name": "Nick Chadwick",
-    "company": "Mux",
-    "headshot": true,
-    "talk": "after-per-title"
-  },
-  {
-    "name": "Ben Dodson",
-    "company": "Mux",
-    "talk": "after-per-title"
-  },
-  {
-    "name": "Aman Gupta",
     "company": "Fancy Bits LLC",
-    "headshot": true,
+    "name": "Aman Gupta",
     "talk": "video-toolbox"
   },
   {
-    "name": "Will Law",
-    "company": "Akamai",
-    "talk": "chunky-monkey"
+    "company": "NGCodec",
+    "name": "Avinash Ramachandran",
+    "talk": "live-vp9-encoder"
   },
   {
-    "name": "Naveen Mareddy",
-    "company": "Netflix",
-    "talk": "media-innovation"
+    "company": "Mux",
+    "name": "Ben Dodson",
+    "talk": "after-per-title"
   },
   {
-    "name": "Lahiru Dayananda",
-    "company": "Brightcove",
-    "talk": "cea-608"
+    "company": "Fubo.tv",
+    "name": "Billy Romero",
+    "talk": "world-cup"
   },
   {
-    "name": "Fabio Sonnati",
-    "company": "Progetto Sinergia",
-    "talk": "time-machine"
-  },
-  {
-    "name": "David Hassoun",
-    "company": "RealEyes",
-    "talk": "multi-cdn-jumpstart"
-  },
-  {
-    "name": "Christian Feldmann",
     "company": "Bitmovin",
-    "headshot": true,
+    "name": "Christian Feldmann",
     "talk": "vvc"
   },
   {
-    "name": "Michelle Munson",
+    "company": "RealEyes",
+    "name": "David Hassoun",
+    "talk": "multi-cdn-jumpstart"
+  },
+  {
+    "company": "Progetto Sinergia",
+    "name": "Fabio Sonnati",
+    "talk": "time-machine"
+  },
+  {
+    "company": "Bitmovin",
+    "name": "James Yeh",
+    "talk": "native-gap"
+  },
+  {
+    "company": "JW Player",
+    "name": "John Bartos",
+    "talk": "hlsjs"
+  },
+  {
+    "company": "Mux",
+    "name": "Jon Dahl",
+    "talk": "evolution"
+  },
+  {
+    "company": "Brightcove",
+    "name": "Lahiru Dayananda",
+    "talk": "cea-608"
+  },
+  {
+    "company": "Vimeo",
+    "name": "Matt Fisher",
+    "talk": "root-causes"
+  },
+  {
+    "company": "Netflix",
+    "name": "Megha Manohara",
+    "talk": "edls"
+  },
+  {
+    "company": "Brightcove",
+    "name": "Michael Roca",
+    "talk": "simulating-live"
+  },
+  {
     "company": "Eluvio",
+    "name": "Michelle Munson",
     "talk": "decentralized-fabric"
-   }
+  },
+  {
+    "company": "Netflix",
+    "name": "Naveen Mareddy",
+    "talk": "media-innovation"
+  },
+  {
+    "company": "Mux",
+    "name": "Nick Chadwick",
+    "talk": "after-per-title"
+  },
+  {
+    "company": "Axinom",
+    "name": "Sander Saares",
+    "talk": "drm"
+  },
+  {
+    "company": "Philo",
+    "name": "Seth Madison",
+    "talk": "synchronize-watches"
+  },
+  {
+    "company": "YouTube",
+    "name": "Steven Robertson",
+    "talk": "ml-abr"
+  },
+  {
+    "company": "Fubo.tv",
+    "name": "Thomas Symborski",
+    "talk": "world-cup"
+  },
+  {
+    "company": "Intel",
+    "name": "Vasavee Vijayaraghavan",
+    "talk": "measuring-perceptual"
+  },
+  {
+    "company": "Akamai",
+    "name": "Will Law",
+    "talk": "chunky-monkey"
+  },
+  {
+    "company": "Twitch",
+    "name": "Ying Cheng",
+    "talk": "magic-mirror"
+  }
 ]

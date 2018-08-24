@@ -38,5 +38,61 @@
   "native-gap": {
     "title": "Narrowing the Native Gap",
     "speakers": ["James Yeh"]
+  },
+  "evolution": {
+    "title": "Video, evolution, and gravity: how science affects digital video",
+    "speakers": ["Jon Dahl"]
+  },
+  "root-causes": {
+    "title": "Identifying Root Cause via Playback Metrics",
+    "speakers": ["Matt Fisher"]
+  },
+  "hlsjs": {
+    "title": "LHLS(.js): Why Hls.js is standardizing low-latency streaming",
+    "description": "Low-latency streaming is a big deal, and the Hls.js team wants to bring it to all video devs. But there's just one problem - how do we build something which works for everyone? In this talk I'll be walking through the ongoing LHLS standard and how you can help.",
+    "speakers": ["John Bartos"]
+  },
+  "drm": {
+    "title": "DRM is not a black box",
+    "speakers": ["Sander Saares"]
+  },
+  "world-cup": {
+    "title": "Lessons learned from streaming the World Cup live in UHD with HDR",
+    "speakers": ["Billy Romero", "Thomas Symborski"]
+  },
+  "synchronize-watches": {
+    "title": "Synchronize your Watches: Cross-platform stream synchronization of HLS and DASH",
+    "description": "Learn how and why Philo built synchronized playback. We'll cover the architecture that allows us to sync up players for both live and recorded content, and some of the use cases that we're exploring, such as watch parties, second-screen, and cross-device control.",
+    "speakers": ["Seth Madison"]
+  },
+  "magic-mirror": {
+    "title": "Magic Mirror: Understanding the Diversified Network Conditions of Twitch Community",
+    "description": "Viewers of Twitch have extremely diversified network conditions. This poses a big challenge when it comes to providing a high-quality live streaming service and deploying new front and back-end features. Therefore, it is essential to identify, understand and build a knowledge base of our community’s typical network conditions in order to optimize the viewing experience for certain user groups and to speed up the software release cycle.\n\nBased on viewer playback metrics collected at Twitch, we propose an unsupervised machine learning approach to generate playback activity clusters. Each cluster represents the playback behavior of a specific kind of network condition. After gathering the cluster information, we are able to compute the network condition parameters in order to reproduce the playback metrics of each cluster through a matching process. The results of these identified network parameters are used in Twitch’s transcoder and player algorithm development. With these parameters, we are able to accelerate the deployment of our new ABR playback algorithm for Twitch’s viewers using low latency streaming on mobile networks.",
+    "speakers": ["Ying Cheng"]
+  },
+  "edls": {
+    "title": "An engineer's perspective on EDLs",
+    "description": "Edit Decision Lists (EDLs) have been an integral part of post-production processes for the past three decades. In this talk, we will look at some of the EDL formats and examine the evolution of use cases of EDLs in non-linear editing systems. We will explore what it means to render an EDL in today's cloud based parallel processing architectures.",
+    "speakers": ["Megha Manohara"]
+  },
+  "simulating-live": {
+    "title": "Simulating livestream for testing",
+    "description": "Brightcove has created an open source tool to simulated hls livestream for testing purposes. This allows us to more easily reproduce error conditions and simulate bad data. This talk will focus on how our simulator works and how it has aided in weeding out bugs.",
+    "speakers": ["Michael Roca"]
+  },
+  "live-vp9-encoder": {
+    "title": "How to build a high quality 'live' HD VP9 Encoder",
+    "description": "VP9 encoder is deployed by YouTube and Netflix at scale. When Netflix deployed it in 2016, reports showed they were able to save up to 36% bandwidth by using VP9 encoding together with their video chunking approach. While VP9 is proven at scale for VOD, it has not been extensively used for live applications which is still dominated by the earlier H.264 video standard.\n\nIn this lecture, we focus on the architecture of an FPGA-based VP9 encoder that can deliver pristine quality video at high resolutions and extremely low bitrates. We shall explain the key coding tools in VP9 that can be leveraged to deliver a consistent quality video across a wide variety of bitrates. We shall also present our analysis of how this compares with a live H.264 encoder including both subjective and objective comparison results.\n\nWe will also explain how FPGAs can be used to design a system that can perform heavy computations like motion estimation and complex mode decisions to optimize video quality. This system will be software-like with flexible upgrades and yet high density making it deployable on-prem or in the Cloud.",
+    "speakers": ["Avinash Ramachandran"]
+  },
+  "measuring-perceptual": {
+    "title": "Towards Measuring Perceptual Video Quality & Why",
+    "description": "Video quality measurement is an essential step in any media pipeline. There are quite a few objective metrics available today including well known SSIM & PSNR. These objective metrics are not real time to be used in a live encoder workflow, but fast enough to do quick offline video quality analysis. The challenge with such objective metrics though, is that they are not truly representative of video quality as our human eyes perceive it, thus making it hard for optimizations such as bitrate reduction.\n\nTo make decisions such as adding or reducing a certain amount of bitrate while maintaining the same subjective video quality, we need to rely on alternative methods. This talk will thus focus on understanding perceptual video quality and evaluating such alternative methods to make reliable decisions. Among many insights that will be shared, some of them will include: BD-Rate curves, existing rate control methods, gaps in using objective video quality metrics, perceptual video quality evaluation tools & benefits, using alternative methods.",
+    "speakers": ["Vasavee Vijayaraghavan"]
+  },
+  "ml-abr": {
+    "title": "Machine Learning for ABR in production",
+    "description": "Our progress on jntegrating machine learning with adaptive streaming at YouTube - what worked, what didn't, what results we have seen.",
+    "speakers": ["Steven Robertson"]
   }
 }

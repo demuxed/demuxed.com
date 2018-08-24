@@ -784,6 +784,7 @@ h1, h2, h3, h4, h5 {
 
     @include mq($large) {
       margin-left: -8%;
+      margin-bottom: 8%;
     }
 
 
@@ -846,6 +847,20 @@ h1, h2, h3, h4, h5 {
       //max-width: 200px;
       width: 500px;
       mix-blend-mode: luminosity;
+      transition: all 0.5s ease-in;
+
+      &:hover {
+        mix-blend-mode: normal;
+      }
+
+      &:before {
+        content: ' ';
+        display: block;
+        height: 200px;
+        width: 200px;
+        background-image: url("/images/default-avatar.svg");
+        background-position: center;
+      }
 
 
       @include mq($large) {

@@ -61,7 +61,7 @@ title: Demuxed, The Conference for Video Engineers
     = image_tag("/images/speakers-photo.jpg", alt: "Demuxed conference location", class: "speaker-photo")
 
     %h2.section-heading
-      15
+      = data.speakers.length
       %span
         Amazing speakers
 
@@ -69,11 +69,11 @@ title: Demuxed, The Conference for Video Engineers
       - data.speakers.each do |speaker|
         %li.speakers-list__card{id: speaker.name}
           %div.speakers-list__img-wrap
-            = image_tag(speaker.headshot ? "/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.thumb.jpg" : "/images/default-avatar.svg", alt: "", class: "speakers-list__img")
+            = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.thumb.jpg", alt: "", class: "speakers-list__img")
           %h3.speakers-list__name= speaker.name
           %h4.speakers-list__company= speaker.company
           %p.speakers-list__talk-title= data.talks[speaker.talk].title
-          %a.speakers-list__btn{href:"#popup-tarek-amara"} Talk Overview
+          %a.speakers-list__btn{href: "#popup-#{speaker.name.downcase.split(' ').join('-')}"} Talk Overview
 
 
 
@@ -88,15 +88,16 @@ title: Demuxed, The Conference for Video Engineers
     %div.pink-box.speaker-box5
 
 
-%section.modal#popup-scott-kellicker
-  %div.modal__container.popup
-    %a.modal-btn{href: "#scott-kellicker"}
-    %div.speakers-list__img-wrap
-      = image_tag("/images/scott-kellicker.jpg", alt: "", class: "speakers-list__img")
-    %h3.speakers-list__name Scott Kellicker
-    %h4.speakers-list__company Wowza
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+- data.speakers.each do |speaker|
+  %section.modal{id: "#popup-#{speaker.name.downcase.split(' ').join('-')}"}
+    %div.modal__container.popup
+      %a.modal-btn{href: "##{speaker.name.downcase.split(' ').join('-')}"}
+      %div.speakers-list__img-wrap
+        = image_tag("/images/#{speaker.name.downcase.split(' ').join('-')}.jpg", alt: "", class: "speakers-list__img")
+      %h3.speakers-list__name= speaker.name
+      %h4.speakers-list__company= speaker.company
+      :markdown
+        = data.talks[speaker.talk].description
 
 
 %section.schedule#schedule
