@@ -93,7 +93,7 @@ title: Demuxed, The Conference for Video Engineers
     %div.modal__container.popup
       %a.modal-btn{href: "##{speaker.name.downcase.split(' ').join('-')}"}
       %div.speakers-list__img-wrap
-        = image_tag("/images/#{speaker.name.downcase.split(' ').join('-')}.jpg", alt: "", class: "speakers-list__img")
+        = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.jpg", alt: "", class: "speakers-list__img")
       %h3.speakers-list__name= speaker.name
       %h4.speakers-list__company= speaker.company
       .content= Tilt['markdown'].new { data.talks[speaker.talk].description }.render
