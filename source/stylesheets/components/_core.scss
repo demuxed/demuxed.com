@@ -897,6 +897,10 @@ h1, h2, h3, h4, h5 {
       line-height: 1.6em;
       margin-bottom: 0.6em;
 
+      .joint {
+        @include font-size(10px);
+      }
+
 //      @include mq($large) {
 //        @include font-size(19px);
 //        line-height: 1.5em;

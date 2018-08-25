@@ -1,11 +1,10 @@
-Base Project
-============
+Demuxed.com Website
+=========
 
-The project uses [Middleman](https://middlemanapp.com/).
+If you have Docker Compose installed, this should be pretty easy. Just run:
 
-To initialise your workspace do:
+```
+$ dc up
+```
 
-0. You will need the latest Middleman release: `gem install middleman --pre`
-1. `bundle exec middleman build`
-
-To run the project for development use `bundle exec middleman`.
+This should start up Middleman and serve the site.

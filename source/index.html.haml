@@ -72,9 +72,11 @@ title: Demuxed, The Conference for Video Engineers
             = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.thumb.jpg", alt: "", class: "speakers-list__img")
           %h3.speakers-list__name= speaker.name
           %h4.speakers-list__company= speaker.company
-          %p.speakers-list__talk-title= data.talks[speaker.talk].title
+          %p.speakers-list__talk-title
+            = data.talks[speaker.talk].title
+            - if data.talks[speaker.talk].speakers.length > 1
+              %span.joint (joint talk)
           %a.speakers-list__btn{href: "#popup-#{speaker.name.downcase.split(' ').join('-')}"} Talk Overview
-
 
 
     = image_tag("/images/zoetrope.svg", alt: "", class: "speaker-illustration")
