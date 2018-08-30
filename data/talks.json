@@ -106,7 +106,7 @@
   },
   "ml-abr": {
     "title": "Machine Learning for ABR in production",
-    "description": "Our progress on jntegrating machine learning with adaptive streaming at YouTube - what worked, what didn't, what results we have seen.",
+    "description": "Our progress on integrating machine learning with adaptive streaming at YouTube - what worked, what didn't, what results we have seen.",
     "speakers": ["Steven Robertson"]
   },
   "weaver": {
