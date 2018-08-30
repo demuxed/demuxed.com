@@ -64,15 +64,15 @@
     "description": "Low-latency streaming is a big deal, and the Hls.js team wants to bring it to all video devs. But there's just one problem - how do we build something which works for everyone? In this talk I'll be walking through the ongoing LHLS standard and how you can help.",
     "speakers": ["John Bartos"]
   },
-  "drm": {
-    "title": "DRM is not a black box",
-    "description": "Content protection is now a commodity and ever-increasing standardization is reducing integration effort. A look on how modern DRM works, the standards involved, where complexity still remains and what to expect from the future.",
-    "speakers": ["Sander Saares"]
-  },
   "world-cup": {
     "title": "Lessons learned from streaming the World Cup live in UHD with HDR",
     "description": "As part of our FIFA World Cup coverage this year, we've been able to deliver matches live in UHD with HDR10. We had a few short weeks to negotiate source acquisition, choose an encoder, configure our players, and determine the correct experience for our users. This project moved quickly and we were ultimately able to launch our UHD HDR experience on Chromecast, Amazon Fire TV and Android TV just before the semi-final matches started, with Apple TV and Roku support coming days later. This process provided an excellent learning opportunity, introducing us to the new challenges of supporting HEVC, HDR10 and much higher bitrate streams. We're happy to share our story, touching on cloud acquisition, cloud encoding, packaging (determining our bitrate/frame rate/resolution ladders), learnings around device support for HDR content, and the performance of our different players (Shaka, AVF, Exo & Roku).",
     "speakers": ["Billy Romero", "Thomas Symborski"]
+  },
+  "video-quality-assessment": {
+    "title": "Subjective video quality assessment for mobile devices",
+    "description": "What is the visual quality of the mobile video generated through your pipeline? How accurate is your measurement?\n\nUsing Adaptive Paired Comparison, the quality of a video sample is evaluated against a reference scale. Using previous responses to select the next reference sample, we only need to show each video once. With this approach we quickly and accurately estimate the perceived visual quality on mobile devices across a large set of videos, allowing us to understand impact of future encoding pipeline changes, without the need for a test lab.",
+    "speakers": ["Sebastiaan Van Leuven"]
   },
   "synchronize-watches": {
     "title": "Synchronize your Watches: Cross-platform stream synchronization of HLS and DASH",
