@@ -90,8 +90,8 @@
     "speakers": ["Megha Manohara"]
   },
   "simulating-live": {
-    "title": "Simulating livestream for testing",
-    "description": "Brightcove has created an open source tool to simulated hls livestream for testing purposes. This allows us to more easily reproduce error conditions and simulate bad data. This talk will focus on how our simulator works and how it has aided in weeding out bugs.",
+    "title": "Simulating livestreams for testing",
+    "description": "Brightcove has created an open source tool to simulate HLS livestreams for testing purposes. This allows us to more easily reproduce error conditions and simulate bad data. This talk will focus on how our simulator works and how it has aided in weeding out bugs.",
     "speakers": ["Michael Roca"]
   },
   "live-vp9-encoder": {
