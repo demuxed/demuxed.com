@@ -1,5 +1,10 @@
 [
   {
+    "company": "Comcast",
+    "name": "Alex Giladi",
+    "talk": "recycling-multi-rate-encoding"
+  },
+  {
     "company": "Fancy Bits LLC",
     "name": "Aman Gupta",
     "talk": "video-toolbox"

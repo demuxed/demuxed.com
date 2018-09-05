@@ -1,4 +1,9 @@
 {
+  "recycling-multi-rate-encoding": {
+    "title": "Virtues of Recycling in Multi-rate Encoding",
+    "description": "In this talk we will show how to double the x265 encoding speed while keeping same encoder.\n\nAdaptive streaming implies encoding of the same content in multiple bitrates and spatial resolutions. With that said, the underlying content does not change. This talk presents a simple yet powerful hierarchical encoding technique for improving computational efficiency of multi-resolution and multi-rate encoding. Video content is first encoded at a lower resolution or at a higher bitrate of same resolution. Encoder decisions taken during this encode, such as motion vectors and quadtree block structure, are then used in higher resolution encodes.\n\nThe proposed encoding approach is not pure theory. It is integrated into the stable branch of x265 open source HEVC encoder and thus is available to anyone using v2.7 and newer. The authors observed speed-ups of up to 250% for higher resolutions with no penalty in terms of visual quality. Neither is hierarchical encoding an HEVC-specific acceleration -- any motion-compensated codec should benefit from the approach.",
+    "speakers": ["Alex Giladi"]
+  },
   "decentralized-fabric": {
     "title": "A Decentralized Fabric for Video over the Internet",
     "description": "This talk will introduce a new high performance software fabric for managing and distributing video over the existing Internet based on a low latency and Internet-scale storage solution with no shared state, just-in time composition (rendering, personalization, etc.) through dynamic bitcode, blockchain controlled access and versioning, and efficient, high bandwidth content routing. We will show several examples using the fabric to stream video just-in-time to consumer audiences from single master version media and metadata, and various novel monetization solutions through blockchain smart contracts enabled by the fabric.",
