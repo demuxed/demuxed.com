@@ -123,5 +123,10 @@
     "title": "How to be data-driven when you aren’t Netflix (or even if you are)",
     "description": "This presentation examines how we built and scaled an analytics pipeline and metadata exchange to millions of concurrent users with only a handful of engineers. From building a clean dataset and choosing metrics to the impact of these choices on AB tests results, we’ll discuss what went wrong (of course), what went right (even better), and the tools we used. We’ll talk about statistical significance, metric variance and how using rudimentary statistical methods can improve confidence in production tests. Finally, we describe basic data visualization techniques that capture the complexity of each experiment’s results, especially useful when running dozens of experiments at the same time. And of course, a few fun facts from our findings on millions of streams and devices around the world.",
     "speakers": ["Charles Sonigo"]
+  },
+  "drm": {
+    "title": "Digital Rights Management: The Good, The Bad, and The Ugly",
+    "description": "Changes in content protection have led to a reduced strain for online video delivery workflows, however, challenges still remain. This session covers the state of DRM, how it works today, the standards involved, where complexity remains, and what changes to expect.",
+    "speakers": ["Thasso Griebel"]
   }
 }
