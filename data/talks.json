@@ -128,5 +128,10 @@
     "title": "Digital Rights Management: The Good, The Bad, and The Ugly",
     "description": "Changes in content protection have led to a reduced strain for online video delivery workflows, however, challenges still remain. This session covers the state of DRM, how it works today, the standards involved, where complexity remains, and what changes to expect.",
     "speakers": ["Thasso Griebel"]
+  },
+  "dav1d": {
+    "title": "Introducing dav1d, a new AV1 decoder",
+    "description": "dav1d is a new open-source AV1 decoder, licensed under BSD, that is focused on being small, fast, and cross-platform, maintained by the VideoLAN non-profit.",
+    "speakers": ["Jean-Baptiste Kempf", "Ronald Bultje"]
   }
 }

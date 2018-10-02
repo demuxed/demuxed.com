@@ -55,6 +55,11 @@
     "talk": "hlsjs"
   },
   {
+    "company": "VideoLAN",
+    "name": "Jean-Baptiste Kempf",
+    "talk": "dav1d"
+  },
+  {
     "company": "Mux",
     "name": "Jon Dahl",
     "talk": "evolution"
@@ -95,6 +100,11 @@
     "talk": "after-per-title"
   },
   {
+    "company": "VideoLAN",
+    "name": "Ronald Bultje",
+    "talk": "dav1d"
+  },
+  {
     "company": "Twitter",
     "name": "Sebastiaan Van Leuven",
     "talk": "video-quality-assessment"
@@ -133,5 +143,8 @@
     "company": "Twitch",
     "name": "Ying Cheng",
     "talk": "magic-mirror"
+  },
+  {
+    "spacer": true
   }
 ]

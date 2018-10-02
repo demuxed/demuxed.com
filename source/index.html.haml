@@ -67,16 +67,19 @@ title: Demuxed, The Conference for Video Engineers
 
     %ul.speakers-list
       - data.speakers.each do |speaker|
-        %li.speakers-list__card{id: speaker.name.downcase.split(' ').join('-')}
-          %div.speakers-list__img-wrap
-            = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.thumb.jpg", alt: "", class: "speakers-list__img")
-          %h3.speakers-list__name= speaker.name
-          %h4.speakers-list__company= speaker.company
-          %p.speakers-list__talk-title
-            = data.talks[speaker.talk].title
-            - if data.talks[speaker.talk].speakers.length > 1
-              %span.joint (joint talk)
-          %a.speakers-list__btn{href: "#popup-#{speaker.name.downcase.split(' ').join('-')}"} Talk Overview
+        - unless speaker.spacer
+          %li.speakers-list__card{id: speaker.name.downcase.split(' ').join('-')}
+            %div.speakers-list__img-wrap
+              = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.thumb.jpg", alt: "", class: "speakers-list__img")
+            %h3.speakers-list__name= speaker.name
+            %h4.speakers-list__company= speaker.company
+            %p.speakers-list__talk-title
+              = data.talks[speaker.talk].title
+              - if data.talks[speaker.talk].speakers.length > 1
+                %span.joint (joint talk)
+            %a.speakers-list__btn{href: "#popup-#{speaker.name.downcase.split(' ').join('-')}"} Talk Overview
+        - else
+          %li.speakers-list__card
 
 
     = image_tag("/images/zoetrope.svg", alt: "", class: "speaker-illustration")
@@ -91,14 +94,15 @@ title: Demuxed, The Conference for Video Engineers
 
 
 - data.speakers.each do |speaker|
-  %section.modal{id: "popup-#{speaker.name.downcase.split(' ').join('-')}"}
-    %div.modal__container.popup
-      %a.modal-btn{href: "##{speaker.name.downcase.split(' ').join('-')}"}
-      %div.speakers-list__img-wrap
-        = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.jpg", alt: "", class: "speakers-list__img")
-      %h3.speakers-list__name= speaker.name
-      %h4.speakers-list__company= speaker.company
-      .content= Tilt['markdown'].new { data.talks[speaker.talk].description }.render
+  - unless speaker.spacer
+    %section.modal{id: "popup-#{speaker.name.downcase.split(' ').join('-')}"}
+      %div.modal__container.popup
+        %a.modal-btn{href: "##{speaker.name.downcase.split(' ').join('-')}"}
+        %div.speakers-list__img-wrap
+          = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.jpg", alt: "", class: "speakers-list__img")
+        %h3.speakers-list__name= speaker.name
+        %h4.speakers-list__company= speaker.company
+        .content= Tilt['markdown'].new { data.talks[speaker.talk].description }.render
 
 
 %section.schedule#schedule
