@@ -1277,6 +1277,8 @@ h1, h2, h3, h4, h5 {
         .schedule-list__speaker {
           @include font-size(14px);
           text-transform: uppercase;
+
+          a { color: inherit };
         }
         .schedule-list__talk {
           @include font-size(12px);
@@ -1314,7 +1316,7 @@ h1, h2, h3, h4, h5 {
         .schedule-list__content {
           &::before {
             background-color: transparent;
-            @extend %lightening;
+            @extend %lightning;
             width: 14px;
             height: 20px;
             border: none;
@@ -1881,108 +1883,6 @@ h1, h2, h3, h4, h5 {
 
 }
 
-
-.modal {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 110;
-  text-align: center;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-
-  @include mq($medium) {
-   //position: fixed;
-  }
-
-  &.modal:target {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .modal__container {
-    background-color: #fff;
-    padding: 2em;
-    margin: 1em;
-    text-align: center;
-    max-width: 36em;
-    position: relative;
-    display: inline-block;
-
-    @include mq($large) {
-      margin-top: 10%;
-      padding: 3em;
-    }
-
-    .speakers-list__img-wrap {
-      display: inline-block;
-      width: 80px;
-      //height: 80px;
-      margin-bottom: 1em;
-      background-color: $brand-purple;
-    }
-
-    .speakers-list__img {
-      //width: 100%;
-      mix-blend-mode: luminosity;
-    }
-
-    .speakers-list__name {
-      @include font-size(16px);
-      line-height: 1em;
-      margin-bottom: 0.4em;
-    }
-
-    .speakers-list__company {
-      @include font-size(13px);
-      line-height: 1em;
-      margin-bottom: 1em;
-      text-transform: uppercase;
-      color: $brand-purple-light;
-    }
-
-    p {
-      @include font-size(12px);
-      line-height: 1.6em;
-      margin-bottom: 1.6em;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      @include mq($large) {
-        @include font-size(13px);
-        line-height: 1.7em;
-      }
-    }
-
-    .modal-btn {
-      @extend %modal-closed;
-      width: 70px;
-      height: 65px;
-      background-repeat: no-repeat;
-      background-position: 50%;
-      background-size: 66%;
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 120;
-
-      &:hover {
-        opacity: 0.6;
-      }
-    }
-
-  }
-}
-
 .content-page {
 
   .content-container {
@@ -2063,4 +1963,4 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-
+.talk-modal-link { cursor: pointer; }

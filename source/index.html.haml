@@ -67,19 +67,7 @@ title: Demuxed, The Conference for Video Engineers
 
     %ul.speakers-list
       - data.speakers.each do |speaker|
-        - unless speaker.spacer
-          %li.speakers-list__card{id: speaker.name.downcase.split(' ').join('-')}
-            %div.speakers-list__img-wrap
-              = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.thumb.jpg", alt: "", class: "speakers-list__img")
-            %h3.speakers-list__name= speaker.name
-            %h4.speakers-list__company= speaker.company
-            %p.speakers-list__talk-title
-              = data.talks[speaker.talk].title
-              - if data.talks[speaker.talk].speakers.length > 1
-                %span.joint (joint talk)
-            %a.speakers-list__btn{href: "#popup-#{speaker.name.downcase.split(' ').join('-')}"} Talk Overview
-        - else
-          %li.speakers-list__card
+        = partial 'partials/speaker', locals: {speaker: speaker}
 
 
     = image_tag("/images/zoetrope.svg", alt: "", class: "speaker-illustration")
@@ -91,19 +79,6 @@ title: Demuxed, The Conference for Video Engineers
     %div.grey-box.speaker-box3
     %div.purple-box.speaker-box4
     %div.pink-box.speaker-box5
-
-
-- data.speakers.each do |speaker|
-  - unless speaker.spacer
-    %section.modal{id: "popup-#{speaker.name.downcase.split(' ').join('-')}"}
-      %div.modal__container.popup
-        %a.modal-btn{href: "##{speaker.name.downcase.split(' ').join('-')}"}
-        %div.speakers-list__img-wrap
-          = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.jpg", alt: "", class: "speakers-list__img")
-        %h3.speakers-list__name= speaker.name
-        %h4.speakers-list__company= speaker.company
-        .content= Tilt['markdown'].new { data.talks[speaker.talk].description }.render
-
 
 %section.schedule#schedule
   %div.schedule-day-one
@@ -118,7 +93,11 @@ title: Demuxed, The Conference for Video Engineers
           We take our talk selection and schedule-building process very seriously. This year we received over <strong>100</strong> talk submissions, and <strong>27</strong> individuals from across the online video industry reviewed those (anonymized) submissions for a total of nearly <strong>1300</strong> reviews. A smaller group from that committee then took those aggregated reviews and helped pick the very best schedule possible, optimizing for talks that are relevant, interesting, and diverse.
 
         %p
-          Keep in mind, the individual session times and their order are subject to change, so make sure to check for changes.
+          Keep in mind, the individual session times and their order are subject to change, so make sure to check back here for changes.
+
+        %p
+          = image_tag 'lightning.svg', alt: 'Lightning'
+          indicates a 10 minute talk.
 
       %ul.schedule-list
         %li.schedule-list__title
@@ -162,7 +141,7 @@ title: Demuxed, The Conference for Video Engineers
         %h2
           After party!
         %p
-          This year's after party kicks off at <strong>6pm Thursday</strong> in <a href="https://goo.gl/maps/cGSztEUtoCF2" target="_blank" rel="noopener noreferrer">Covo</a>, which, and stay with us here, is a co-working space that becomes an amazing event space. Space is limited, so as much as we'd love for friends and colleagues to join us, please have your ticket or badge with you.
+          This year's after party kicks off at <strong>6pm Thursday</strong> in <a href="https://goo.gl/maps/cGSztEUtoCF2" target="_blank" rel="noopener noreferrer">Covo</a>, which is less than a block away from the conference venue. Space is limited, so as much as we'd love for friends and colleagues to join us, please have your ticket or badge with you.
 
 
 
@@ -297,5 +276,5 @@ title: Demuxed, The Conference for Video Engineers
       %li
         = link_to(image_tag("/images/mux.svg", alt: "", class: ""), "https://mux.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
 
-
-
+- data.talks.each do |talk|
+  = partial 'partials/talk-modal', locals: {talk: talk, speakers: data.speakers}

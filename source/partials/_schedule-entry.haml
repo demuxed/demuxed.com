@@ -15,7 +15,7 @@
         = talk.speakers.join(' & ')
     %p.schedule-list__talk
       - if !session.title
-        = talk.title
+        %a.talk-modal-link{data: {custom: {open: session.talk}}}= talk.title
       - elsif session.sponsor_image
         %span.sponsored-by
           Sponsored by:
