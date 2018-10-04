@@ -115,7 +115,7 @@ title: Demuxed, The Conference for Video Engineers
       %div.schedule-text
         %h2 Our Schedule
         %p
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          We take our talk selection and schedule-building process very seriously. This year we received over <strong>100</strong> talk submissions, and <strong>27</strong> individuals from across the online video industry reviewed those (anonymized) submissions for a total of nearly <strong>1300</strong> reviews. A smaller group from that committee then took those aggregated reviews and helped pick the very best schedule possible, optimizing for talks that are relevant, interesting, and diverse.
 
       %ul.schedule-list
         %li.schedule-list__title
@@ -123,81 +123,8 @@ title: Demuxed, The Conference for Video Engineers
             Wednesday
             %br October 17th, 2018
 
-        %li.schedule-list__item.break
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Registration
-            %p.schedule-list__talk
-
-        %li.schedule-list__item.break
-          %h4.schedule-list__time
-            8.45am &ndash; 9.00am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Opening remarks
-            %p.schedule-list__talk
-
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            9.00am &ndash; 9.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Mark Williams
-            %p.schedule-list__talk
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            9.45am &ndash; 10.15am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Thomas Daede
-            %p.schedule-list__talk
-              Lights, camera, artwork
-
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Tarke Amara
-            %p.schedule-list__talk
-              Lights, camera, artwork
-
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            9.00am &ndash; 9.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Mark Williams
-            %p.schedule-list__talk
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            9.45am &ndash; 10.15am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Thomas Daede
-            %p.schedule-list__talk
-              Lights, camera, artwork
-
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Tarke Amara
-            %p.schedule-list__talk
-              Lights, camera, artwork
-
-        %li.schedule-list__item.break
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Break
-            %p.schedule-list__talk
+        - data.schedule["day_1"].each do |session|
+          = partial 'partials/schedule-entry', locals: { session: session }
 
       %div.purple-box.schedule-box1
       %div.pink-box.schedule-box2
@@ -212,55 +139,8 @@ title: Demuxed, The Conference for Video Engineers
             %span
               Morning
 
-        %li.schedule-list__item.break
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Registration
-            %p.schedule-list__talk
-
-        %li.schedule-list__item.break
-          %h4.schedule-list__time
-            8.45am &ndash; 9.00am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Opening remarks
-            %p.schedule-list__talk
-
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            9.00am &ndash; 9.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Mark Williams
-            %p.schedule-list__talk
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            9.45am &ndash; 10.15am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Thomas Daede
-            %p.schedule-list__talk
-              Lights, camera, artwork
-
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Tarke Amara
-            %p.schedule-list__talk
-              Lights, camera, artwork
-
-        %li.schedule-list__item.break
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Break
-            %p.schedule-list__talk
+        - data.schedule["day_2_morning"].each do |session|
+          = partial 'partials/schedule-entry', locals: { session: session }
 
 
       %ul.schedule-list.pm
@@ -269,81 +149,8 @@ title: Demuxed, The Conference for Video Engineers
             %span
               Afternoon
 
-        %li.schedule-list__item.break
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Registration
-            %p.schedule-list__talk
-
-        %li.schedule-list__item.break
-          %h4.schedule-list__time
-            8.45am &ndash; 9.00am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Opening remarks
-            %p.schedule-list__talk
-
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            9.00am &ndash; 9.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Mark Williams
-            %p.schedule-list__talk
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            9.45am &ndash; 10.15am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Thomas Daede
-            %p.schedule-list__talk
-              Lights, camera, artwork
-
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Tarke Amara
-            %p.schedule-list__talk
-              Lights, camera, artwork
-
-        %li.schedule-list__item.break
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Break
-            %p.schedule-list__talk
-
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            9.00am &ndash; 9.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Mark Williams
-            %p.schedule-list__talk
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            9.45am &ndash; 10.15am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Thomas Daede
-            %p.schedule-list__talk
-              Lights, camera, artwork
-
-        %li.schedule-list__item
-          %h4.schedule-list__time
-            8.00am &ndash; 8.45am
-          %div.schedule-list__content
-            %h3.schedule-list__speaker
-              Tarke Amara
-            %p.schedule-list__talk
-              Lights, camera, artwork
+        - data.schedule["day_2_afternoon"].each do |session|
+          = partial 'partials/schedule-entry', locals: { session: session }
 
 
 
@@ -429,18 +236,18 @@ title: Demuxed, The Conference for Video Engineers
 
     %ul.sponsors__sponsor-list.platinum
       %li
-        = link_to(image_tag("/images/comcast.svg", alt: "Comcast", class: ""), "https://comcast.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/comcast.svg", alt: "Comcast", class: ""), "https://comcast.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
 
     %h4.sponsors__type
       Gold
 
     %ul.sponsors__sponsor-list.gold
       %li
-        = link_to(image_tag("/images/google.svg", alt: "Google", class: ""), "https://google.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/google.svg", alt: "Google", class: ""), "https://google.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
       %li
-        = link_to(image_tag("/images/bitmovin.svg", alt: "Bitmovin", class: ""), "https://bitmovin.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/bitmovin.svg", alt: "Bitmovin", class: ""), "https://bitmovin.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
       %li
-        = link_to(image_tag("/images/netflix.svg", alt: "Netflix", class: ""), "https://netflix.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/netflix.svg", alt: "Netflix", class: ""), "https://netflix.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
 
 
     %h4.sponsors__type
@@ -448,30 +255,30 @@ title: Demuxed, The Conference for Video Engineers
 
     %ul.sponsors__sponsor-list.silver
       %li
-        = link_to(image_tag("/images/wowza.svg", alt: "Wowza", class: ""), "https://wowza.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/wowza.svg", alt: "Wowza", class: ""), "https://wowza.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
       %li
-        = link_to(image_tag("/images/fastly.svg", alt: "Fastly", class: ""), "https://fastly.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/fastly.svg", alt: "Fastly", class: ""), "https://fastly.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
       %li
-        = link_to(image_tag("/images/cbs.svg", alt: "CBS Interactive", class: ""), "https://cbsinteractive.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/cbs.svg", alt: "CBS Interactive", class: ""), "https://cbsinteractive.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
       %li
-        = link_to(image_tag("/images/peer5.svg", alt: "Peer5", class: ""), "https://peer5.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/peer5.svg", alt: "Peer5", class: ""), "https://peer5.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
       %li
-        = link_to(image_tag("/images/jwplayer.svg", alt: "JWPlayer", class: ""), "https://jwplayer.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/jwplayer.svg", alt: "JWPlayer", class: ""), "https://jwplayer.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
 
 
     %h4.sponsors__type
       Bronze
     %ul.sponsors__sponsor-list.bronze
       %li
-        = link_to(image_tag("/images/unified-streaming.png", alt: "Unified Streaming", class: ""), "http://unified-streaming.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/unified-streaming.png", alt: "Unified Streaming", class: ""), "http://unified-streaming.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
       %li
-        = link_to(image_tag("/images/hulu.svg", alt: "", class: ""), "https://hulu.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/hulu.svg", alt: "", class: ""), "https://hulu.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
       %li
-        = link_to(image_tag("/images/m2a-media.svg", alt: "", class: ""), "http://m2amedia.tv/", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/m2a-media.svg", alt: "", class: ""), "http://m2amedia.tv/?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
       %li
-        = link_to(image_tag("/images/philo.svg", alt: "", class: ""), "https://philo.com/", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/philo.svg", alt: "", class: ""), "https://philo.com/?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
       %li
-        = link_to(image_tag("/images/vimeo.svg", alt: "", class: ""), "https://vimeo.com/", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/vimeo.svg", alt: "", class: ""), "https://vimeo.com/?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
 
 
     %h4.sponsors__type
@@ -479,14 +286,14 @@ title: Demuxed, The Conference for Video Engineers
 
     %ul.sponsors__sponsor-list.party
       %li
-        = link_to(image_tag("/images/brightcove.png", alt: "", class: ""), "https://brightcove.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/brightcove.png", alt: "", class: ""), "https://brightcove.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
 
     %h4.sponsors__type
       Conference organizers
 
     %ul.sponsors__sponsor-list.conf
       %li
-        = link_to(image_tag("/images/mux.svg", alt: "", class: ""), "https://mux.com", target: "_blank", rel: "noopener noreferrer")
+        = link_to(image_tag("/images/mux.svg", alt: "", class: ""), "https://mux.com?ref=demuxed", target: "_blank", rel: "noopener noreferrer")
 
 
 
