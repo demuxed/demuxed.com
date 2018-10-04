@@ -1051,10 +1051,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .schedule {
-
-  display: none;
-
-
   text-align: center;
   @include mq($large) {
     @include purple-divider-left;
@@ -1096,7 +1092,6 @@ h1, h2, h3, h4, h5 {
   }
 
   .schedule-box1 {
-    display: none;
     @include mq($med-large) {
       display: block;
       position: absolute;
@@ -1106,7 +1101,6 @@ h1, h2, h3, h4, h5 {
   }
 
   .schedule-box2 {
-    display:none;
     @include mq($med-large) {
       display: block;
       position: absolute;
@@ -1198,6 +1192,7 @@ h1, h2, h3, h4, h5 {
 
     p {
       line-height: 2.3em;
+      padding-bottom: 2em;
     }
   }
 
@@ -1267,7 +1262,7 @@ h1, h2, h3, h4, h5 {
 
         }
 
-        &:before {
+        &::before {
           content: "";
           position: absolute;
           display: block;
@@ -1282,6 +1277,8 @@ h1, h2, h3, h4, h5 {
         .schedule-list__speaker {
           @include font-size(14px);
           text-transform: uppercase;
+
+          a { color: inherit };
         }
         .schedule-list__talk {
           @include font-size(12px);
@@ -1291,8 +1288,18 @@ h1, h2, h3, h4, h5 {
       }
 
       &.break {
+        .sponsored-by {
+          color: $brand-grey;
+          img {
+            vertical-align: text-bottom;
+            max-width: 80px;
+          }
+        }
+      }
+
+      &.break {
         .schedule-list__content {
-          &:before {
+          &::before {
             background-color: #fff;
             border: solid 2px $brand-purple;
             width: 8px;
@@ -1301,6 +1308,19 @@ h1, h2, h3, h4, h5 {
 
           .schedule-list__speaker {
             color: $brand-grey;
+          }
+        }
+      }
+
+      &.crazy-eight {
+        .schedule-list__content {
+          &::before {
+            background-color: transparent;
+            @extend %lightning;
+            width: 14px;
+            height: 20px;
+            border: none;
+            left: -8px;
           }
         }
       }
@@ -1329,92 +1349,6 @@ h1, h2, h3, h4, h5 {
     }
   }
 }
-
-//.schedule-list {
-//  background-color: #fff;
-//  width: 100%;
-//  display: inline-block;
-//  vertical-align: top;
-//  border-left: solid 2px lighten($brand-grey, 33%);
-//
-//  @include mq($medium) {
-//    width: 34em;
-//  }
-//
-//  @include mq($x-large) {
-//    margin: 0 1.5em;
-//  }
-//
-//
-//  li {
-//    padding: 1.8em 1.6em;
-//    list-style-type: none;
-//    @extend %clearfix;
-//    text-align: left;
-//  }
-//
-//  .schedule-list__ampm {
-//
-//    h2 {
-//      text-align: center;
-//      text-transform: uppercase;
-//    }
-//  }
-//
-//  .schedule-list__time {
-//    float: left;
-//    @include font-size(17px);
-//
-//    @include mq($large) {
-//      @include font-size(19px);
-//    }
-//  }
-//
-//  .schedule-list__type {
-//    //float: right;
-//    @include font-size(13px);
-//
-//    @include mq($large) {
-//      @include font-size(14px);
-//    }
-//  }
-//
-//  .schedule-list__break {
-//
-//  }
-//
-//  .schedule-list__speaker-box {
-//    padding-top: 1.3em;
-//    clear: both;
-//    position: relative;
-//    padding-left: 5em;
-//  }
-//
-//  .schedule-list__speaker {
-//    @include font-size(22px);
-//    margin-bottom: 0.2em;
-//
-//    @include mq($large) {
-//      @include font-size(24px);
-//      line-height: 1.1em;
-//      margin-bottom: 0.1em;
-//    }
-//  }
-//
-//  .schedule-list__talk-desc {
-//    @include font-size(14px);
-//    color: $brand-purple-light;
-//  }
-//
-//
-//  .schedule-list__img {
-//    width: 60px;
-//    position: absolute;
-//    top: 1em;
-//    left: 0;
-//    border-radius: 70px;
-//  }
-//}
 
 .location {
   text-align: center;
@@ -1949,108 +1883,6 @@ h1, h2, h3, h4, h5 {
 
 }
 
-
-.modal {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 110;
-  text-align: center;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-
-  @include mq($medium) {
-   //position: fixed;
-  }
-
-  &.modal:target {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .modal__container {
-    background-color: #fff;
-    padding: 2em;
-    margin: 1em;
-    text-align: center;
-    max-width: 36em;
-    position: relative;
-    display: inline-block;
-
-    @include mq($large) {
-      margin-top: 10%;
-      padding: 3em;
-    }
-
-    .speakers-list__img-wrap {
-      display: inline-block;
-      width: 80px;
-      //height: 80px;
-      margin-bottom: 1em;
-      background-color: $brand-purple;
-    }
-
-    .speakers-list__img {
-      //width: 100%;
-      mix-blend-mode: luminosity;
-    }
-
-    .speakers-list__name {
-      @include font-size(16px);
-      line-height: 1em;
-      margin-bottom: 0.4em;
-    }
-
-    .speakers-list__company {
-      @include font-size(13px);
-      line-height: 1em;
-      margin-bottom: 1em;
-      text-transform: uppercase;
-      color: $brand-purple-light;
-    }
-
-    p {
-      @include font-size(12px);
-      line-height: 1.6em;
-      margin-bottom: 1.6em;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      @include mq($large) {
-        @include font-size(13px);
-        line-height: 1.7em;
-      }
-    }
-
-    .modal-btn {
-      @extend %modal-closed;
-      width: 70px;
-      height: 65px;
-      background-repeat: no-repeat;
-      background-position: 50%;
-      background-size: 66%;
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 120;
-
-      &:hover {
-        opacity: 0.6;
-      }
-    }
-
-  }
-}
-
 .content-page {
 
   .content-container {
@@ -2130,3 +1962,5 @@ h1, h2, h3, h4, h5 {
     }
   }
 }
+
+.talk-modal-link { cursor: pointer; }

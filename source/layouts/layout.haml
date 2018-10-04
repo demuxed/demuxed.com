@@ -14,10 +14,10 @@
 
     = favicon_tag("/favicon.ico", rel: "shortcut icon")
 
-    %link{rel: "stylesheet", href: "https://use.typekit.net/xts4zxl.css"}
-
-
+    = stylesheet_link_tag "https://use.typekit.net/xts4zxl.css"
     = stylesheet_link_tag :site
+
+    = javascript_include_tag "https://unpkg.com/micromodal/dist/micromodal.min.js"
     = javascript_include_tag :all
 
   %body{:class => page_classes}

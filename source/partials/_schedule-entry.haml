@@ -1,0 +1,22 @@
+- start_time = Time.parse(session.start)
+- end_time = Time.parse(session.end)
+- length = (end_time - start_time) / 60
+- talk = data.talks[session.talk] if session.talk
+%li.schedule-list__item{class: [('break' if session.title), ('crazy-eight' if talk && length <= 10)]}
+  %h4.schedule-list__time
+    = start_time.strftime('%l.%M%P')
+    &ndash;
+    = end_time.strftime('%l.%M%P')
+  %div.schedule-list__content
+    %h3.schedule-list__speaker
+      - if session.title
+        = session.title
+      - else
+        = talk.speakers.join(' & ')
+    %p.schedule-list__talk
+      - if !session.title
+        %a.talk-modal-link{data: {custom: {open: session.talk}}}= talk.title
+      - elsif session.sponsor_image
+        %span.sponsored-by
+          Sponsored by:
+          = link_to(image_tag(session.sponsor_image, alt: "Facebook", class: ''), 'https://facebook.com?ref=demuxed', target: '_blank', rel: "noopener noreferrer")
