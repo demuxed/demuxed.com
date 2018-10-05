@@ -35,9 +35,17 @@
    //position: fixed;
   }
 
+  .speakers {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .speaker_details {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     margin: 1em;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .modal__content {

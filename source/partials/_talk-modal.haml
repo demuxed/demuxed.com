@@ -5,12 +5,13 @@
     .modal__container{role: "dialog", aria: {modal: true, labelledby: "#{id}-title"}}
       %main.modal__content{id: "#{id}-content"}
         %a.modal-btn(data-custom-close)
-        - details.speakers.each do |speaker_name|
-          - speaker = speakers.find{ |s| s.name == speaker_name if s.name }
-          .speaker_details
-            .speakers-list__img-wrap
-              = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.jpg", alt: "", class: "speakers-list__img")
-            %h3.speakers-list__name= speaker.name
-            %h4.speakers-list__company= speaker.company
+        .speakers
+          - details.speakers.each do |speaker_name|
+            - speaker = speakers.find{ |s| s.name == speaker_name if s.name }
+            .speaker_details
+              .speakers-list__img-wrap
+                = image_tag("/images/speakers/#{speaker.name.downcase.split(' ').join('-')}.jpg", alt: "", class: "speakers-list__img")
+              %h3.speakers-list__name= speaker.name
+              %h4.speakers-list__company= speaker.company
 
         .content= Tilt['markdown'].new { details.description }.render
