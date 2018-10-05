@@ -9,15 +9,30 @@
   z-index: 110;
   text-align: center;
   position: fixed;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-
-  @include mq($medium) {
-   //position: fixed;
-  }
 
   &.is-open {
     display: block;
+  }
+
+  .modal__overlay {
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .modal__container {
+    background-color: #fff;
+    max-width: 36em;
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
+
+  @include mq($medium) {
+   //position: fixed;
   }
 
   .speaker_details {
@@ -26,7 +41,6 @@
   }
 
   .modal__content {
-    background-color: #fff;
     padding: 2em;
     margin: 1em;
     text-align: center;
@@ -35,7 +49,6 @@
     display: inline-block;
 
     @include mq($large) {
-      margin-top: 10%;
       padding: 3em;
     }
 

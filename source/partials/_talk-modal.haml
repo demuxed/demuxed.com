@@ -3,10 +3,6 @@
 .modal{id: id, aria: {hidden: true}}
   .modal__overlay{tabindex: -1, data: {custom: {close: true}}}
     .modal__container{role: "dialog", aria: {modal: true, labelledby: "#{id}-title"}}
-      %header.modal__header
-        %h2.modal__title{id: "#{id}-title"}
-          Modal Title
-
       %main.modal__content{id: "#{id}-content"}
         %a.modal-btn(data-custom-close)
         - details.speakers.each do |speaker_name|
