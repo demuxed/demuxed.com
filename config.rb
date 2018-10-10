@@ -7,6 +7,7 @@ Time.zone = "UTC"
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page "/animated-hero.html", layout: false
 
 
 # General configuration
