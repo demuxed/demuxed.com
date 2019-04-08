@@ -12,7 +12,7 @@ const JobsList = ({ jobs }) => (
         key={i}
         heading={item.position}
         subHeading={item.company}
-        text={item.description}
+        html={item.description}
         url={item.url}
       />
     ))}

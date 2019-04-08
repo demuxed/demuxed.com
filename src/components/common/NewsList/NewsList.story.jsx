@@ -6,28 +6,36 @@ import NewsList from './NewsList';
 
 const news = [
   {
-    title: 'Article title',
-    date: 'June 19, 2018',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    url: '#',
+    frontmatter: {
+      title: 'Article title',
+      date: 'June 19, 2018',
+      url: '#',
+    },
+    html: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>',
   },
   {
-    title: 'Article title',
-    date: 'June 19, 2018',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    url: '#',
+    frontmatter: {
+      title: 'Article title',
+      date: 'June 19, 2018',
+      url: '#',
+    },
+    html: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>',
   },
   {
-    title: 'Article title',
-    date: 'June 19, 2018',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    url: '#',
+    frontmatter: {
+      title: 'Article title',
+      date: 'June 19, 2018',
+      url: '#',
+    },
+    html: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>',
   },
   {
-    title: 'Article title',
-    date: 'June 19, 2018',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    url: '#',
+    frontmatter: {
+      title: 'Article title',
+      date: 'June 19, 2018',
+      url: '#',
+    },
+    html: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>',
   },
 ];
 
