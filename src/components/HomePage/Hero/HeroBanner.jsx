@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import GatsbyImage from 'gatsby-image';
 
 import Link from '../../common/Link';
 import { brandBlue } from '../../../styles/variables';
@@ -10,7 +11,7 @@ const ContentWrapper = styled.div`
   padding: 0;
 `;
 
-const Img = styled.img`
+const Img = styled(GatsbyImage)`
   display: block;
         
   &:hover {
@@ -18,10 +19,13 @@ const Img = styled.img`
   }
 `;
 
-const HeroBanner = ({ className, imageUrl, url }) => (
+const HeroBanner = ({ className, imageSharpFluid, url }) => (
   <ContentWrapper className={className}>
     <Link to={url}>
-      <Img src={imageUrl} />
+      <Img
+        fluid={imageSharpFluid}
+        alt="Hero Banner"
+      />
     </Link>
   </ContentWrapper>
 );
@@ -31,7 +35,6 @@ HeroBanner.defaultProps = {
 };
 
 HeroBanner.propTypes = {
-  imageUrl: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   className: PropTypes.string,
 };

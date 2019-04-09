@@ -24,11 +24,26 @@ const HeroContainer = () => (
             }
           }
         }
+
+        file (relativePath: { eq: "hero-banner.png" }) {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `}
     render={(data) => {
       const events = extractNodes(data.allAirtable).map(flattenAirtableNode);
-      return <Hero events={events} />;
+      const imageSharpFluid = data.file.childImageSharp.fluid;
+
+      return (
+        <Hero
+          events={events}
+          imageSharpFluid={imageSharpFluid}
+        />
+      );
     }}
   />
 );
