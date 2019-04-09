@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Container from '../../common/Container';
 import HeroBanner from './HeroBanner';
 import HeroEventCard from './HeroEventCard';
+import bannerImage from '../../../images/hero-banner.gif';
 import {
   brandBlue, large, medLarge, medium,
 } from '../../../styles/variables';
@@ -76,7 +77,7 @@ const StyledBanner = styled(HeroBanner)`
   margin-bottom: 1em;
 `;
 
-const Hero = ({ events, imageSharpFluid }) => (
+const Hero = ({ events }) => (
   <Section>
     <Container>
       <H1>The Community for Engineers Working with Video</H1>
@@ -87,7 +88,7 @@ const Hero = ({ events, imageSharpFluid }) => (
           </LeftContent>
         ) : null}
         <RightContent>
-          <StyledBanner url="#" imageSharpFluid={imageSharpFluid} />
+          <StyledBanner url="#" imageUrl={bannerImage} />
         </RightContent>
       </ContentWrapper>
     </Container>
