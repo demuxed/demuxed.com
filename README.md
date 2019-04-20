@@ -1,10 +1,9 @@
-Demuxed.com Website
-=========
+# Demuxed
 
-If you have Docker Compose installed, this should be pretty easy. Just run:
+The project uses [Gatsby](https://www.gatsbyjs.org/).
 
-```
-$ dc up
-```
+To get started with development take the following steps:
 
-This should start up Middleman and serve the site.
+0. Install Gatsby: `npm install --global gatsby-cli`
+1. Install NPM packages: `yarn`
+2. Start development server: `gatsby develop`
