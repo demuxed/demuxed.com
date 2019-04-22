@@ -67,9 +67,7 @@ const StyledButton = styled(Button)`
   padding: 0.5em 3em;
 `;
 
-const EventCard = ({
-  community, startDate, type, url,
-}) => (
+const EventCard = ({ community, startDate, type, url }) => (
   <StyledListItem>
     <Link to={url}>
       <img src={defaultEventImage} alt={community[0].name} />
@@ -86,9 +84,11 @@ const EventCard = ({
 );
 
 EventCard.propTypes = {
-  community: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string.isRequired,
-  })).isRequired,
+  community: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   startDate: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,

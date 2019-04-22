@@ -7,7 +7,11 @@ import EventPhotoLink from './EventPhotoLink';
 import EventTitle from './EventTitle';
 import defaultEventImage from '../../../../images/event.jpg';
 import { fontSize, media } from '../../../../styles/mixins';
-import { brandPink, brandTextGrey, xlLarge } from '../../../../styles/variables';
+import {
+  brandPink,
+  brandTextGrey,
+  xlLarge,
+} from '../../../../styles/variables';
 
 const ContentWrapper = styled.div`
   background-color: #fff;
@@ -71,7 +75,9 @@ const HeroEventCard = ({
       <EventTitle url={url}>{type}</EventTitle>
       <EventDate>{startDate}</EventDate>
       <EventLocation>{community[0].name}</EventLocation>
-      {logos.map((logo, i) => <EventLogo key={i} src={logo} />)}
+      {logos.map((logo, i) => (
+        <EventLogo key={i} src={logo} />
+      ))}
     </LeftContent>
     <RightContent>
       <EventPhotoLink url={url} photoUrl={defaultEventImage} />
@@ -85,9 +91,11 @@ HeroEventCard.defaultProps = {
 };
 
 HeroEventCard.propTypes = {
-  community: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string.isRequired,
-  })).isRequired,
+  community: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   startDate: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,

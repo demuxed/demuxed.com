@@ -8,7 +8,7 @@ const EventsSectionContainer = () => (
   <StaticQuery
     query={graphql`
       query {
-        allAirtable (filter: { table: { eq: "Events" } }, limit: 6) {
+        allAirtable(filter: { table: { eq: "Events" } }, limit: 6) {
           edges {
             node {
               data {
@@ -26,9 +26,8 @@ const EventsSectionContainer = () => (
         }
       }
     `}
-    render={(data) => {
+    render={data => {
       const events = extractNodes(data.allAirtable).map(flattenAirtableNode);
-      console.log(events);
       return <EventsSection events={events} />;
     }}
   />

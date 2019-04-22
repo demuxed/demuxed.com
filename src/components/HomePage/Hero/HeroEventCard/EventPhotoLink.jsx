@@ -17,13 +17,12 @@ const Img = styled.div`
   right: 0;
   left: 0;
   bottom: 0;
-  background-image: url(${props => console.log(props) || props.eventPhoto});
+  background-image: url(${props => props.eventPhoto});
   background-size: cover;
 `;
 
 const EventPhotoLink = ({ url, photoUrl }) => (
   <StyledLink to={url}>
-    asDFASDF
     <Img eventPhoto={photoUrl} />
   </StyledLink>
 );
