@@ -10,7 +10,7 @@ import { fontSize, media } from '../../../../styles/mixins';
 import { brandPink, brandTextGrey, xlLarge } from '../../../../styles/variables';
 
 const ContentWrapper = styled.div`
-  background-color: #fff; 
+  background-color: #fff;
   padding: 0;
 
   ${media(xlLarge)`
@@ -20,7 +20,7 @@ const ContentWrapper = styled.div`
 
 const LeftContent = styled.div`
   padding: 1.5em;
-      
+
   ${media(xlLarge)`
     width: 49%;
     display: inline-block;
@@ -34,7 +34,7 @@ const RightContent = styled.div`
   min-height: 160px;
   position: relative;
   background-color: ${brandPink};
-      
+
   ${media(xlLarge)`
     min-height: 11.8em;
     display: inline-block;
@@ -60,7 +60,7 @@ const EventLogo = styled.img`
 
 const HeroEventCard = ({
   className,
-  location,
+  community,
   startDate,
   type,
   url,
@@ -70,9 +70,7 @@ const HeroEventCard = ({
     <LeftContent>
       <EventTitle url={url}>{type}</EventTitle>
       <EventDate>{startDate}</EventDate>
-      {location && location[0] ? (
-        <EventLocation>{location[0].city}</EventLocation>
-      ) : null}
+      <EventLocation>{community[0].name}</EventLocation>
       {logos.map((logo, i) => <EventLogo key={i} src={logo} />)}
     </LeftContent>
     <RightContent>
@@ -87,8 +85,8 @@ HeroEventCard.defaultProps = {
 };
 
 HeroEventCard.propTypes = {
-  location: PropTypes.arrayOf(PropTypes.shape({
-    city: PropTypes.string.isRequired,
+  community: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
   })).isRequired,
   startDate: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,

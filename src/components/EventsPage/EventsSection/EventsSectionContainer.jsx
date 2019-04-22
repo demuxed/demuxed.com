@@ -12,12 +12,12 @@ const EventsSectionContainer = () => (
           edges {
             node {
               data {
-                startDate: Time_Start(formatString: "D.M.YYYY")
+                startDate: Time_Start(formatString: "M.D.YYYY")
                 type: Type
                 url: Event_URL
-                location: Location {
+                community: Community {
                   data {
-                    city: City
+                    name: Community_Name
                   }
                 }
               }

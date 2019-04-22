@@ -18,7 +18,7 @@ import {
 const StyledListItem = styled(List.Item)`
   list-style-type: none;
   text-align: left;
-  background-color: #fff; 
+  background-color: #fff;
   margin-bottom: 1em;
 
   ${media(small)`
@@ -28,7 +28,7 @@ const StyledListItem = styled(List.Item)`
     margin: 0 2.5%;
     margin-bottom: 2em;
   `}
-  
+
   ${media(medLarge)`
     width: 28%;
     margin-right: 2%;
@@ -41,13 +41,13 @@ const EventDetails = styled.div`
   position: relative;
 `;
 
-const EventTitle = styled.h3`
+const EventCommunity = styled.h3`
   ${fontSize('16px')};
   line-height: 1.2em;
   margin-bottom: 0.6em;
 `;
 
-const EventLocation = styled.h4`
+const EventType = styled.h4`
   ${fontSize('14px')};
   font-family: ${defaultSerif};
   font-weight: 500;
@@ -68,17 +68,15 @@ const StyledButton = styled(Button)`
 `;
 
 const EventCard = ({
-  location, startDate, type, url,
+  community, startDate, type, url,
 }) => (
   <StyledListItem>
     <Link to={url}>
-      <img src={defaultEventImage} alt="" />
+      <img src={defaultEventImage} alt={community[0].name} />
     </Link>
     <EventDetails>
-      <EventTitle>{type}</EventTitle>
-      {location && location[0] ? (
-        <EventLocation>{location[0].city}</EventLocation>
-      ) : null}
+      <EventCommunity>{community[0].name}</EventCommunity>
+      <EventType>{type}</EventType>
       <EventDate>{startDate}</EventDate>
       <StyledButton as={Link} to={url}>
         Join
@@ -88,8 +86,8 @@ const EventCard = ({
 );
 
 EventCard.propTypes = {
-  location: PropTypes.arrayOf(PropTypes.shape({
-    city: PropTypes.string.isRequired,
+  community: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
   })).isRequired,
   startDate: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,

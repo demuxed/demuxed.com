@@ -3,29 +3,20 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: 'Demuxed, the conference for video engineers',
-    description: 'Demuxed, the conference for video engineers.'
+    description: 'Demuxed, the conference for video engineers.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-json',
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         name: 'data',
         path: `${__dirname}/src/data/`,
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Demuxed, the conference for video engineers',
         short_name: 'Demuxed',
@@ -36,27 +27,38 @@ module.exports = {
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-styled-components`,
-    `gatsby-transformer-remark`,
+    'gatsby-plugin-styled-components',
+    'gatsby-transformer-remark',
     {
-      // Requires GATSBY_AIRTABLE_API_KEY env variable to be set
-      resolve: `gatsby-source-airtable`,
+      resolve: 'gatsby-source-airtable',
       options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
         tables: [
           {
-            baseId: `appNzvLTUWY5c8z6W`,
-            tableName: `Events`,
-            tableView: `All Upcoming`,
-            tableLinks: [`Location`],
+            baseId: 'appFSpQPrQIH2CvT5',
+            tableName: 'Events',
+            tableView: 'All Upcoming',
+            tableLinks: ['Community'],
+            mappings: { Logo: 'fileNode' },
           },
           {
-            baseId: `appNzvLTUWY5c8z6W`,
-            tableName: `Locations`,
-            tableView: `All`,
+            baseId: 'appFSpQPrQIH2CvT5',
+            tableName: 'Communities',
+            tableView: 'Grid view',
+            mappings: { Logo: 'fileNode' },
           },
         ],
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     // {
     //   resolve: 'gatsby-source-twitter',
     //   options: {
