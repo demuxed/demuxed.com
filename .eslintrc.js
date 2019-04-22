@@ -12,7 +12,7 @@ module.exports = {
     window: true,
     graphql: true,
   },
-  extends: 'eslint-config-airbnb',
+  extends: ['eslint-config-airbnb', 'plugin:prettier/recommended', 'prettier/react'],
   rules: {
     'import/no-extraneous-dependencies': false,
     'react/prop-types': false,

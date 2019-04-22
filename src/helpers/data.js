@@ -1,8 +1,7 @@
-export const extractNodes = dataArray => (
-  dataArray ? dataArray.edges.map(edge => edge.node) : []
-);
+export const extractNodes = dataArray =>
+  dataArray ? dataArray.edges.map(edge => edge.node) : [];
 
-export const flattenAirtableNode = (node) => {
+export const flattenAirtableNode = node => {
   if (Array.isArray(node)) {
     return node.map(flattenAirtableNode);
   }

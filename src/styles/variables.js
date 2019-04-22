@@ -15,7 +15,8 @@ export const buttonFont = '"ocr-a-std", monospace';
 export const defaultSerif = '"ocr-a-std", monospace';
 export const fontColor = '#2f1c46';
 export const headlineFont = '"ocr-a-std", monospace';
-export const lineHeightRatio = parseInt(baseLineHeight, 10) / parseInt(baseFontSize, 10);
+export const lineHeightRatio =
+  parseInt(baseLineHeight, 10) / parseInt(baseFontSize, 10);
 
 // Media breakpoints
 export const small = 600;

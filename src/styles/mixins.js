@@ -3,11 +3,15 @@ import { css } from 'styled-components';
 import { baseFontSize, baseLineHeight, transitionSpeed } from './variables';
 
 export const animateIn = () => css`
-  animation: fadein .5s ease-in;
+  animation: fadein 0.5s ease-in;
 
   @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 `;
 
@@ -25,7 +29,7 @@ export const clearfix = () => css`
   }
 `;
 
-export const fontSize = (size) => {
+export const fontSize = size => {
   const fontSizeNum = parseInt(size, 10);
   const baseFontSizeNum = parseInt(baseFontSize, 10);
   const baseLineHeightNum = parseInt(baseLineHeight, 10);
@@ -33,7 +37,8 @@ export const fontSize = (size) => {
   return css`
     font-size: ${fontSizeNum}px;
     font-size: ${fontSizeNum / baseFontSizeNum}rem;
-    line-height: ${Math.ceil(fontSizeNum / baseLineHeightNum) * (baseLineHeightNum / fontSizeNum)};
+    line-height: ${Math.ceil(fontSizeNum / baseLineHeightNum) *
+      (baseLineHeightNum / fontSizeNum)};
   `;
 };
 
