@@ -7,7 +7,9 @@ import EventCard from './EventCard';
 
 const EventsList = ({ events }) => (
   <List>
-    {events.map((item, i) => <EventCard key={i} {...item} />)}
+    {events.map((item, i) => (
+      <EventCard key={i} {...item} />
+    ))}
   </List>
 );
 

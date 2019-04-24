@@ -8,10 +8,12 @@ export const flattenAirtableNode = node => {
 
   const { data: nodeData } = node;
 
+  if (typeof nodeData === 'undefined') return nodeData;
+
   return Object.keys(nodeData).reduce((acc, key) => {
     let val = nodeData[key];
 
-    if (typeof val === 'object' && val !== null) {
+    if (typeof val === 'object' && val !== null && !val.localFiles) {
       val = flattenAirtableNode(val);
     }
 

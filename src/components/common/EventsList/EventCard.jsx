@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import get from 'lodash/get';
+import Img from 'gatsby-image';
 
 import Button from '../Button';
 import Link from '../Link';
@@ -36,6 +38,17 @@ const StyledListItem = styled(List.Item)`
   `}
 `;
 
+const EventImageLink = styled(Link)`
+  width: 100%;
+  height: 215px;
+  overflow: hidden;
+  display: flex;
+
+  img {
+    align-self: center;
+  }
+`;
+
 const EventDetails = styled.div`
   padding: 2em;
   position: relative;
@@ -67,13 +80,20 @@ const StyledButton = styled(Button)`
   padding: 0.5em 3em;
 `;
 
-const EventCard = ({ community, startDate, type, url }) => (
+const communityImage = community =>
+  get(
+    community,
+    'Logo.localFiles[0].childImageSharp.fixed.src',
+    defaultEventImage
+  );
+
+const EventCard = ({ community: [community], startDate, type, url }) => (
   <StyledListItem>
-    <Link to={url}>
-      <img src={defaultEventImage} alt={community[0].name} />
-    </Link>
+    <EventImageLink to={url}>
+      <img src={communityImage(community)} alt={community.name} />
+    </EventImageLink>
     <EventDetails>
-      <EventCommunity>{community[0].name}</EventCommunity>
+      <EventCommunity>{community.name}</EventCommunity>
       <EventType>{type}</EventType>
       <EventDate>{startDate}</EventDate>
       <StyledButton as={Link} to={url}>

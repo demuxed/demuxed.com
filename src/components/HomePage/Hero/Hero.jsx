@@ -6,9 +6,7 @@ import Container from '../../common/Container';
 import HeroBanner from './HeroBanner';
 import HeroEventCard from './HeroEventCard';
 import bannerImage from '../../../images/hero-banner.gif';
-import {
-  brandBlue, large, medLarge, medium,
-} from '../../../styles/variables';
+import { brandBlue, large, medLarge, medium } from '../../../styles/variables';
 import { fontSize, media } from '../../../styles/mixins';
 
 const Section = styled.section`
@@ -23,7 +21,7 @@ const H1 = styled.h1`
   margin-bottom: 1em;
   text-align: center;
   text-transform: uppercase;
-  
+
   ${media(medLarge)`
     ${fontSize('24px')};
   `}
@@ -84,7 +82,9 @@ const Hero = ({ events }) => (
       <ContentWrapper>
         {events.length ? (
           <LeftContent>
-            {events.map((event, i) => <StyledEventCard key={i} {...event} />)}
+            {events.map((event, i) => (
+              <StyledEventCard key={i} {...event} />
+            ))}
           </LeftContent>
         ) : null}
         <RightContent>

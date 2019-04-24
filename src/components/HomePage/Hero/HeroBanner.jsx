@@ -12,9 +12,9 @@ const ContentWrapper = styled.div`
 
 const Img = styled.img`
   display: block;
-        
+
   &:hover {
-    box-shadow: 0px 0px 52px -6px rgba(252,123,251,0.6);
+    box-shadow: 0px 0px 52px -6px rgba(252, 123, 251, 0.6);
   }
 `;
 

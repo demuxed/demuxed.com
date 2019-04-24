@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import get from 'lodash/get';
 
 import EventPhotoLink from './EventPhotoLink';
 import EventTitle from './EventTitle';
@@ -37,7 +38,6 @@ const RightContent = styled.div`
   display: none;
   min-height: 160px;
   position: relative;
-  background-color: ${brandPink};
 
   ${media(xlLarge)`
     min-height: 11.8em;
@@ -62,6 +62,13 @@ const EventLogo = styled.img`
   max-width: 60px;
 `;
 
+const communityImage = community =>
+  get(
+    community,
+    'Logo.localFiles[0].childImageSharp.fixed.src',
+    defaultEventImage
+  );
+
 const HeroEventCard = ({
   className,
   community,
@@ -80,7 +87,7 @@ const HeroEventCard = ({
       ))}
     </LeftContent>
     <RightContent>
-      <EventPhotoLink url={url} photoUrl={defaultEventImage} />
+      <EventPhotoLink url={url} photoUrl={communityImage(community[0])} />
     </RightContent>
   </ContentWrapper>
 );

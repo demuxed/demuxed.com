@@ -4,7 +4,11 @@ import styled from 'styled-components';
 
 import Link from '../../../common/Link';
 import { fontSize } from '../../../../styles/mixins';
-import { brandPink, defaultSerif, fontColor } from '../../../../styles/variables';
+import {
+  brandPink,
+  defaultSerif,
+  fontColor,
+} from '../../../../styles/variables';
 
 const H3 = styled.h3`
   ${fontSize('13px')};
@@ -25,9 +29,7 @@ const StyledLink = styled(Link)`
 
 const EventTitle = ({ children, url }) => (
   <H3>
-    <StyledLink to={url}>
-      {children}
-    </StyledLink>
+    <StyledLink to={url}>{children}</StyledLink>
   </H3>
 );
 

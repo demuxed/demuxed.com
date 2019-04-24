@@ -18,6 +18,15 @@ const EventsSectionContainer = () => (
                 community: Community {
                   data {
                     name: Community_Name
+                    Logo {
+                      localFiles {
+                        childImageSharp {
+                          fixed(width: 500) {
+                            ...GatsbyImageSharpFixed
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }

@@ -11,6 +11,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'data',
         path: `${__dirname}/src/data/`,
       },
@@ -39,22 +46,14 @@ module.exports = {
             tableName: 'Events',
             tableView: 'All Upcoming',
             tableLinks: ['Community'],
-            mappings: { Logo: 'fileNode' },
           },
           {
             baseId: 'appFSpQPrQIH2CvT5',
             tableName: 'Communities',
             tableView: 'Grid view',
-            mappings: { Logo: 'fileNode' },
+            mapping: { Logo: 'fileNode' },
           },
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
       },
     },
     'gatsby-transformer-sharp',
