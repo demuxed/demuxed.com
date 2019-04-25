@@ -88,7 +88,7 @@ const Hero = ({ events }) => (
           </LeftContent>
         ) : null}
         <RightContent>
-          <StyledBanner url="#" imageUrl={bannerImage} />
+          <StyledBanner url="https://2019.demuxed.com" imageUrl={bannerImage} />
         </RightContent>
       </ContentWrapper>
     </Container>
