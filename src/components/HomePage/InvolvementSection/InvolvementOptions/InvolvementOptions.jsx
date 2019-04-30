@@ -35,7 +35,7 @@ const InvolvementOptions = () => (
       <IOCard.Heading>Subscribe to the Demuxed podcast</IOCard.Heading>
       <IOCard.Button
         as={Link}
-        to="https://itunes.apple.com/us/podcast/demuxed/id1156304199?mt=2"
+        to="https://www.heavybit.com/library/podcasts/demuxed/"
       >
         Subscribe
       </IOCard.Button>
