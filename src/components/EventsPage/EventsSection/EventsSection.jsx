@@ -9,7 +9,7 @@ import PageSection from '../../common/PageSection';
 const EventsSection = ({ communities, events }) => (
   <>
     <PageSection>
-      <PageSection.Heading>Upcoming Meetuos/Events</PageSection.Heading>
+      <PageSection.Heading>Upcoming Meetups/Events</PageSection.Heading>
       <PageSection.SubHeading>
         Run an event or interested in running one?&nbsp;
         <Link to="mailto:info@demuxed.com">Get in touch!</Link>

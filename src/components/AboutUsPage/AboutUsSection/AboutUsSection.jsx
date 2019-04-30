@@ -5,9 +5,7 @@ import xss from 'xss';
 
 import PageSection from '../../common/PageSection';
 import { fontSize, media } from '../../../styles/mixins';
-import {
-  large, medium, xlLarge,
-} from '../../../styles/variables';
+import { large, medium, xlLarge } from '../../../styles/variables';
 
 const AboutUsText = styled.div`
   text-align: left;
@@ -48,7 +46,7 @@ const AboutUsImage = styled.img`
   width: 100%;
   max-width: 706px;
   display: inline-block;
-  
+
   ${media(xlLarge)`
     float: right;
   `}

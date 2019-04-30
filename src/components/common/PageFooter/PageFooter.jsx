@@ -15,7 +15,7 @@ const navBlocks = [
     title: 'Community',
     links: [
       { to: '/', caption: 'Home' },
-      { to: '/events', caption: 'Events' },
+      { to: '/events', caption: 'Events & Meetups' },
       // { to: '/jobs', caption: 'Jobs' },
       // { to: '/videos', caption: 'Videos' },
       { to: '/about', caption: 'About' },
@@ -24,10 +24,7 @@ const navBlocks = [
   },
   {
     title: 'Legal stuff',
-    links: [
-      { to: 'https://confcodeofconduct.com/', caption: 'Code of Conduct' },
-      { to: '/', caption: 'Privacy' },
-    ],
+    links: [{ to: '/code-of-conduct', caption: 'Code of Conduct' }],
   },
   {
     title: 'Follow us',
