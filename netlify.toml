@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/meetups"
+  to = "/events"
+  status = 301
