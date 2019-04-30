@@ -8,7 +8,7 @@ const EventsSectionContainer = () => (
   <StaticQuery
     query={graphql`
       query {
-        allAirtable(filter: { table: { eq: "Events" } }) {
+        events: allAirtable(filter: { table: { eq: "Events" } }) {
           edges {
             node {
               data {
@@ -33,11 +33,34 @@ const EventsSectionContainer = () => (
             }
           }
         }
+
+        communities: allAirtable(filter: { table: { eq: "Communities" } }) {
+          edges {
+            node {
+              data {
+                name: Community_Name
+                url: URL
+                logo: Logo {
+                  localFiles {
+                    childImageSharp {
+                      fixed(width: 500) {
+                        ...GatsbyImageSharpFixed
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     `}
     render={data => {
-      const events = extractNodes(data.allAirtable).map(flattenAirtableNode);
-      return <EventsSection events={events} />;
+      const events = extractNodes(data.events).map(flattenAirtableNode);
+      const communities = extractNodes(data.communities).map(
+        flattenAirtableNode
+      );
+      return <EventsSection events={events} communities={communities} />;
     }}
   />
 );
