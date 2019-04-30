@@ -42,13 +42,13 @@ module.exports = {
         apiKey: process.env.AIRTABLE_API_KEY,
         tables: [
           {
-            baseId: 'appFSpQPrQIH2CvT5',
+            baseId: process.env.AIRTABLE_BASE_EVENTS,
             tableName: 'Events',
             tableView: 'All Upcoming',
             tableLinks: ['Community'],
           },
           {
-            baseId: 'appFSpQPrQIH2CvT5',
+            baseId: process.env.AIRTABLE_BASE_EVENTS,
             tableName: 'Communities',
             tableView: 'Grid view',
             mapping: { Logo: 'fileNode' },
