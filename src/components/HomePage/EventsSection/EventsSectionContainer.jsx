@@ -8,7 +8,11 @@ const EventsSectionContainer = () => (
   <StaticQuery
     query={graphql`
       query {
-        allAirtable(filter: { table: { eq: "Events" } }, limit: 6) {
+        allAirtable(
+          filter: { table: { eq: "Events" } }
+          sort: { fields: [data___Time_Start], order: ASC }
+          limit: 6
+        ) {
           edges {
             node {
               data {
