@@ -8,7 +8,11 @@ const HeroContainer = () => (
   <StaticQuery
     query={graphql`
       query {
-        allAirtable(filter: { table: { eq: "Events" } }, limit: 2) {
+        allAirtable(
+          filter: { table: { eq: "Events" } }
+          sort: { fields: [data___Time_Start], order: ASC }
+          limit: 2
+        ) {
           edges {
             node {
               data {
