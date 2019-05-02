@@ -16,7 +16,7 @@ const HeroContainer = () => (
           edges {
             node {
               data {
-                startDate: Time_Start(formatString: "M.D.YYYY")
+                startDate: Time_Start(formatString: "MMM D, YYYY")
                 type: Type
                 url: Event_URL
                 community: Community {
