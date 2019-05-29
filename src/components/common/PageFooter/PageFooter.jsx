@@ -40,7 +40,7 @@ const navBlocks = [
         icon: youtubeIcon,
       },
       {
-        to: 'https://www.facebook.com/info',
+        to: 'https://www.facebook.com/demuxed',
         caption: 'Facebook',
         icon: facebookIcon,
       },
