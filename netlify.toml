@@ -2,3 +2,8 @@
   from = "/meetups"
   to = "/events"
   status = 301
+
+[[redirects]]
+  from = "/londonfeedback"
+  to = "https://www.surveymonkey.co.uk/r/WVLNHGN"
+  status = 302
