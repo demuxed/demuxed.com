@@ -2,8 +2,8 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: 'Demuxed, the conference for video engineers',
-    description: 'Demuxed, the conference for video engineers.',
+    title: 'Demuxed, the community for engineers working with video.',
+    description: 'Demuxed, the community for engineers working with video.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Demuxed, the conference for video engineers',
+        name: 'Demuxed, the community for engineers working with video.',
         short_name: 'Demuxed',
         start_url: '/',
         background_color: '#efeaf3',
