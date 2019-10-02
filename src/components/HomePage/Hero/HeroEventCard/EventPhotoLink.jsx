@@ -18,7 +18,9 @@ const Img = styled.div`
   left: 0;
   bottom: 0;
   background-image: url(${props => props.eventPhoto});
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 `;
 
 const EventPhotoLink = ({ url, photoUrl }) => (
