@@ -7,3 +7,8 @@
   from = "/londonfeedback"
   to = "https://www.surveymonkey.co.uk/r/WVLNHGN"
   status = 302
+
+[[redirects]]
+  from = "/londonvideos"
+  to = "https://www.youtube.com/channel/UCcY68Rc35-UXADMXOH8G7eA"
+  status = 302
