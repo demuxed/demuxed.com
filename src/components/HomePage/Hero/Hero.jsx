@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Container from '../../common/Container';
 import HeroBanner from './HeroBanner';
 import HeroEventCard from './HeroEventCard';
-import bannerImage from '../../../images/hero-banner.gif';
+import bannerImage from '../../../images/europe-hero.png';
 import { brandBlue, large, medLarge, medium } from '../../../styles/variables';
 import { fontSize, media } from '../../../styles/mixins';
 
@@ -88,7 +88,7 @@ const Hero = ({ events }) => (
           </LeftContent>
         ) : null}
         <RightContent>
-          <StyledBanner url="https://2019.demuxed.com" imageUrl={bannerImage} />
+          <StyledBanner url="https://europe.demuxed.com" imageUrl={bannerImage} />
         </RightContent>
       </ContentWrapper>
     </Container>
