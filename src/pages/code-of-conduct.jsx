@@ -136,9 +136,9 @@ const CodeOfConduct = () => (
 
         <p>
           The text of this page is a modified version of{' '}
-          <a href="https://codeofconduct.com">confcodeofconduct.com</a>, which
-          is recommended by diversity and inclusion experts for in-person group
-          events. It has been modified to include our conference name and
+          <a href="https://confcodeofconduct.com">confcodeofconduct.com</a>,
+          which is recommended by diversity and inclusion experts for in-person
+          group events. It has been modified to include our conference name and
           relevant contact information.
         </p>
       </CodeOfConductContent>
