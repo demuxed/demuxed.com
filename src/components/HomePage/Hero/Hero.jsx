@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Container from '../../common/Container';
 import HeroBanner from './HeroBanner';
 import HeroEventCard from './HeroEventCard';
-import bannerImage from '../../../images/2020-hero-banner.png';
+import bannerImage from '../../../images/demuxed-2021-hero.png';
 import { brandBlue, large, medLarge, medium } from '../../../styles/variables';
 import { fontSize, media } from '../../../styles/mixins';
 
