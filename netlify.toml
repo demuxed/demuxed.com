@@ -12,3 +12,8 @@
   from = "/londonvideos"
   to = "https://www.youtube.com/channel/UCcY68Rc35-UXADMXOH8G7eA"
   status = 302
+
+[[redirects]]
+  from = "/live"
+  to = "https://2021.demuxed.com/live"
+  status = 302
