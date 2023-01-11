@@ -29,7 +29,7 @@
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-source-twitter": "^2.0.0",
     "gatsby-transformer-json": "^2.1.6",
-    "gatsby-transformer-remark": "^2.1.15",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.1.18",
     "lodash": "^4.17.13",
     "polished": "^2.3.1",
