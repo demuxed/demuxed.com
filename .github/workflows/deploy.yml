@@ -17,6 +17,9 @@ jobs:
           node-version: 10
 
       - name: Install and Build 🔧
+        env :
+          AIRTABLE_API_KEY: ${{ env.AIRTABLE_API_KEY }}
+          AIRTABLE_BASE_EVENTS: ${{ env.AIRTABLE_BASE_EVENTS }}
         run: |
           yarn install
           yarn build
