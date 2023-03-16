@@ -13,8 +13,8 @@ jobs:
 
       - name: Install and Build 🔧
         uses: actions/setup-node@v3
-          with:
-            node-version: 10
+        with:
+          node-version: 10
         run: |
           yarn install
           yarn build
