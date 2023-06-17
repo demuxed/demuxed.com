@@ -12,7 +12,7 @@ export default function Community({ community }: { community: Community }) {
     >
       <div className="p-2 border-b border-black">
         <div
-          className="w-full h-44 bg-contain bg-no-repeat bg-center flex items-center justify-center"
+          className="w-full h-36 bg-contain bg-no-repeat bg-center flex items-center justify-center"
           style={{
             backgroundImage: `url(${community.logo?.[0].url})`,
           }}

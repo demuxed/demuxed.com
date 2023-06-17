@@ -33,7 +33,7 @@ export default async function Home() {
           Upcoming community stuff
         </h2>
         <div className="grid grid-flow-row-dense grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-          <div className="border border-black flex flex-row p-4 gap-8 row-span-2 sm:col-span-2 place-content-center">
+          <div className="border border-black flex flex-col sm:flex-row p-4 gap-8 row-span-2 sm:col-span-2 place-content-center">
             <HomeCTA className="w-1/3" />
             <div className="flex flex-col justify-center">
               <Link href="https://2023.demuxed.com">
@@ -44,12 +44,18 @@ export default async function Home() {
                 <br />
                 San Francisco, CA
               </p>
-              <div className="flex flex-row gap-2">
-                <Link href="https://2023.demuxed.com/submit">
-                  <Button>Submit a talk</Button>
+              <div className="flex flex-row max-[250px]:flex-col gap-2">
+                <Link
+                  href="https://2023.demuxed.com/submit"
+                  className="flex-1 sm:flex-none"
+                >
+                  <Button className="w-full">Submit a talk</Button>
                 </Link>
-                <Link href="mailto:sponsor@demuxed.com">
-                  <Button>Sponsor</Button>
+                <Link
+                  href="mailto:sponsor@demuxed.com"
+                  className="flex-1 sm:flex-none"
+                >
+                  <Button className="w-full">Sponsor</Button>
                 </Link>
               </div>
             </div>

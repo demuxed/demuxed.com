@@ -73,14 +73,14 @@ export default async function Page() {
       </p>
 
       <h2 className="text-3xl font-semibold py-8">Upcoming Events</h2>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
         {events.map((event) => (
           <CommunityEventItem key={event.id} event={event} />
         ))}
       </div>
 
       <h2 className="text-3xl font-semibold pt-16 pb-8">Communities</h2>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
         {communities.map((community) => (
           <CommunityItem key={community.id} community={community} />
         ))}
