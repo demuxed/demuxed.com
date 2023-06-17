@@ -33,7 +33,7 @@ export default async function Home() {
           Upcoming community stuff
         </h2>
         <div className="grid grid-flow-row-dense grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-          <div className="border border-black flex flex-col sm:flex-row p-4 gap-8 row-span-2 sm:col-span-2 place-content-center">
+          <div className="border-2 border-black flex flex-col sm:flex-row p-4 gap-8 row-span-2 sm:col-span-2 place-content-center">
             <HomeCTA className="w-1/3" />
             <div className="flex flex-col justify-center">
               <Link href="https://2023.demuxed.com">
@@ -60,8 +60,12 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          {oneEventPerCommunity(events).map((event) => (
-            <CommunityEventItem key={event.id} event={event} />
+          {oneEventPerCommunity(events).map((event, index) => (
+            <CommunityEventItem
+              key={event.id}
+              event={event}
+              className={index === 0 ? '-order-1' : ''}
+            />
           ))}
         </div>
       </div>

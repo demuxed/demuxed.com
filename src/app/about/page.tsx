@@ -39,7 +39,7 @@ export default function About() {
       <h2>Our guiding principles</h2>
       <div className="grid md:grid-cols-3 gap-2">
         <div className="flex flex-col h-full">
-          <h3>No Marketing</h3>
+          <h3 className="h-16">No Marketing</h3>
           <p>
             Speakers are selected based on merit, not how much money their
             company paid. To be clear, that means speaking slots aren't for
@@ -48,7 +48,7 @@ export default function About() {
           </p>
         </div>
         <div className="flex flex-col h-full">
-          <h3>Affordable</h3>
+          <h3 className="h-16">Affordable</h3>
           <p>
             We want anyone in the industry to be able to come, keeping tickets
             reasonably priced through amazing sponsors and backing from our
@@ -57,7 +57,7 @@ export default function About() {
           </p>
         </div>
         <div className="flex flex-col h-full">
-          <h3>For everyone in the industry</h3>
+          <h3 className="h-16">For everyone in the industry</h3>
           <p>
             In keeping with our love for reasonable standards, we've adopted the{' '}
             <Link href="http://confcodeofconduct.com/">

@@ -5,14 +5,16 @@ import { format } from 'date-fns';
 
 export default function CommunityEventItem({
   event,
+  className = '',
 }: {
   event: CommunityEvent;
+  className?: string;
 }) {
   return (
     <Link
       href={event.url}
       key={event.id}
-      className="border border-black p-2 relative hover:bg-slate-50 hover:outline hover:outline-1 hover:outline-black h-24"
+      className={`border border-black p-2 relative hover:bg-slate-50 hover:outline hover:outline-1 hover:outline-black h-24 ${className}`}
     >
       <h5 className="text-l font-semibold">{event.community?.name}</h5>
       <Badge color="green" className="absolute bottom-0 right-0">
