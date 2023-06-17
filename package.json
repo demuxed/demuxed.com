@@ -16,7 +16,6 @@
     "airtable": "^0.12.1",
     "autoprefixer": "10.4.14",
     "cheerio": "^1.0.0-rc.12",
-    "clsx": "^1.2.1",
     "date-fns": "^2.30.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
