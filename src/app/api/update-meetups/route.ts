@@ -62,49 +62,62 @@ export async function POST() {
     const response = await fetch(meetupEventsUrl);
 
     const $ = cheerio.load(await response.text());
-    const events = $('.eventList-list').find('li');
+    const events = $('.eventList-list > li');
 
-    console.log(community.name, events.length);
-    events.map(async (i, $el) => {
-      const startTimeStr = events
-        .find('.eventTimeDisplay time')
-        .attr('datetime');
-      const startTime = new Date(parseInt(startTimeStr as string));
+    log(`Found ${events.length} events`, community);
+    return events
+      .map(async (i, $el) => {
+        const startTimeStr = $($el)
+          .find('.eventTimeDisplay time')
+          .attr('datetime');
 
-      log(`Upcoming event found`, community, startTime.toISOString());
+        const startTime = new Date(parseInt(startTimeStr as string));
 
-      const relativeLink = events.find('.eventCard--link').attr('href');
-      const eventUrl = createUrl('https://meetup.com', relativeLink || '');
+        log(`Upcoming event found`, community, startTime.toISOString());
 
-      const existingEvent = eventRecords.find(
-        (r) => r.get('Event URL') === eventUrl.toString()
-      );
+        const relativeLink = $($el).find('.eventCard--link').attr('href');
+        const eventUrl = createUrl('https://meetup.com', relativeLink || '');
 
-      if (existingEvent) {
-        log(
-          `Event already exists (${existingEvent.id}), skipping`,
-          community,
-          startTime.toISOString()
-        );
-      } else {
-        log(
-          'Event does not exist, creating',
-          community,
-          startTime.toISOString()
+        const existingEvent = eventRecords.find(
+          (r) => r.get('Event URL') === eventUrl.toString()
         );
 
-        const newEvent = await base('Events').create({
-          'Time Start': startTime.toISOString(),
-          Community: [community.id],
-          Type: 'Meetup',
-          'Event URL': eventUrl.toString(),
-        });
-        log(`Event created ${newEvent.id}`, community, startTime.toISOString());
-      }
-    });
+        if (existingEvent) {
+          log(
+            `Event already exists (${existingEvent.id}), skipping`,
+            community,
+            startTime.toISOString()
+          );
+        } else {
+          log(
+            'Event does not exist, creating',
+            community,
+            startTime.toISOString()
+          );
+
+          const newEvent = await base('Events').create({
+            'Time Start': startTime.toISOString(),
+            Community: [community.id],
+            Type: 'Meetup',
+            'Event URL': eventUrl.toString(),
+          });
+          log(
+            `Event created ${newEvent.id}`,
+            community,
+            startTime.toISOString()
+          );
+        }
+      })
+      .toArray();
   });
 
-  const work = await Promise.all(communities);
+  const communityPromises = await Promise.all(communities);
+
+  // communityPromises should at this point be an array of communities, which contain an array of
+  // events. Flatten it out so we can await all of the events and make sure Airtable gets updated.
+  const events = await Promise.all(communityPromises.flat());
+
+  console.log(`\n\nAll done! Dealt with ${events.length} events.`);
 
   return NextResponse.json({ hello: 'world' });
 }
