@@ -119,5 +119,8 @@ export async function POST() {
 
   console.log(`\n\nAll done! Dealt with ${events.length} events.`);
 
-  return NextResponse.json({ hello: 'world' });
+  return NextResponse.json({
+    communities_processed: communityRecords.length,
+    events_processed: events.length,
+  });
 }

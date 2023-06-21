@@ -67,7 +67,7 @@ export default function NewsletterSubscribe(props: NewsletterSubscribeProps) {
         />
       </div>
       <Button type="submit" className="w-full">
-        Send me video industry stuff
+        Subscribe me
       </Button>
     </form>
   );
