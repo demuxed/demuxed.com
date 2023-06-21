@@ -15,7 +15,7 @@ export default async function Home() {
   return (
     <main className="container max-w-screen-lg mx-auto pt-4 pb-8">
       <div className="flex flex-col items-center justify-center mt-8 max-w-screen-md">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-4xl md:text-6xl font-bold">
           The conference &amp; community for video devs
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600">

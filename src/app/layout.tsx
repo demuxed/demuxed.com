@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Demuxed',
-  description: 'The conference for video devs',
+  description: 'The conference & community for video devs',
 };
 
 export default function RootLayout({
