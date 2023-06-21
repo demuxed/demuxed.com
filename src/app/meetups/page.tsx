@@ -1,8 +1,4 @@
 import { format } from 'date-fns';
-import {
-  CalendarDaysIcon,
-  ArrowTopRightOnSquareIcon,
-} from '@heroicons/react/20/solid';
 import Link from 'next/link';
 
 import CommunityItem from '@/components/CommunityItem';

@@ -1,7 +1,4 @@
 import Link from 'next/link';
-import Badge from '@/components/Badge';
-import { CalendarDaysIcon } from '@heroicons/react/20/solid';
-import { format } from 'date-fns';
 
 export default function Community({ community }: { community: Community }) {
   return (
