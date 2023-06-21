@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="bg-slate-50 border-t-2 border-black">
-        <div className="container max-w-screen-md mx-auto py-12 px-4 md:px-0">
+        <div className="container max-w-screen-lg mx-auto py-12 px-4 md:px-0">
           <DemuxedLogo className="w-40" />
           <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
             <div className="col-span-2 md:col-span-3">

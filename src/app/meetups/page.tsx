@@ -46,15 +46,15 @@ export default async function Page() {
   const { communities, events } = await getData();
 
   return (
-    <main className="container max-w-screen-md mx-auto pt-4 pb-16">
+    <main className="container max-w-screen-lg mx-auto pt-4 pb-16">
       <h1 className="text-6xl font-bold mb-8">Meetups & Events</h1>
 
-      <p className="py-4">
+      <p className="py-4 max-w-screen-md">
         These communities are all run by amazing, independent organizers from
         all across the video industry and globe. If you're interested in getting
         involved with any of them, help make introductions!
       </p>
-      <p className="py-4">
+      <p className="py-4 max-w-screen-md">
         If you're interested in starting a new community,{' '}
         <Link
           className="underline hover:text-gray-600"
@@ -66,7 +66,7 @@ export default async function Page() {
         and in some cases we've even been able to help coordinate getting
         speakers involved.
       </p>
-      <p className="py-4">
+      <p className="py-4 max-w-screen-md">
         These upcoming events are pulled directly from each group's Meetup page
         on a consistent basis and is updated every few hours. If you notice
         something wrong, out of date, etc, please let us know!

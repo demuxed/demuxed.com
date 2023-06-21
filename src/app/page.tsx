@@ -13,8 +13,8 @@ export default async function Home() {
   const events = await getUpcomingEvents();
 
   return (
-    <main className="container max-w-screen-md mx-auto pt-4 pb-8">
-      <div className="flex flex-col items-center justify-center mt-8 sm:mr-16">
+    <main className="container max-w-screen-lg mx-auto pt-4 pb-8">
+      <div className="flex flex-col items-center justify-center mt-8 max-w-screen-md">
         <h1 className="text-6xl font-bold">
           The conference &amp; community for video devs
         </h1>

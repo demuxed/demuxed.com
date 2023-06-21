@@ -16,7 +16,7 @@ export default function Navigation() {
 
   return (
     <nav className="bg-white px-4 md:px-0">
-      <div className="container max-w-screen-md mx-auto">
+      <div className="container max-w-screen-lg mx-auto">
         <div className="flex justify-between items-center py-4">
           <div>
             <Link href="/" className="text-xl font-bold">
