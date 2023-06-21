@@ -22,7 +22,7 @@ export default function NewsletterSubscribe(props: NewsletterSubscribeProps) {
         required={true}
         id="mce-EMAIL"
         name="EMAIL"
-        placeholder="buck@leporidae.com"
+        placeholder="buck@leporidae.family"
         className="block w-full border-0 px-2 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6 ring-offset-black"
       />
       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
