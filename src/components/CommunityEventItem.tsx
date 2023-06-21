@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Badge from '@/components/Badge';
 import { CalendarDaysIcon } from '@heroicons/react/20/solid';
-import { format } from 'date-fns';
+import LocalDate from '@/components/LocalDate';
 
 export default function CommunityEventItem({
   event,
@@ -21,7 +21,7 @@ export default function CommunityEventItem({
         <h5 className="text-l font-semibold pt-1">{event.community?.name}</h5>
         <span className="inline-flex items-center gap-1">
           <CalendarDaysIcon className="h-4 w-4" aria-hidden="true" />{' '}
-          {format(new Date(event.time_start), 'MMM d')}
+          <LocalDate date={event.time_start} />
         </span>
       </div>
       {event.community?.logo?.[0].url && (
