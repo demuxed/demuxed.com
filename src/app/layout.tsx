@@ -1,4 +1,5 @@
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google';
 
 import Navigation from '../components/Navigation';
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Navigation />
         <div className="bg-white px-4 md:px-0">{children}</div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
