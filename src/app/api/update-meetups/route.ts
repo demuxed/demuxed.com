@@ -49,7 +49,7 @@ function createUrl(url: string, ...paths: string[]) {
   return urlObj;
 }
 
-export async function POST() {
+export async function GET() {
   const communityRecords = await getCommunities();
   const eventRecords = await getEvents();
 
@@ -88,6 +88,8 @@ export async function POST() {
             community,
             startTime.toISOString()
           );
+
+          return undefined;
         } else {
           log(
             'Event does not exist, creating',
@@ -101,11 +103,14 @@ export async function POST() {
             Type: 'Meetup',
             'Event URL': eventUrl.toString(),
           });
+
           log(
             `Event created ${newEvent.id}`,
             community,
             startTime.toISOString()
           );
+
+          return newEvent;
         }
       })
       .toArray();
@@ -121,6 +126,16 @@ export async function POST() {
 
   return NextResponse.json({
     communities_processed: communityRecords.length,
-    events_processed: events.length,
+    events_processed: eventRecords.length,
+    new_events: events
+      .filter((e) => e !== undefined)
+      .map((e) => ({
+        // Super weak that TS doesn't know that e is not undefined here after the `filter` above.
+        id: e?.id,
+        community: e?.get('Community'),
+        type: e?.get('Type'),
+        url: e?.get('Event URL'),
+        time: e?.get('Time Start'),
+      })),
   });
 }
