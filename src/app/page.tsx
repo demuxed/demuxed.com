@@ -40,7 +40,7 @@ export default async function Home() {
                 <h3 className="text-2xl font-semibold pb-2">Demuxed 2023</h3>
               </Link>
               <p className="pb-2">
-                October 24-26
+                October 24-25
                 <br />
                 San Francisco, CA
               </p>
