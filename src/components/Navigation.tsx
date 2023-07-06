@@ -3,16 +3,18 @@
 import { useState } from 'react';
 import DemuxedMark from '@/components/DemuxedMark';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const navItems = [
-  { text: 'Home', href: '/' },
-  { text: 'Video Dev', href: 'https://video-dev.org' },
+  { text: 'Posts', href: '/posts' },
   { text: 'Events & Meetups', href: '/meetups' },
   { text: 'About', href: '/about' },
+  { text: 'Video Dev', href: 'https://video-dev.org' },
 ];
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="bg-white px-4 md:px-0">
@@ -28,7 +30,9 @@ export default function Navigation() {
               <Link
                 href={item.href}
                 key={item.href}
-                className="text-sm font-semibold text-gray-700 mx-2 hover:underline hover:text-gray-900"
+                className={`text-sm font-semibold text-gray-700 mx-2 hover:underline hover:text-gray-900 ${
+                  pathname.startsWith(item.href) && 'underline'
+                }`}
               >
                 {item.text}
               </Link>

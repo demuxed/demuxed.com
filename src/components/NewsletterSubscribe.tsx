@@ -13,7 +13,7 @@ export default function NewsletterSubscribe(props: NewsletterSubscribeProps) {
     >
       <label
         htmlFor="mce-EMAIL"
-        className="block text-sm font-medium leading-6 text-gray-900"
+        className="block text-sm font-medium text-gray-900"
       >
         Email
       </label>
@@ -23,7 +23,7 @@ export default function NewsletterSubscribe(props: NewsletterSubscribeProps) {
         id="mce-EMAIL"
         name="EMAIL"
         placeholder="buck@leporidae.family"
-        className="block w-full border-0 px-2 py-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6 ring-offset-black"
+        className="block w-full border-0 px-2.5 py-1.5 my-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6 ring-offset-black"
       />
       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
         <input
