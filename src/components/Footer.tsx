@@ -46,6 +46,12 @@ export default function Footer() {
                   <Link href="/about">About</Link>
                 </li>
                 <li className="pb-1">
+                  <Link href="/posts">Posts</Link>
+                </li>
+                <li className="pb-1">
+                  <Link href="https://video-dev.org">Video Dev</Link>
+                </li>
+                <li className="pb-1">
                   <Link href="mailto:info@demuxed.com">Contact us</Link>
                 </li>
               </ul>
