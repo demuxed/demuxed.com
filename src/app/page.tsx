@@ -46,11 +46,11 @@ export default async function Home() {
               </p>
               <div className="flex flex-row max-[250px]:flex-col gap-2">
                 <Link
-                  href="https://2023.demuxed.com/submit"
+                  href="https://tickets.demuxed.com"
                   className="flex-1 sm:flex-none"
                 >
                   <Button className="w-full" variant="inverse">
-                    Submit a talk
+                    Buy a ticket
                   </Button>
                 </Link>
                 <Link
