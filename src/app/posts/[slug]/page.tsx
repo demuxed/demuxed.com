@@ -47,6 +47,14 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </p>
         <NewsletterSubscribe />
       </div>
+
+      {meta.sponsorImage && (
+        <img
+          className="max-w-xl w-full mx-auto"
+          src={meta.sponsorImage}
+          alt="The collection of logos showing this year's sponsors"
+        />
+      )}
     </main>
   );
 }
