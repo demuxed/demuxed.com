@@ -4,5 +4,8 @@
       "path": "/api/update-meetups",
       "schedule": "0 * * * *"
     }
+  ],
+  "redirects": [
+    { "source": "/live", "destination": "https://2023.demuxed.com/live", "permanent": false }
   ]
 }
