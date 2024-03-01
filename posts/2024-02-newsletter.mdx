@@ -1,0 +1,66 @@
+export const meta = {
+  authors: ['Matthew McClure'],
+  title: "We've got VODs, a venue, and dates.",
+  date: '2024-02-29',
+  tags: ['newsletter'],
+  sponsorImage: '/2023-sponsors.png',
+};
+
+import Button from '@/components/Button';
+import Callout from '@/components/Callout';
+import Link from '@/components/Link';
+import { CalendarDaysIcon } from '@heroicons/react/20/solid';
+
+Yes, we know there's been a Demuxed-shaped hole in your inbox since October, but Santa was late with the VODs, so we figured since he was slacking, so could we.
+
+But more seriously, we've been _so_ close to a venue + date announcement that it felt silly not to wait so we could announce it in the next newsletter. The [Demuxed 2023 recordings](https://www.youtube.com/watch?v=sX3dGsh5WHc&list=PLkyaYNWEKcOesxC4VpHJtbjnzuN6r1NGg) have been live on our YouTube for a while, but now you can also go find the [lightning talks](https://youtu.be/OIyOEuQQsCQ)!
+
+Now…🥁…
+
+The 10th iteration of Demuxed, Demuxed 2024, will be at the **Regency Ballroom** in San Francisco on **October 16th and 17th**. You can catch a sneak peek of [this year's design on the holding page](https://2024.demuxed.com). Look we've had great designs over the year, but this one…yeah.
+
+Tickets will go on sale next month (March), along with the call for speakers. Both of these things will probably land, unsurprisingly, inline with the March newsletter. If you're interested in getting involved in Demuxed 2024 as a sponsor, [shoot us an email](mailto:sponsor@demuxed.com). We're hoping to have the prospectus in people's hands in the next couple of weeks, and it'll be first-come-first-serve from there.
+
+Anyway, we've got some stuff to cover since it's been a few months…
+
+## The Wide World of Video
+
+A part of my brain turns off every time I see “AI-powered” in marketing copy, but every once in a while it's _not_ chatGPT in a trench coat. NVIDIA's new RTX Video can, among other things, [transform old-fashioned video into HDR](https://blogs.nvidia.com/blog/rtx-video-hdr-remix-studio-driver/). Good for you if you own any $NVDA.
+
+Based on their docs, it sure looks like Twitch is [starting to wade into client-side encoding](https://help.twitch.tv/s/article/multiple-encodes?language=en_US).
+
+"[This patch ports the VP9 library written by Andrzej into Rust](https://lkml.org/lkml/2024/2/27/1455) as a
+proof-of-concept. This is so that we can evaluate the Rust in V4L2 initiative
+with source code in hand.”
+
+[VideoPoet](https://sites.research.google/videopoet/), an LLM out of Google research for zero-shot video generation, was launched a couple of months ago. It was pretty neat. Then [OpenAI announced Sora](https://openai.com/sora) a couple of weeks ago. We all laughed over the early attempts like [Will Smith eating spaghetti](https://www.reddit.com/r/StableDiffusion/comments/1244h2c/will_smith_eating_spaghetti/), but this [generative video arms race](https://simonwillison.net/2024/Feb/21/gemini-pro-video/) feels like it's probably going to create some pretty weird situations soon. I can't wait for my parents to call and ask if I saw that video of Biden and Trump eating spaghetti together.
+
+Yes, we all know that [Vanessa Pyne is a datamoshing artist](https://www.youtube.com/watch?v=Qtia43DGSrY&list=PLkyaYNWEKcOfD1GYFxFbZXDP03XM-cZPg&index=16), but it's fun to see that [The Art World™ has gotten the glitch itch](https://www.wallpaper.com/art/exhibitions-shows/glitch-artists-explore-the-potential-in-imperfection-in-munich) too.
+
+No notes on this one, just a [technical overview of the AV1 spec](https://github.com/QuPengfei/Technical-Overview-Of-AV1-Spec).
+
+Khronos has been rolling out some video goodies in Vulkan over the years. In 2021 there were some announcements. In 2022 they announced accelerated _decoding_ for h.264 and h.265. This last December [they announced accelerated _encoding_ as well](https://www.khronos.org/blog/khronos-finalizes-vulkan-video-extensions-for-accelerated-h.264-and-h.265-encode). Neat.
+
+Apparently, [NASA beamed a UHD video of a cat](https://www.bbc.com/news/technology-67721671), named Taters, _back_ to Earth from space. It's not lost on me that I, an American, read about this on the BBC. Phil probably knew about Taters before I did.
+
+This is a bit of old news, but still worth shouting out the FFmpeg team for landing “[one of the most complex refactoring of the CLI in decades](https://www.phoronix.com/news/FFmpeg-CLI-MT-Merged)”.
+
+## Upcoming meetups/community events
+
+2/29 - [SF Video Tech](https://www.meetup.com/sf-video-technology/events/298593583/) (TONIGHT!)
+
+3/4-10 [Montevideo Summer Camp](https://montevideotech.dev/summer-camp-2024/)
+
+3/12 - [London Video Tech](https://www.meetup.com/london-video-technology/events/299217292/) (wow, that speaker list, tho)
+
+3/13 - [Sydney Video Tech](https://www.meetup.com/sydney-video-technology/events/299262682/)
+
+3/14 - [Portland Video Tech](https://www.meetup.com/pdx-video-tech/events/298433374/)
+
+3/26 - [Milan Video Tech](https://www.meetup.com/milan-video-tech-meetup-group/events/299153131/)
+
+4/16 - [Demuxed NAB Party](https://lu.ma/8lrssggi) (7pm @ Millennium Fandom)
+
+4/23 - [Kitchener-Waterloo Video Tech](https://www.meetup.com/kw-video-technology/events/299448166/)
+
+<Callout>P.S. This is the last email that will include our beautiful 2023 sponsors. Get in touch to talk about 2024!</Callout>
