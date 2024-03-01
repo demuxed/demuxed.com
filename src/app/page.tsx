@@ -13,9 +13,9 @@ export default async function Home() {
   const events = await getUpcomingEvents();
 
   return (
-    <main className="container max-w-screen-lg mx-auto pt-4 pb-8">
-      <div className="flex flex-col items-center justify-center mt-8 max-w-screen-md">
-        <h1 className="text-4xl md:text-6xl font-bold">
+    <main className="container mx-auto max-w-screen-lg pb-8 pt-4">
+      <div className="mt-8 flex max-w-screen-md flex-col items-center justify-center">
+        <h1 className="text-4xl font-bold md:text-6xl">
           The conference &amp; community for video devs
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -28,29 +28,30 @@ export default async function Home() {
         </p>
       </div>
 
-      <div className="flex flex-col justify-center mt-8">
-        <h2 className="text-3xl font-semibold pb-4">
+      <div className="mt-8 flex flex-col justify-center">
+        <h2 className="pb-4 text-3xl font-semibold">
           Upcoming community stuff
         </h2>
-        <div className="grid auto-rows-fr grid-flow-row-dense grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-          <div className="border border-black bg-black text-white flex flex-col sm:flex-row p-4 gap-8 row-span-2 sm:col-span-2 place-content-center">
+        <div className="grid grid-flow-row-dense auto-rows-fr grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+          <div className="row-span-2 flex flex-col place-content-center gap-8 border border-black bg-black p-4 text-white sm:col-span-2 sm:flex-row">
             <HomeCTA className="w-1/3" />
             <div className="flex flex-col justify-center">
-              <Link href="https://2023.demuxed.com">
-                <h3 className="text-2xl font-semibold pb-2">Demuxed 2023</h3>
+              <Link href="https://2024.demuxed.com">
+                <h3 className="pb-2 text-2xl font-semibold">Demuxed 2024</h3>
               </Link>
               <p className="pb-2">
-                October 24-25
+                October 16-17
                 <br />
                 San Francisco, CA
               </p>
-              <div className="flex flex-row max-[250px]:flex-col gap-2">
-                <Link
-                  href="https://tickets.demuxed.com"
-                  className="flex-1 sm:flex-none"
-                >
-                  <Button className="w-full" variant="inverse">
-                    Buy a ticket
+              <div className="flex flex-row gap-2 max-[250px]:flex-col">
+                <Link href="#" className="flex-1 sm:flex-none">
+                  <Button
+                    className="w-full bg-slate-300"
+                    variant="inverse"
+                    disabled
+                  >
+                    Buy a ticket (coming soon)
                   </Button>
                 </Link>
                 <Link
