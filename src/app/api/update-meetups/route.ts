@@ -75,9 +75,10 @@ export async function GET() {
 
       log(`Found ${events.length} events`, community);
       return events.map(async (event) => {
-        const startTime = new Date(event.time ?? 0);
+        const startTime = event.time ? new Date(event.time) : undefined;
+        const startTimeISOString = startTime?.toISOString();
 
-        log(`Upcoming event found`, community, startTime.toISOString());
+        log(`Upcoming event found`, community, startTimeISOString);
 
         const eventUrl = event.link;
 
@@ -90,30 +91,22 @@ export async function GET() {
           log(
             `Event already exists (${existingEvent.id}), skipping`,
             community,
-            startTime.toISOString()
+            startTimeISOString
           );
 
           return undefined;
         } else {
-          log(
-            'Event does not exist, creating',
-            community,
-            startTime.toISOString()
-          );
+          log('Event does not exist, creating', community, startTimeISOString);
 
           // todo: once we're happy with this, remove Dev
           const newEvent = await base('Events Dev').create({
-            'Time Start': startTime.toISOString(),
+            'Time Start': startTimeISOString,
             Community: [community.id],
             Type: 'Meetup',
             'Event URL': eventUrl,
           });
 
-          log(
-            `Event created ${newEvent.id}`,
-            community,
-            startTime.toISOString()
-          );
+          log(`Event created ${newEvent.id}`, community, startTimeISOString);
 
           return newEvent;
         }
