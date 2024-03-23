@@ -1,8 +1,8 @@
-import * as cheerio from 'cheerio';
 import { NextResponse } from 'next/server';
 import path from 'node:path';
 
 import { base, recordToCommunity } from '@/lib/airtable';
+import { EventsSchema } from './schema';
 
 function log(message: string, community: Community, eventTime?: string) {
   let str = `[${community.name}]`;
@@ -53,34 +53,38 @@ export async function GET() {
   const communityRecords = await getCommunities();
   const eventRecords = await getEvents();
 
-  const communities = communityRecords.map(async (record) => {
-    const community = recordToCommunity(record);
+  const communities = communityRecords
+    .map(async (record) => {
+      const community = recordToCommunity(record);
 
-    const meetupEventsUrl = createUrl(community.meetup_url, 'events');
-    log(`Fetching meetup url ${meetupEventsUrl.toString()}`, community);
+      const meetupEventsUrl = createUrl(
+        community.meetup_url.replace('www.', 'api.'),
+        'events'
+      );
+      log(`Fetching meetup url ${meetupEventsUrl.toString()}`, community);
 
-    const response = await fetch(meetupEventsUrl);
+      const response = await fetch(meetupEventsUrl, { cache: 'no-store' });
 
-    const $ = cheerio.load(await response.text());
-    const events = $('.eventList-list > li');
+      if (!response.ok) {
+        log(`Failed to fetch events`, community, response.statusText);
+        return undefined;
+      }
+      const json = await response.json();
 
-    log(`Found ${events.length} events`, community);
-    return events
-      .map(async (i, $el) => {
-        const startTimeStr = $($el)
-          .find('.eventTimeDisplay time')
-          .attr('datetime');
+      const events = EventsSchema.parse(json);
 
-        const startTime = new Date(parseInt(startTimeStr as string));
+      log(`Found ${events.length} events`, community);
+      return events.map(async (event) => {
+        const startTime = new Date(event.time ?? 0);
 
         log(`Upcoming event found`, community, startTime.toISOString());
 
-        const relativeLink = $($el).find('.eventCard--link').attr('href');
-        const eventUrl = createUrl('https://meetup.com', relativeLink || '');
+        const eventUrl = event.link;
 
-        const existingEvent = eventRecords.find(
-          (r) => r.get('Event URL') === eventUrl.toString()
-        );
+        // todo: this might not work because the API provides lowercase URLs
+        const existingEvent = eventUrl
+          ? eventRecords.find((r) => r.get('Event URL') === eventUrl.toString())
+          : undefined;
 
         if (existingEvent) {
           log(
@@ -97,11 +101,12 @@ export async function GET() {
             startTime.toISOString()
           );
 
-          const newEvent = await base('Events').create({
+          // todo: once we're happy with this, remove Dev
+          const newEvent = await base('Events Dev').create({
             'Time Start': startTime.toISOString(),
             Community: [community.id],
             Type: 'Meetup',
-            'Event URL': eventUrl.toString(),
+            'Event URL': eventUrl,
           });
 
           log(
@@ -112,9 +117,9 @@ export async function GET() {
 
           return newEvent;
         }
-      })
-      .toArray();
-  });
+      });
+    })
+    .filter((c) => c !== undefined);
 
   const communityPromises = await Promise.all(communities);
 
