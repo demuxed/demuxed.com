@@ -57,6 +57,10 @@ export async function GET() {
     .map(async (record) => {
       const community = recordToCommunity(record);
 
+      if (!community.meetup_url) {
+        return log(`No meetup URL, skipping`, community);
+      }
+
       const meetupEventsUrl = createUrl(
         community.meetup_url.replace('www.', 'api.'),
         'events'
