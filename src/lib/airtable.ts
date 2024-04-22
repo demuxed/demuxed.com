@@ -10,7 +10,7 @@ export async function getUpcomingEvents(communities?: Community[]) {
   let fetchedCommunities: { [community_id: string]: Community } = {};
 
   const events: CommunityEvent[] = (
-    await base('Events')
+    await base('Events V2')
       .select({
         filterByFormula: '{Time Start} >= TODAY()',
         sort: [

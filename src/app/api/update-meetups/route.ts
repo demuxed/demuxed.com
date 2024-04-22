@@ -32,7 +32,7 @@ async function getCommunities() {
 }
 
 async function getEvents() {
-  const records = await base('Events')
+  const records = await base('Events V2')
     .select({
       filterByFormula: '{Time Start} >= TODAY()',
     })
@@ -86,7 +86,6 @@ export async function GET() {
 
         const eventUrl = event.link;
 
-        // todo: this might not work because the API provides lowercase URLs
         const existingEvent = eventUrl
           ? eventRecords.find((r) => r.get('Event URL') === eventUrl.toString())
           : undefined;
@@ -102,8 +101,7 @@ export async function GET() {
         } else {
           log('Event does not exist, creating', community, startTimeISOString);
 
-          // todo: once we're happy with this, remove Dev
-          const newEvent = await base('Events Dev').create({
+          const newEvent = await base('Events V2').create({
             'Time Start': startTimeISOString,
             Community: [community.id],
             Type: 'Meetup',
