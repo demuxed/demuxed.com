@@ -32,7 +32,7 @@ async function getCommunities() {
 }
 
 async function getEvents() {
-  const records = await base('Events V2')
+  const records = await base('Events')
     .select({
       filterByFormula: '{Time Start} >= TODAY()',
     })
@@ -101,7 +101,7 @@ export async function GET() {
         } else {
           log('Event does not exist, creating', community, startTimeISOString);
 
-          const newEvent = await base('Events V2').create({
+          const newEvent = await base('Events').create({
             'Time Start': startTimeISOString,
             Community: [community.id],
             Type: 'Meetup',
