@@ -31,8 +31,10 @@ async function getCommunities() {
   return records;
 }
 
+const EVENTS_BASE =
+  process.env.VERCEL_ENV === 'production' ? 'Events' : 'Events Dev';
 async function getEvents() {
-  const records = await base('Events')
+  const records = await base(EVENTS_BASE)
     .select({
       filterByFormula: '{Time Start} >= TODAY()',
     })
@@ -87,7 +89,13 @@ export async function GET() {
         const eventUrl = event.link;
 
         const existingEvent = eventUrl
-          ? eventRecords.find((r) => r.get('Event URL') === eventUrl.toString())
+          ? eventRecords.find((r) => {
+              const recordURL = r.get('Event URL');
+              if (typeof recordURL === 'string') {
+                return recordURL.toLowerCase() === eventUrl.toLowerCase();
+              }
+              return false;
+            })
           : undefined;
 
         if (existingEvent) {
@@ -101,7 +109,7 @@ export async function GET() {
         } else {
           log('Event does not exist, creating', community, startTimeISOString);
 
-          const newEvent = await base('Events').create({
+          const newEvent = await base(EVENTS_BASE).create({
             'Time Start': startTimeISOString,
             Community: [community.id],
             Type: 'Meetup',
