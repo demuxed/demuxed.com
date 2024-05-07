@@ -1,0 +1,64 @@
+export const meta = {
+  authors: ['Matthew McClure'],
+  title: "April 2024: Tickets are available, you've got a month to submit talks, and we're all AI companies now",
+  date: '2024-05-6',
+  tags: ['newsletter'],
+};
+
+import Button from '@/components/Button';
+import Link from '@/components/Link';
+
+“We're a week into May, how dare you call this the April newsletter?!” I know, I promise. I'm the only person you know that wakes up in a panic at 3:45am because, for some reason, that's the moment my brain has decided to have a full on anxiety attack about the late newsletter (or whatever other imagined Demuxed disaster looms). I wake up and everything's fine (aside from the newsletter actually being late), so that's cool. High fives, y'all.
+
+## Demuxed 2024
+
+ANYWAY, this time we were waiting on something preeetty cool to go live before sending this: [TICKETS](https://tickets.demuxed.com). The early bird gets the…uh…Early Birds… Get ‘em while they're fresh! As always, if you work in open source, are currently a student, or are just generally in a place where the price of a ticket is a barrier, [reach out](mailto:info@demuxed.com?subject=I could use a discounted ticket)! We've got a discounted ticket with your name on it.
+
+<Link href="https://tickets.demuxed.com">
+  <Button>Buy a ticket</Button>
+</Link>
+
+### Submit a talk!
+
+Remember, talk submissions are open through the end of May, so [get your submissions in](https://2024.demuxed.com/submit)! I'll get the next newsletter out by the end of the month so we'll have one more reminder, but why wait until the last second? We're also happy to give feedback if you ask (and submit early enough), but some high level reminders for what makes a good submission:
+
+- Just generally interesting! Sounds crazy, but the committee picks talks they actually want to see.
+- Useful can be great
+- Not useful but sufficiently weird is also great
+- Not a sales/vendor pitch (it's totally fair to talk about what you're working on, just make sure it's interesting to a technical person listening who may never buy it)
+
+<Link href="https://2024.demuxed.com/submit">
+  <Button>Submit a talk</Button>
+</Link>
+
+### Sponsors
+
+This might be a surprise, but the cost of the tickets don't really cover the cost of the conference. Amazing sponsors from throughout the industry are how we're able to put this thing on every year with reasonable ticket prices, so huge thank you to the last 9 years of sponsors, and thank you to all the current and future sponsors for year 10!
+
+We've already got a solid list of reservations in, and you'll start seeing these beautiful logos in the next newsletter. If you want to sponsor, reach out, [we'd love to hear from you](mailto:sponsor@demuxed.com?subject=I'm interested in sponsoring Demuxed 2024).
+
+## The Wide World of Video
+
+✈️ A lot of us were in Vegas a few weeks ago. Many of us met and had tacos and refreshments in everyone's favorite cosplay bar. We walked the show floor and learned that everyone in the industry is an AI company now. There's not a news article to link to here, just a reminder that we're collectively riding the same hype train as everyone else in tech right now.
+
+🧮 It's been a second since we've had new Converse Content™ (not for lack of trying, I'm sure he's sick of me asking about meetup talks), but he's back with a writeup on how they were able to [debug and improve Discord Go Live streaming on AMD GPUs](https://discord.com/blog/from-blocky-to-brilliant-improving-video-quality-on-discord-go-live-on-amd-gpus). Alternate title: Too Many ~~Cooks~~ Keyframes.
+
+📱A Reddit engineer did a deep dive on [how they improved video playback in ExoPlayer](https://www.reddit.com/r/RedditEng/comments/1af2d8d/improving_video_playback_with_exoplayer/). This one covers a pretty wide range, from streaming tech choices to view rendering, so there's something in there for everyone.
+
+🤖 Super Resolution has been a hot topic for a while now (yes, Nick, we know, you were talking about it before it was cool), but the advancements we're seeing right now are absurd. The latest is the [Adobe research team's VideoGigaGAN](https://videogigagan.github.io/). I'm a little disappointed that it seems like we're past the early stages where we could randomly play [Where's Ryan in upscaled images](https://petapixel.com/2020/08/17/gigapixel-ai-accidentally-added-ryan-goslings-face-to-this-photo/).
+
+💪 VideoLAN's dav1d decoder is now the [default AV1 decoder on Android](https://twitter.com/videolan/status/1781025929659392360). If the thought of two hundred thousand lines of hand written assembly code doesn't make you feel imposter syndrome, then…just me? Ok then.
+
+☑️ Hate it when you misplaced that one media file because you changed the metadata? [Dano has you covered](https://github.com/kimono-koans/dano). It's a wrapper for ffmpeg that checksums the internal media stream of a file and stores it so you can change whatever metadata you like and still be able to verify it's the same later. I honestly have no idea what I'd use this for, but I want to try.
+
+🧑‍🚀 Netflix engineering wrote about their [Video Encoding Service (VES) microservice](https://netflixtechblog.com/the-making-of-ves-the-cosmos-microservice-for-netflix-video-encoding-946b9b3cd300). It's always a treat to get a peek into what that team is doing behind the scenes, but I particularly enjoyed seeing the service names. True dedication to the Cosmos theme.
+
+## Upcoming meetups/community events
+
+- 5/8 - [Denver Video Tech](https://www.meetup.com/denver-digital-video/events/300514059/)
+- 5/9 - [MonteVIDEO Tech Meetup](https://www.meetup.com/montevideo-tech-meetup/events/300476506/)
+- 5/9 - [Portland Video Tech](https://www.meetup.com/pdx-video-tech/events/300487366/)
+- 5/22 - [Video Tech NYC](https://www.meetup.com/video-tech-nyc/events/300615292)
+- 5/28 - [Kitchener-Waterloo Video Technology](https://www.meetup.com/kw-video-technology/events/fvbrjtygchblc/)
+- 5/30 - [SF Video Tech](https://www.meetup.com/sf-video-technology/events/nhrxvsygchbnc/) featuring *the* Phil Cluff
+- 6/12 - [Berlin Video Tech](https://www.meetup.com/berlin-video-tech-meetup/events/300010483/)
