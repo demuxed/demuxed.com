@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import {
   CalendarIcon,
   ChevronLeftIcon,
@@ -12,6 +13,17 @@ const getPost = async (slug: string) => {
 
   return { post, meta };
 };
+
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const { meta } = await getPost(params.slug);
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    authors: meta.authors.map((author: string) => ({ name: author })),
+    publishedTime: new Date(meta.date).toISOString(),
+  };
+}
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const { post: Content, meta } = await getPost(params.slug);
