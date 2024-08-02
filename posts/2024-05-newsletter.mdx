@@ -1,0 +1,70 @@
+export const meta = {
+  authors: ['Matthew McClure'],
+  title: "May 2024: Submission deadline is coming up, and the orange site gang talks video.",
+  date: '2024-05-31',
+  tags: ['newsletter'],
+  sponsorImage: '/2024-sponsors.png',
+};
+
+import Button from '@/components/Button';
+import Link from '@/components/Link';
+
+It's May, and this is the May newsletter. It's a small win, but we're taking it (even if you didn't believe in us, Gareth). This feels like it's been an unusually quiet month: no big trade shows, no companies vs open source projects on ~Twitter~ X, no LinkedIn drama (that we know of, at least). Chalking up at least the latter two as a collective win, go team.
+
+It's also the end of the month, and you know what that means…
+
+## Demuxed 2024
+
+Every year we panic about submissions, and then in the last like ~36 hours they start flooding in. Very predictable, team. Glancing at them as they come by, and I'm seeing a *lot* to be excited about. We're already on track to get have one of our better years in terms of submission count, which is _amazing_. 
+
+That being said, this is year 10! Our goal should be to make this the toughest year for committee decisions, so we want *as many submissions as possible*. We're also traveling right now and not going to be able to get the review software set up for the committee this week, so *you've got one more week* if you've been on the fence.
+
+SO: you've got until **June 10th** to get those talks in. That's this weekend, next week, and next weekend. Remember as you submit: useful is great, weird is also great, useful *and* weird is amazing. A pure sales/marketing pitch is the opposite of those things. Don't worry too much about word smithing your description, and remember you can “talk to the committee” and give extra details/clarification that won't necessarily need to be in the published abstract.
+
+<Link href="https://2024.demuxed.com/submit">
+  <Button>Get submittin</Button>
+</Link>
+
+### Tickets are on sale!
+
+Since we started sales so early this year, we put a bigger percentage of early birds up, and those are over halfway gone at this point. Just sayin, [grab your ticket sooner rather than later](https://tickets.demuxed.com).
+
+<Link href="https://tickets.demuxed.com">
+  <Button>Buy a ticket</Button>
+</Link>
+
+### Sponsors
+
+Check out those amazing logos in the footer of this email! HUGE thank you and a shoutout to all of these sponsors that have stepped up to support Demuxed in 2024. As always, it's worth noting: sponsors are how we can put on a great event on and keep ticket prices reasonable. If you're interested in sponsoring this year, [we'd love to talk](mailto:sponsor@demuxed.com)!
+
+## The Wide World of Video
+
+🧠 Google Research trained a model, [VideoPrism](https://research.google/blog/videoprism-a-foundational-visual-encoder-for-video-understanding/), on a approximately a gajillion videos that's “designed to handle a wide spectrum of video understanding tasks, including classification, localization, retrieval, captioning, and question answering (QA).” No mention of speed and the language makes it seem like it's more intended for research, but the results are still very impressive.
+
+📎 [Omniclip](https://github.com/omni-media/omniclip) is an open-source, web based video editor. It uses WebCodecs and everything! There's a [HackerNews discussion](https://news.ycombinator.com/item?id=40331968) about it that includes this poetic description of the video journey: “I started digging into first and I found webcodecs API, it was like dream come true for my project, but that was just a start of my painful journey.” Existence is pain, Jerry. 
+
+🗣️ Ok speaking of HN…I'd say that the typical discussion about video technology on there is just a gaggle of confidently wrong dudes talking back and forth, but I was still kinda blown away when a [single FFmpeg command made the front page](https://news.ycombinator.com/item?id=40407526). 
+
+‼️ Very shortly after that one, a [49 line long Python script popped up](https://github.com/dheera/scripts/blob/50b4ca87a0d696df4bed1f2a0b52f72d44b507e4/ffmpeg-english) that prompts ChatGPT to be an “FFmpeg expert” and return a command based on whatever you asked for in English. Then, of course, you just blindly pipe result back into your shell. Ok, not truly blindly, the script made sure the result started with “ffmpeg” and didn't contain “;” or “|”. I'm not claiming to be a security expert, but this feels like the robots' path to freedom.
+
+To quote Walker:
+ > At some point people will realize that a 1 character difference in an ffmpeg command is the difference between a perfectly encoded video and a day-old bagel
+
+🔓 “DRM” and “Set Top Boxes”, and the combination of the two, are not typically known as entertaining topics, but the Fraunhofer team managed to do it. They [wrote up the journey](https://websites.fraunhofer.de/video-dev/kid-it-out-putting-big-buck-bunny-on-a-diet/) of getting everyone's favorite premium content playing.
+
+🎥 At this point I think it's just a tradition where we have to include the latest absurd advancement in generative video. Up this time around: [Google DeepMind's Veo](https://deepmind.google/technologies/veo/). 
+
+🧪 I like Elixir and WebRTC is cool. Even cooler that there's an [Elixir implementation of the WebRTC protocol](https://github.com/elixir-webrtc/ex_webrtc). There's even WHIP/WHEP out of the box.
+
+📺 A YouTube video on [why we switched from 4:3 to 16:9](https://www.youtube.com/watch?v=Z7Ngusj_3w8). Should have just skipped to 9:16, tbh, our kids' kids are going to ask why people used to mount the “big phones” sideways on the wall.
+
+📻 Ok this has nothing to do with video, but it's media-adjacent so roll with it: there's a [boombox that plays midis on floppy discs](https://nicole.express/2024/elementary-midi-watson.html). Just take this journey, you'll enjoy it.
+
+🎁 Here's a [Gif encoder focused entirely on quality](https://github.com/ImageOptim/gifski) and it seems like it does what it says on the box. There's a recent addition to the license to email the maintainer if it won't work for you, so…that probably says something.
+
+## Upcoming meetups/community events
+
+- 5/30 - [SF Video Tech](https://www.meetup.com/sf-video-technology/events/nhrxvsygchbnc/) (ok it was last night, but a wild Phil appeared!)
+- 6/4 - [BCN Video Tech](https://www.meetup.com/bcnvideotech/events/300939441/)
+- 6/12 - [Berlin Video Tech](https://www.meetup.com/berlin-video-tech-meetup/events/300010483/)
+- 6/25 - [Kitchener-Waterloo Video Technology](https://www.meetup.com/kw-video-technology/events/fvbrjtygcjbhc/)

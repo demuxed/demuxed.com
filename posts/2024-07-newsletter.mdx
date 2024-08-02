@@ -1,0 +1,71 @@
+export const meta = {
+  authors: ['Matthew McClure'],
+  title: "July 2024: The committee has committee'd and Dolby snags another one!",
+  date: '2024-07-31',
+  tags: ['newsletter'],
+  sponsorImage: '/2024-sponsors.png',
+};
+
+import Button from '@/components/Button';
+import Link from '@/components/Link';
+
+You're probably asking yourself, “hey, wait a second, did I miss a June newsletter?” Why yes, very astute, we're glad you noticed. ~~The dog ate it.~~ ~~My 4 year old used it as coloring paper.~~ We just didn't have it ready in time for a June release. A few days into the next month, sure, but we have our limits too.
+
+BUT, the good news is, we've got our first round of accepted talks in the door! Wow, what a segue…
+
+## Demuxed 2024
+
+The first round of emails for accepted talks is out and confirmations are flowing back! The first round of thankful decline emails went out while we were working on this. That still leaves a group of folks that won't get an email either way until (hopefully) next week as we see how the initial acceptance emails go so we can add more talks in. A big goal for this year is to try and balance a schedule full of great talks without being too exhausting for the audience, so we're slow rolling acceptance a bit.
+
+As an aside, the committee does a *ton* of work to help put together this schedule and just ~15% of submissions actually make it in. We totally understand the disappointment of not getting selected, but please remember that there's a team of humans doing their best on the other side of this process. Asking for feedback is totally welcome, but please be respectful of the team when you do.
+
+That being said, the schedule is looking *amazing* so far. Truly, thank you everyone that submitted a talk, the field was incredible. Early bird tickets might be gone by the time this email goes out, but you should still go grab a ticket.
+
+<Link href="https://tickets.demuxed.com">
+  <Button>Buy a ticket</Button>
+</Link>
+
+We've also proud to announce a stacked list of sponsors! You can see all their beautiful logos in the footer of this email. There are still some spots available, so [email us](mailto:sponsor@demuxed.com) if you want more info.
+
+### SF Video Tech Week Part Deux (and other community stuff)
+
+For the folks that are booking your travel to Demuxed, keep in mind the pile of community events that are happening around SF that week. We don't link to these directly just because they're smaller, more participatory events, but if you're interested you should seek them out!
+
+- October 14th (Monday) - Foundations of Open Media Standards and Software, aka FOMS. It's a participant-led un-conference and developer workshop, and truly an industry gem of an event.
+- October 15th (Tuesday) - HLS Interest Group. A meeting of industry practitioners to hear the latest from Apple, identify key industry pain points as they pertain to HTTP Live Streaming, and discuss potential solutions.
+
+And this isn't even remotely the same week, but it's still a fun community event that's Demuxed-adjacent:
+
+- January 26 - February 1, 2025 - [MonteVIDEO Tech Summer Camp](https://montevideotech.dev/summercamp2025/). Anyone that's gone has raved about it. Those of us that haven't get to enjoy FOMO. I'm the latter, totally not bitter.
+
+## The Wide World of Video
+
+👩‍⚖️ The wild west nature of AI is a big contributor to just how fast things are moving there, but one AI Video company just got [caught with their hand in the YouTube cookie jar](https://www.404media.co/runway-ai-image-generator-training-data-youtube/). An unfair truth of the current landscape is that the first movers in this space got to hoover up a ton of content before folks even knew what was happening, but the increased attention has newer entrants holding the bag on the same behavior. Scraping isn't going anywhere, there's even a whole AI-centric cottage industry around evading bot-detection at this point. The Internet that was built on handshake agreements like robots.txt is dead, friends.
+
+🛍️ [Dolby picked up another great team from the community: THEO Technologies](https://www.theoplayer.com/blog/theo-technologies-is-joining-dolby)! They already responded to the biggest question on everyone's mind: THEO promises they'll still have Belgian beers at their IBC booth. We're not sure if it was enumerated in the purchase agreement, but a message in a video-dev thread is definitely legally binding. I think I should finally admit that for a long time I thought THEO Player was THE O Player. I don't know why. Thanks for letting me get that off my chest.
+
+🎨 “Frames are just representations of the world, and the actual relationship between the flat image and the real thing is not always obvious.” — That quote is opening up [a post on why it's important to calibrate cameras for computer vision](https://www.notion.so/July-2024-ac0f7b025cda46f980e4943b00855f7b?pvs=21), so…it's very literal, but I like to just read it as a deep soliloquy.
+
+🥷 If you have privileged access to your company's users' content, you shouldn't share it. Yes, even if it's a [cool scoop about an upcoming Nintendo release](https://www.gamesradar.com/games/platformer/nintendo-leak-reportedly-came-from-an-employee-accessing-private-youtube-videos-but-google-says-it-was-non-intentional-because-they-only-showed-it-to-a-friend/). But if you *are* going to send that screenshot to a friend, maybe crop out the URL bar that includes the “admin” part. Just sayin'. 
+
+🎓 If you're thinking to yourself, “hey I kinda want to write a media player from scratch but don't know where to start,” here's a [“simpler” player built on top of FFmpeg4 and SDL2](https://github.com/piaodazhu/simpleFFplay) built as a learning resource.
+
+💅 Speaking of FFmpeg, someone did an [unprompted/unofficial redesign of the FFmpeg homepage](https://ffmpeg.bufferhead.com/) and [tweeted about it](https://x.com/bufferhead_/status/1804163778793119855). I'll admit, I think it looks pretty good, and I'm sure there are Opinions about it, but c'mon…that “used by” social proof should make it into the official page. 
+
+🧑‍💻 A group of Video Dev/Demuxed OGs built a "[zero setup required SRT (MPEG-TS) and RTMP to WebRTC bridge powered by Pion.](https://github.com/flavioribeiro/donut)”
+
+🍏 Apple announced a handful of media things in June, but a big one is that [Workers now support  Managed Media Source and Media Source Extensions](https://webkit.org/blog/15443/news-from-wwdc24-webkit-in-safari-18-beta/). Not to throw anyone under the bus, but that leaves just Firefox as the last ~~major~~ beloved browser without support.
+
+🧩 The folks at Software Mansion released a new [real-time/low latency compositor](https://compositor.live/). The primary usage is probably for the folks using the (very cool) [Membrane Framework](https://github.com/membraneframework/membrane_live_compositor_plugin).
+
+🏗️ "[Writing an MP4 Muxer for Fun and Profit](https://obsproject.com/blog/obs-studio-hybrid-mp4). (Except there is no profit, only pain). No notes, that title/tagline rules. 
+
+🐧 Someone [demystified the Linux audio stack](https://blog.rtrace.io/posts/the-linux-audio-stack-demystified/). My many, many personal attempts at trying to use Linux as a daily driver have all died somewhere between audio and Bluetooth. I did at least chuckle thinking about [Walker's pain in this realm](https://www.youtube.com/watch?v=m0yNWtCeWh8), though. 
+
+## Upcoming meetups/community events
+
+- 08/06 - [Seattle Video Technology](https://events.gomomento.com/86meetup)
+- 08/27 - [Kitchener](https://www.meetup.com/kw-video-technology/events/fvbrjtygclbkc/)
+- 08/29 - [SF Video Technology](https://www.meetup.com/sf-video-technology/events/301385617/)
+- 08/14 - [Sydney Video Technology](https://www.meetup.com/sydney-video-technology/events/302560627/)
+- 09/18 - [Paris Video Technology](https://www.meetup.com/Paris-Video-Tech/) (Announcement coming soon)
