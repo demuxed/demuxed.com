@@ -31,8 +31,10 @@ async function getCommunities() {
   return records;
 }
 
+const EVENTS_BASE =
+  process.env.VERCEL_ENV === 'production' ? 'Events' : 'Events Dev';
 async function getEvents() {
-  const records = await base('Events')
+  const records = await base(EVENTS_BASE)
     .select({
       filterByFormula: '{Time Start} >= TODAY()',
     })
@@ -86,9 +88,14 @@ export async function GET() {
 
         const eventUrl = event.link;
 
-        // todo: this might not work because the API provides lowercase URLs
         const existingEvent = eventUrl
-          ? eventRecords.find((r) => r.get('Event URL') === eventUrl.toString())
+          ? eventRecords.find((r) => {
+              const recordURL = r.get('Event URL');
+              if (typeof recordURL === 'string') {
+                return recordURL.toLowerCase() === eventUrl.toLowerCase();
+              }
+              return false;
+            })
           : undefined;
 
         if (existingEvent) {
@@ -102,8 +109,7 @@ export async function GET() {
         } else {
           log('Event does not exist, creating', community, startTimeISOString);
 
-          // todo: once we're happy with this, remove Dev
-          const newEvent = await base('Events Dev').create({
+          const newEvent = await base(EVENTS_BASE).create({
             'Time Start': startTimeISOString,
             Community: [community.id],
             Type: 'Meetup',
