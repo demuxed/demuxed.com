@@ -34,7 +34,7 @@ export default async function Home() {
         </h2>
         <div className="grid grid-flow-row-dense auto-rows-fr grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
           <div className="row-span-2 flex flex-col place-content-center gap-8 border border-black bg-black p-4 text-white sm:col-span-2 sm:flex-row">
-            <HomeCTA className="w-1/3" />
+            <img src="/trolly-clip.jpg" className="w-1/3 rounded border border-white" />
             <div className="flex flex-col justify-center">
               <Link href="https://2024.demuxed.com">
                 <h3 className="pb-2 text-2xl font-semibold">Demuxed 2024</h3>
@@ -45,13 +45,13 @@ export default async function Home() {
                 San Francisco, CA
               </p>
               <div className="flex flex-row gap-2 max-[250px]:flex-col">
-                <Link href="#" className="flex-1 sm:flex-none">
+                <Link href="https://tickets.demuxed.com" className="flex-1 sm:flex-none">
                   <Button
                     className="w-full bg-slate-300"
                     variant="inverse"
                     disabled
                   >
-                    Buy a ticket (coming soon)
+                    Buy a ticket
                   </Button>
                 </Link>
                 <Link
