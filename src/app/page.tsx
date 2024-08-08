@@ -49,7 +49,6 @@ export default async function Home() {
                   <Button
                     className="w-full bg-slate-300"
                     variant="inverse"
-                    disabled
                   >
                     Buy a ticket
                   </Button>
