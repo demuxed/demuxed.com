@@ -1,0 +1,63 @@
+export const meta = {
+  authors: ['Matthew McClure'],
+  title: 'October 2024 (pt 1): Demuxed is next week and VHS is our retro tech of the day',
+  description: "Now that the iframe tickets are gone, we're just one long GOP from here on out.",
+  date: '2024-10-09',
+  tags: ['newsletter'],
+  sponsorImage: '/2024-sponsors.png',
+};
+
+import Button from '@/components/Button';
+import Link from '@/components/Link';
+
+Welcome to the bonus October newsletter of the year\! It makes me feel better to say Demuxed isn't a week out, because (at least at the time I'm writing these words), it is not technically 7 days away yet. It is, however, officially next week. *Palm sweating intensifies.* Just to note, after this, only attendees will get the logistics emails, so if that's you, make sure you keep an eye out for emails from “hey.demuxed.com.”
+
+This has been an interesting run-up to the show this year… Luckily a lot less interesting than our entire venue ceasing to exist like last year, but the best part about organizing a conference is that, after 10 years, you can still find new and different surprises. The most recent of which is a speaker change you'll see reflected on the website: there's a new/different talk on the schedule\!
+
+The standard iframe tickets are also **sold out** now. *But*, have no fear, there are still the buffer tickets available. Reminder: we've got deeply discounted tickets available for FOSS contributors and students, so [email us](mailto:info@demuxed.com) if that's you and we'll get you set up.
+
+<Link href="https://tickets.demuxed.com">
+  <Button>Grab your ticket(s)</Button>
+</Link>
+
+## Happy hours
+
+We're running low on happy hour capacity, so **if you'd like to host one [shoot us a note](mailto:info@demuxed.com)**.There's one, big happy hour collab happening (that we currently know of), along with a few smaller, private events, so having one or two more would make sure every attendee has an option. It's a very low barrier to entry to host one: you give us an invite link, we'll email it in a list to attendees. 10/10 Demuxed attendees agree that it's a great way to spend marketing/recruiting budget.
+
+There are also a (very) small number of sponsorship opportunities left, but they do still exist, namely the party. You should sponsor the party.
+
+<div className="px-8 py-2 border-dashed border-2 text-center text-sm">
+  <span className="block italic">A word from one of our sponsors</span>
+  <Link href="https://aws.amazon.com/media-services/">AWS</Link> is proud to support Demuxed as a Platinum Sponsor this year. Meet teams from AWS Elemental and Amazon IVS at our demo table if you want to learn about resilient streaming, live AV1 encoding, real-time collaboration, or if you just have a question about video in the cloud.
+</div>
+
+## Wide World of Video
+
+💔 Meta's friendship ended with Deutsch Telekom. [One might say they're not even peers anymore](https://about.fb.com/news/2024/09/why-were-having-to-end-our-direct-peering-relationship-with-deutsche-telekom/). Meta's argument is at least spiritually along the lines of Net Neutrality, claiming that DTAG's direct peering fees are “using its market power to put its subscribers in Germany behind a de facto paywall.” As a result, Meta's now routing their traffic through a 3rd party transit provider.
+
+😤 Deutsch Telekom, on the other hand, [says that these fees aren't new](https://www.telekom.com/en/company/details/meta-is-not-above-the-law-1079704), Meta just stopped paying them during COVID and never started again, and that they're going the third party transit route to avoid paying them after a court ruled in DTAG's favor. Fun scale note in the article: DTAG says Meta sends 3.5 TB/s (“about 100,000 HD films”) into their network.
+
+📼 This one's more of a journey than it seems based on the headline, but [a guy wants help digitizing 20k old VHS tapes](https://takes.jamesomalley.co.uk/p/my-vhs-nightmare). Some people that work on this newsletter (Matt) had never even heard of a thing called Teletext, and other people that work on this newsletter (Phil) hadn't even read far enough before sharing to see that's the important part of digitizing all these tapes. “Oh, well that makes it even cooler\!” \- Phil. 
+
+📺 Apparently “[the golden age of streaming is far behind us](https://www.theguardian.com/tv-and-radio/2024/sep/27/price-hikes-terrible-adverts-customer-crackdowns-how-the-joy-in-streaming-tv-died)” because streaming services are doing things like *checks notes* asking people that use their service to pay for it. The author bemoans the arrival of all these new paid streaming services like Mubi…which launched 30 *days* after Netflix streaming did *back in 2007*. There are certainly reasons for viewers to be bummed about the current situation, like that we've managed to make The Bundle a pretty good memory, but…this article just ain't it.
+
+🚢 [FFmpeg 7.1 "Péter" drops](https://www.ffmpeg.org/#pr7.1) with the VVC decoder now stable, native AAC USAC support, and Vulkan encoding for H264 and HEVC. You love to see an open source project talking about finally getting a decade old monkey off their back in terms of internal cleanup/improvements.
+
+📡 Dish and SlingTV are [heading to DirecTV](https://ir.echostar.com/news-releases/news-release-details/echostar-announces-suite-transformative-transactions-delever-its). Seems like EchoStar is moving to focus more on wireless connectivity like 5G and getting out of the streaming business.
+
+🍝 Every time one of these new media foundational models gets released it gets a little easier to see how the world is going to burn. This time it's [Meta's Movie Gen model](https://ai.meta.com/research/movie-gen/), and…it's really damn impressive. It's hard to imagine that most people will be able to identify this stuff as AI in the (pretty) near future.
+
+⚾ Fanatics has had a live product for a little over a year (“Fanatics Live”), but now [they've acquired the french startup Voggt](https://www.sportspromedia.com/news/fanatics-live-voggt-acquisition-europe/) to double down on the live shopping side of things.
+
+👁️‍🗨️ The ideal state of security cameras is that they show you absolutely nothing of interest. But if you do want to see if there's something interesting automatically, it's nice to keep all that happening locally. [Machina](https://github.com/PsyChip/machina) does real-time object tagging using local LLMs via RTSP into Ollama.
+
+🎤 Sydney Video Tech shared a few videos they loved from past meetups, so we uploaded them to the Demuxed YouTube channel. If you're itching for a pre-Demuxed fix, you can go watch Garrett talk about [debug.video](https://www.youtube.com/watch?v=27Z1eqV3YDQ) and [writing his preferred streaming protocol](https://www.youtube.com/watch?v=Ww0Ea12191s). 
+
+## Upcoming Meetups/Community Events
+
+**Note for the Lisbon and Romania crews\!** We've got two people looking to start a meetups in 2025 for Lisbon and Romania\! If you're interested in getting involved (speaking, attending, whatever), [shoot us a note](mailto:info@demuxed.com) and we'll connect you.
+
+10/10 \- [Video Tech NYC](https://lu.ma/lup2pb9c)  
+10/14 \- FOMS  
+10/15 \- HLS Interest Group  
+10/16-17 \- [Demuxed](https://2024.demuxed.com)
