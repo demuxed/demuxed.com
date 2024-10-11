@@ -55,7 +55,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <h3 className="mt-1">Get this in your inbox</h3>
         <p>
           We send ~1 email a month about the video industry along with updates
-          on Demuxed, community events. No spam, ever.
+          on Demuxed and other community events. No spam, ever.
         </p>
         <NewsletterSubscribe />
       </div>

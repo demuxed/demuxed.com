@@ -13,7 +13,7 @@ export default function GetInvolved() {
           <h3 className="text-2xl font-semibold pb-2">Newsletter</h3>
           <p className="pb-4">
             We send ~1 email a month about the video industry along with updates
-            on Demuxed, community events. No spam, ever.
+            on Demuxed and other community events. No spam, ever.
           </p>
           <NewsletterSubscribe />
         </div>
