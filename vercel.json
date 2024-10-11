@@ -6,6 +6,6 @@
     }
   ],
   "redirects": [
-    { "source": "/live", "destination": "https://2023.demuxed.com/live", "permanent": false }
+    { "source": "/live", "destination": "https://2024.demuxed.com/live", "permanent": false }
   ]
 }
