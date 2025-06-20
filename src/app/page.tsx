@@ -42,7 +42,7 @@ export default async function Home() {
               <p className="pb-2">
                 October 29-30
                 <br />
-                London, UK.
+                London, UK
               </p>
               <div className="flex flex-row gap-2 max-[250px]:flex-col">
                 <Link href="https://2025.demuxed.com" className="flex-1 sm:flex-none">
