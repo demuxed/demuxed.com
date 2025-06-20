@@ -36,29 +36,29 @@ export default async function Home() {
           <div className="row-span-2 flex flex-col place-content-center gap-8 border border-black bg-black p-4 text-white sm:col-span-2 sm:flex-row">
             <img src="/trolly-clip.jpg" className="w-1/3 rounded border border-white" />
             <div className="flex flex-col justify-center">
-              <Link href="https://2024.demuxed.com">
-                <h3 className="pb-2 text-2xl font-semibold">Demuxed 2024</h3>
+              <Link href="https://2025.demuxed.com">
+                <h3 className="pb-2 text-2xl font-semibold">Demuxed 2025</h3>
               </Link>
               <p className="pb-2">
-                October 16-17
+                October 29-30
                 <br />
-                San Francisco, CA
+                London, UK.
               </p>
               <div className="flex flex-row gap-2 max-[250px]:flex-col">
-                <Link href="https://tickets.demuxed.com" className="flex-1 sm:flex-none">
+                <Link href="https://2025.demuxed.com" className="flex-1 sm:flex-none">
                   <Button
                     className="w-full bg-slate-300"
                     variant="inverse"
                   >
-                    Buy a ticket
+                    Learn more
                   </Button>
                 </Link>
                 <Link
-                  href="mailto:sponsor@demuxed.com"
+                  href="https://2025.demuxed.com/submit"
                   className="flex-1 sm:flex-none"
                 >
                   <Button className="w-full" variant="inverse">
-                    Sponsor
+                    Submit a talk
                   </Button>
                 </Link>
               </div>
