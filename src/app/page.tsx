@@ -54,11 +54,11 @@ export default async function Home() {
                   </Button>
                 </Link>
                 <Link
-                  href="https://2025.demuxed.com/submit"
+                  href="https://tickets.demuxed.com"
                   className="flex-1 sm:flex-none"
                 >
                   <Button className="w-full" variant="inverse">
-                    Submit a talk
+                    Buy tickets
                   </Button>
                 </Link>
               </div>
