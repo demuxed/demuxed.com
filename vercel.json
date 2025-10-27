@@ -6,7 +6,7 @@
     }
   ],
   "redirects": [
-    { "source": "/live", "destination": "https://2024.demuxed.com/live", "permanent": false },
+    { "source": "/live", "destination": "https://2025.demuxed.com/live", "permanent": false },
     { "source": "/brand-guide", "destination": "https://demuxed.notion.site/Demuxed-Brand-Guide-28b254a26f0780bba47fe1f213e5d2be", "permanent": true }
   ]
 }
