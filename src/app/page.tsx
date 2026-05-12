@@ -45,20 +45,12 @@ export default async function Home() {
                 London, UK
               </p>
               <div className="flex flex-row gap-2 max-[250px]:flex-col">
-                <Link href="https://2025.demuxed.com" className="flex-1 sm:flex-none">
-                  <Button
-                    className="w-full bg-slate-300"
-                    variant="inverse"
-                  >
-                    Learn more
-                  </Button>
-                </Link>
                 <Link
-                  href="https://tickets.demuxed.com"
+                  href="https://www.youtube.com/playlist?list=PLkyaYNWEKcOeMg62dwyzfX4GvQbhhjByv"
                   className="flex-1 sm:flex-none"
                 >
                   <Button className="w-full" variant="inverse">
-                    Buy tickets
+                    Watch VODs
                   </Button>
                 </Link>
               </div>
