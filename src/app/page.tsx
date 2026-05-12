@@ -5,12 +5,27 @@ import Button from '@/components/Button';
 import GetInvolved from '@/components/GetInvolved';
 import CommunityEventItem from '@/components/CommunityEventItem';
 
-import { base, getUpcomingEvents, oneEventPerCommunity } from '@/lib/airtable';
+import {
+  base,
+  getUpcomingEvents,
+  oneEventPerCommunity,
+  recordToCommunity,
+} from '@/lib/airtable';
 
 export const revalidate = 60 * 60; // 1 hour
 
 export default async function Home() {
-  const events = await getUpcomingEvents();
+  const communities: Community[] = (
+    await base('Communities')
+      .select({
+        filterByFormula: 'NOT({Dead})',
+      })
+      .all()
+  ).map((record) => recordToCommunity(record)) as Community[];
+
+  const events = (await getUpcomingEvents(communities)).filter(
+    (event) => event.community
+  );
 
   return (
     <main className="container mx-auto max-w-screen-lg pb-8 pt-4">
