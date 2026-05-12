@@ -16,6 +16,7 @@ async function getData() {
   const communities: Community[] = (
     await base('Communities')
       .select({
+        filterByFormula: 'NOT({Dead})',
         sort: [
           {
             field: 'Community Name',
@@ -27,7 +28,8 @@ async function getData() {
   ).map((record) => recordToCommunity(record)) as Community[]; // Yes, I'm ignoring Airtable types here because ugh, Airtable types suck.
 
   const events = await getUpcomingEvents(communities);
-  const filteredEvents = oneEventPerCommunity(events);
+  const liveEvents = events.filter((event) => event.community);
+  const filteredEvents = oneEventPerCommunity(liveEvents);
 
   return { communities, events: filteredEvents };
 }

@@ -5,12 +5,27 @@ import Button from '@/components/Button';
 import GetInvolved from '@/components/GetInvolved';
 import CommunityEventItem from '@/components/CommunityEventItem';
 
-import { base, getUpcomingEvents, oneEventPerCommunity } from '@/lib/airtable';
+import {
+  base,
+  getUpcomingEvents,
+  oneEventPerCommunity,
+  recordToCommunity,
+} from '@/lib/airtable';
 
 export const revalidate = 60 * 60; // 1 hour
 
 export default async function Home() {
-  const events = await getUpcomingEvents();
+  const communities: Community[] = (
+    await base('Communities')
+      .select({
+        filterByFormula: 'NOT({Dead})',
+      })
+      .all()
+  ).map((record) => recordToCommunity(record)) as Community[];
+
+  const events = (await getUpcomingEvents(communities)).filter(
+    (event) => event.community
+  );
 
   return (
     <main className="container mx-auto max-w-screen-lg pb-8 pt-4">
@@ -45,20 +60,12 @@ export default async function Home() {
                 London, UK
               </p>
               <div className="flex flex-row gap-2 max-[250px]:flex-col">
-                <Link href="https://2025.demuxed.com" className="flex-1 sm:flex-none">
-                  <Button
-                    className="w-full bg-slate-300"
-                    variant="inverse"
-                  >
-                    Learn more
-                  </Button>
-                </Link>
                 <Link
-                  href="https://tickets.demuxed.com"
+                  href="https://www.youtube.com/playlist?list=PLkyaYNWEKcOeMg62dwyzfX4GvQbhhjByv"
                   className="flex-1 sm:flex-none"
                 >
                   <Button className="w-full" variant="inverse">
-                    Buy tickets
+                    Watch VODs
                   </Button>
                 </Link>
               </div>
